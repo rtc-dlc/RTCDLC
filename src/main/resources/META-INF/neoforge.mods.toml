@@ -1,0 +1,39 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Not specified"
+
+[[mods]]
+modId="rtc_extras"
+version="1.0.0"
+displayName="RTC: Extras"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="MCreator"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.rtc_extras]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.176,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.rtc_extras]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration
