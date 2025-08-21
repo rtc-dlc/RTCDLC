@@ -227,12 +227,17 @@ public class BacteriumItem extends Item {
 		tip.add(Component.literal("Status: " + (stabilized ? "Stabilized" : "Destabilized")).withStyle(stabilized ? net.minecraft.ChatFormatting.AQUA : net.minecraft.ChatFormatting.YELLOW));
 		// Time bar & time left (always shown)
 		if (ctx.level() != null) {
-			long left = timeLeftTicks(ctx.level(), stack);
-			long total = PER_ITEM_TICKS * Math.max(1, stack.getCount());
-			float frac = total <= 0 ? 0f : (left / (float) total);
-			long leftSec = left / 20L;
-			tip.add(Component.literal("Time left: " + formatTime(leftSec)));
-			tip.add(coloredBarComponent(frac, 20));
+			if (isExpired(ctx.level(), stack)) {
+				// Show expired in red
+				tip.add(Component.literal("Expired").withStyle(net.minecraft.ChatFormatting.RED));
+			} else {
+				long left = timeLeftTicks(ctx.level(), stack);
+				long total = PER_ITEM_TICKS * Math.max(1, stack.getCount());
+				float frac = total <= 0 ? 0f : (left / (float) total);
+				long leftSec = left / 20L;
+				tip.add(Component.literal("Time left: " + formatTime(leftSec)));
+				tip.add(coloredBarComponent(frac, 20));
+			}
 		} else {
 			tip.add(Component.literal("Time left: ~unknown (client world null)"));
 		}
