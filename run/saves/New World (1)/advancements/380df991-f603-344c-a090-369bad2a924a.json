@@ -1,15 +1,21 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2025-08-21 11:51:15 -0400"
+      "unlock_right_away": "2025-08-21 10:51:15 -0500"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:plains": "2025-08-21 11:51:16 -0400"
+      "minecraft:plains": "2025-08-21 10:51:16 -0500"
     },
     "done": false
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2025-08-21 11:10:38 -0500"
+    },
+    "done": true
   },
   "DataVersion": 3955
 }

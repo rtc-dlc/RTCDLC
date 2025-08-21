@@ -64,7 +64,7 @@ public class GUIGeneSequencerScreen extends AbstractContainerScreen<GUIGeneSeque
 				0, // U
 				0, // V
 				20, // width to draw
-				(int)final_drawheight, // height to draw
+				(int) final_drawheight, // height to draw
 				20, // texture width
 				50 // texture height
 		);
