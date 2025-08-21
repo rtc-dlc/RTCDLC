@@ -306,6 +306,20 @@
         ]
       },
       "path": "~/bacteria"
+    },
+    {
+      "name": "BacteriumShouldLive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacterium_should_live",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/BacteriumShouldLiveProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
     }
   ],
   "variable_elements": [
@@ -331,6 +345,8 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS",
       "~Blocks.STONE#0"
     ]
   },

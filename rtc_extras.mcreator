@@ -345,6 +345,8 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS",
       "~Blocks.STONE#0"
     ]
   },

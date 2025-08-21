@@ -4,7 +4,16 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "badlands"
+        "value": "CUSTOM:GliesePlains"
+      },
+      {
+        "value": "CUSTOM:GlieseShroomlands"
+      },
+      {
+        "value": "CUSTOM:GlieseThicket"
+      },
+      {
+        "value": "CUSTOM:GlieseBioprofusion"
       }
     ],
     "worldGenType": "Normal world gen",

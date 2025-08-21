@@ -311,7 +311,7 @@
       "name": "BacteriumShouldLive",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "bacterium_should_live",
       "metadata": {
         "dependencies": [],
@@ -345,6 +345,8 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS",
       "~Blocks.STONE#0"
     ]
   },
