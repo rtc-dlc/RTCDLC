@@ -383,6 +383,34 @@
         ]
       },
       "path": "~/analyzer"
+    },
+    {
+      "name": "GeneSample",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_sample",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/item/gene_sample.json",
+          "src/main/java/net/crizo/rtcextras/item/GeneSampleItem.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "AnalyzeGeneSample",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "analyze_gene_sample",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/AnalyzeGeneSampleProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
     }
   ],
   "variable_elements": [
@@ -426,7 +454,9 @@
       "item.rtc_extras.bacterium_dummy": "Bacterium",
       "block.rtc_extras.bioreactor": "Bioreactor",
       "gui.rtc_extras.gui_bioreactor.label_bioreactor": "Bioreactor",
-      "block.rtc_extras.gene_sequencer": "Gene Sequencer"
+      "block.rtc_extras.gene_sequencer": "Gene Sequencer",
+      "item.rtc_extras.gene_sample": "Gene Sample",
+      "gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer": "Gene Sequencer"
     }
   },
   "metadata": {
