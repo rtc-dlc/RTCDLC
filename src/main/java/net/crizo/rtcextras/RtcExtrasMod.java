@@ -18,6 +18,10 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.crizo.rtcextras.network.RtcExtrasModVariables;
+import net.crizo.rtcextras.init.RtcExtrasModTabs;
+import net.crizo.rtcextras.init.RtcExtrasModItems;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
 import java.util.List;
@@ -35,6 +39,11 @@ public class RtcExtrasMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+
+		RtcExtrasModItems.REGISTRY.register(modEventBus);
+
+		RtcExtrasModTabs.REGISTRY.register(modEventBus);
+		RtcExtrasModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
