@@ -80,11 +80,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/crizo/rtcextras/block/entity/GeneSequencerBlockEntity.java",
-          "src/main/resources/assets/rtc_extras/blockstates/gene_sequencer.json",
-          "src/main/resources/assets/rtc_extras/models/block/gene_sequencer.json",
           "src/main/resources/assets/rtc_extras/models/item/gene_sequencer.json",
+          "src/main/resources/assets/rtc_extras/blockstates/gene_sequencer.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/gene_sequencer.json",
           "src/main/java/net/crizo/rtcextras/block/GeneSequencerBlock.java",
-          "src/main/resources/data/rtc_extras/loot_table/blocks/gene_sequencer.json"
+          "src/main/resources/assets/rtc_extras/models/block/gene_sequencer.json"
         ]
       },
       "path": "~/analyzer"
@@ -156,9 +156,9 @@
       "registry_name": "gliese_plains",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_plains_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_plains_tree.json",
           "src/main/resources/data/rtc_extras/worldgen/biome/gliese_plains.json",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_plains_tree.json"
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_plains_tree.json"
         ]
       },
       "path": "~/gliese"
@@ -217,9 +217,9 @@
       "registry_name": "gliese_shroomlands",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_shroomlands_tree.json",
           "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_shroomlands_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_shroomlands.json"
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_shroomlands.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_shroomlands_tree.json"
         ]
       },
       "path": "~/gliese"
@@ -246,8 +246,8 @@
       "registry_name": "gui_gene_sequencer",
       "metadata": {
         "files": [
-          "src/main/java/net/crizo/rtcextras/world/inventory/GUIGeneSequencerMenu.java",
-          "src/main/java/net/crizo/rtcextras/client/gui/GUIGeneSequencerScreen.java"
+          "src/main/java/net/crizo/rtcextras/client/gui/GUIGeneSequencerScreen.java",
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUIGeneSequencerMenu.java"
         ]
       },
       "path": "~/analyzer"
@@ -301,12 +301,12 @@
       "registry_name": "bioreactor",
       "metadata": {
         "files": [
-          "src/main/java/net/crizo/rtcextras/block/BioreactorBlock.java",
           "src/main/java/net/crizo/rtcextras/block/entity/BioreactorBlockEntity.java",
-          "src/main/resources/assets/rtc_extras/blockstates/bioreactor.json",
-          "src/main/resources/assets/rtc_extras/models/item/bioreactor.json",
+          "src/main/resources/assets/rtc_extras/models/block/bioreactor.json",
+          "src/main/java/net/crizo/rtcextras/block/BioreactorBlock.java",
           "src/main/resources/data/rtc_extras/loot_table/blocks/bioreactor.json",
-          "src/main/resources/assets/rtc_extras/models/block/bioreactor.json"
+          "src/main/resources/assets/rtc_extras/models/item/bioreactor.json",
+          "src/main/resources/assets/rtc_extras/blockstates/bioreactor.json"
         ]
       },
       "path": "~/bioreactor"
@@ -319,9 +319,9 @@
       "registry_name": "gliese_bioprofusion",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_bioprofusion_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_bioprofusion.json",
           "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_bioprofusion_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_bioprofusion.json"
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_bioprofusion_tree.json"
         ]
       },
       "path": "~/gliese"
@@ -441,15 +441,32 @@
       "key.rtc_extras.switch_dimension": "Switch Dimension",
       "item.rtc_extras.gene_sample": "Gene Sample",
       "item.rtc_extras.bacterium_dummy": "Bacterium",
-      "item.rtc_extras.bacterium": "Bacterium"
+      "item.rtc_extras.bacterium": "Bacterium",
+      "block.rtc_extras.gene_sequencer": "Gene Sequencer",
+      "biome.rtc_extras.gliese_plains": "Gliese Plains",
+      "biome.rtc_extras.gliese_thicket": "Gliese Thicket",
+      "biome.rtc_extras.gliese_shroomlands": "Gliese Shroomlands",
+      "gui.rtc_extras.gui_bioreactor.label_bioreactor": "Bioreactor",
+      "gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer": "Gene Sequencer",
+      "block.rtc_extras.bioreactor": "Bioreactor",
+      "biome.rtc_extras.gliese_bioprofusion": "Gliese Bioprofusion",
+      "item_group.rtc_extras.rtc_extras": "RTC Extras"
     }
   },
   "metadata": {
     "files": [
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
       "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java"
+      "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlockEntities.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModItems.java"
     ]
   },
   "foldersRoot": {
