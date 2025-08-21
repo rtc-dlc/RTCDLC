@@ -1,0 +1,57 @@
+{
+  "mod_elements": [
+    {
+      "name": "Gliese",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/world/dimension/GlieseDimension.java",
+          "src/main/resources/data/rtc_extras/dimension_type/gliese.json",
+          "src/main/resources/data/rtc_extras/dimension/gliese.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "rtc_extras",
+    "modName": "RTC: Extras",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.crizo.rtcextras"
+  },
+  "mcreatorVersion": 202500228610
+}
