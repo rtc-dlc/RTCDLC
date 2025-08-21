@@ -1,4 +1,6 @@
 {
-  "biome.rtc_extras.gliese_biome": "Gliese Biome",
-  "key.rtc_extras.switch_dimension": "Switch Dimension"
+  "key.rtc_extras.switch_dimension": "Switch Dimension",
+  "item.rtc_extras.gene_sample": "Gene Sample",
+  "item.rtc_extras.bacterium_dummy": "Bacterium",
+  "item.rtc_extras.bacterium": "Bacterium"
 }

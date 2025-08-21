@@ -58,7 +58,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -121,18 +121,8 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
-key_Gravity Gun: Shoot:key.mouse.left
-key_Gravity Gun: Grab/Release:key.mouse.right
-key_key.rtc.bind_guided_mode:key.keyboard.r
-key_key.rtc.keybind_jetpack_use:key.keyboard.left.control
-key_key.rtc.keybind_flight_computer:key.keyboard.v
-key_key.rtc.keybind_autodrill_automine:key.keyboard.c
-key_key.rtc.keybind_jetpack_hover:key.keyboard.h
-key_key.rtc.keybind_tesla_active:key.keyboard.x
-key_key.rtc.keybind_autocarbine_targeting:key.keyboard.k
-key_key.rtc.key_bind_client_allow_shaders:key.keyboard.home
 key_key.rtc_extras.switch_dimension:key.keyboard.0
-soundCategory_master:0.19536423841059603
+soundCategory_master:0.0
 soundCategory_music:0.1056338028169014
 soundCategory_record:1.0
 soundCategory_weather:1.0

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rtc_extras:block/art",
+    "up": "rtc_extras:block/art",
+    "north": "rtc_extras:block/art",
+    "east": "rtc_extras:block/art",
+    "south": "rtc_extras:block/art",
+    "west": "rtc_extras:block/art",
+    "particle": "rtc_extras:block/art"
+  },
+  "render_type": "solid"
+}
