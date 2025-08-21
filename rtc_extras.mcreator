@@ -441,15 +441,32 @@
       "key.rtc_extras.switch_dimension": "Switch Dimension",
       "item.rtc_extras.gene_sample": "Gene Sample",
       "item.rtc_extras.bacterium_dummy": "Bacterium",
-      "item.rtc_extras.bacterium": "Bacterium"
+      "item.rtc_extras.bacterium": "Bacterium",
+      "block.rtc_extras.gene_sequencer": "Gene Sequencer",
+      "biome.rtc_extras.gliese_plains": "Gliese Plains",
+      "biome.rtc_extras.gliese_thicket": "Gliese Thicket",
+      "biome.rtc_extras.gliese_shroomlands": "Gliese Shroomlands",
+      "gui.rtc_extras.gui_bioreactor.label_bioreactor": "Bioreactor",
+      "gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer": "Gene Sequencer",
+      "block.rtc_extras.bioreactor": "Bioreactor",
+      "biome.rtc_extras.gliese_bioprofusion": "Gliese Bioprofusion",
+      "item_group.rtc_extras.rtc_extras": "RTC Extras"
     }
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
       "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java"
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
+      "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlockEntities.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModItems.java"
     ]
   },
   "foldersRoot": {

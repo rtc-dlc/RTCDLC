@@ -1,6 +1,22 @@
 package net.crizo.rtcextras.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ExperienceOrb;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.BlockPos;
+
+import net.crizo.rtcextras.init.RtcExtrasModItems;
 
 public class GeneSequencerOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -8,8 +24,8 @@ public class GeneSequencerOnTickUpdateProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, 0));
 		}
-		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == RtcExtrasModItems.DELETED_MOD_ELEMENT.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() == 64
-				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == RtcExtrasModItems.DELETED_MOD_ELEMENT.get()
+		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == RtcExtrasModItems.BACTERIUM.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() == 64
+				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == RtcExtrasModItems.GENE_SAMPLE.get()
 				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("rtc_gene_id")).equals("")) {// server-only
 			if (world.isClientSide())
 				return;
