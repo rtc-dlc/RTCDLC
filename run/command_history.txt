@@ -19,3 +19,15 @@
 /give Dev rtc_extras:bacterium_dummy 64
 /tick rate 200
 /give Dev rtc_extras:bacterium_dummy 64
+/give Dev rtc_extras:bacterium_dummy 1
+/give Dev rtc_extras:bacterium_dummy 64
+/tick rate 2000
+/give Dev rtc_extras:bacterium_dummy 64
+/tick rate 2000
+/give Dev rtc_extras:bacterium_dummy 64
+/tick rate 20
+/give Dev rtc_extras:bacterium_dummy 64
+/tick rate 200
+/give Dev rtc_extras:bacterium_dummy 64
+/tick rate 200
+/give Dev rtc_extras:bacterium_dummy 64

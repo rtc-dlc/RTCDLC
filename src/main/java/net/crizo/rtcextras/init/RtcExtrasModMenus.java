@@ -15,6 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
+import net.crizo.rtcextras.world.inventory.GUIGeneSequencerMenu;
 import net.crizo.rtcextras.world.inventory.GUIBioreactorMenu;
 import net.crizo.rtcextras.network.MenuStateUpdateMessage;
 import net.crizo.rtcextras.RtcExtrasMod;
@@ -24,6 +25,7 @@ import java.util.Map;
 public class RtcExtrasModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, RtcExtrasMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<GUIBioreactorMenu>> GUI_BIOREACTOR = REGISTRY.register("gui_bioreactor", () -> IMenuTypeExtension.create(GUIBioreactorMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUIGeneSequencerMenu>> GUI_GENE_SEQUENCER = REGISTRY.register("gui_gene_sequencer", () -> IMenuTypeExtension.create(GUIGeneSequencerMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

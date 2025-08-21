@@ -8,5 +8,8 @@
   "item.rtc_extras.bacterium": "Bacterium",
   "item.rtc_extras.bacterium_dummy": "Bacterium",
   "block.rtc_extras.bioreactor": "Bioreactor",
-  "gui.rtc_extras.gui_bioreactor.label_bioreactor": "Bioreactor"
+  "gui.rtc_extras.gui_bioreactor.label_bioreactor": "Bioreactor",
+  "block.rtc_extras.gene_sequencer": "Gene Sequencer",
+  "item.rtc_extras.gene_sample": "Gene Sample",
+  "gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer": "Gene Sequencer"
 }

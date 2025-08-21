@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.crizo.rtcextras.item.GeneSampleItem;
 import net.crizo.rtcextras.item.BacteriumItem;
 import net.crizo.rtcextras.item.BacteriumDummyItem;
 import net.crizo.rtcextras.RtcExtrasMod;
@@ -20,6 +21,8 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> BACTERIUM = REGISTRY.register("bacterium", BacteriumItem::new);
 	public static final DeferredItem<Item> BACTERIUM_DUMMY = REGISTRY.register("bacterium_dummy", BacteriumDummyItem::new);
 	public static final DeferredItem<Item> BIOREACTOR = block(RtcExtrasModBlocks.BIOREACTOR);
+	public static final DeferredItem<Item> GENE_SEQUENCER = block(RtcExtrasModBlocks.GENE_SEQUENCER);
+	public static final DeferredItem<Item> GENE_SAMPLE = REGISTRY.register("gene_sample", GeneSampleItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -19,6 +19,9 @@ public class RtcExtrasModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RTC_EXTRAS = REGISTRY.register("rtc_extras",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.rtc_extras.rtc_extras")).icon(() -> new ItemStack(Blocks.POPPY)).displayItems((parameters, tabData) -> {
 				tabData.accept(RtcExtrasModItems.BACTERIUM.get());
+				tabData.accept(RtcExtrasModItems.BACTERIUM_DUMMY.get());
 				tabData.accept(RtcExtrasModBlocks.BIOREACTOR.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GENE_SEQUENCER.get().asItem());
+				tabData.accept(RtcExtrasModItems.GENE_SAMPLE.get());
 			}).withSearchBar().build());
 }

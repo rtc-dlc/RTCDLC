@@ -22,6 +22,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.crizo.rtcextras.init.RtcExtrasModMenus;
+import net.crizo.rtcextras.init.RtcExtrasModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -93,6 +94,11 @@ public class GUIBioreactorMenu extends AbstractContainerMenu implements RtcExtra
 			private final int slot = 0;
 			private int x = GUIBioreactorMenu.this.x;
 			private int y = GUIBioreactorMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return RtcExtrasModItems.BACTERIUM.get() == stack.getItem();
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
