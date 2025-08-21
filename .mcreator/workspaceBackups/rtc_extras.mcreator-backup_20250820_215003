@@ -1,38 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "GlieseBiome",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gliese_biome",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_biome_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_biome_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_biome.json"
-        ]
-      }
-    },
-    {
-      "name": "SwitchDimensionOnKeyPressed",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "switch_dimension_on_key_pressed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/crizo/rtcextras/procedures/SwitchDimensionOnKeyPressedProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "Gliese",
       "type": "dimension",
       "compiles": true,
@@ -43,18 +11,6 @@
           "src/main/java/net/crizo/rtcextras/world/dimension/GlieseDimension.java",
           "src/main/resources/data/rtc_extras/dimension_type/gliese.json",
           "src/main/resources/data/rtc_extras/dimension/gliese.json"
-        ]
-      }
-    },
-    {
-      "name": "SwitchDimension",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "switch_dimension",
-      "metadata": {
-        "files": [
-          "src/main/java/net/crizo/rtcextras/network/SwitchDimensionMessage.java"
         ]
       }
     }
@@ -68,10 +24,7 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {
-      "biome.rtc_extras.gliese_biome": "Gliese Biome",
-      "key.rtc_extras.switch_dimension": "Switch Dimension"
-    }
+    "en_us": {}
   },
   "metadata": {
     "files": [
