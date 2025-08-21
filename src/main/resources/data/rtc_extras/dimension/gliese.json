@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "badlands",
+          "biome": "rtc_extras:gliese_biome",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -383,7 +383,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "badlands"
+                "rtc_extras:gliese_biome"
               ]
             },
             "then_run": {
@@ -417,7 +417,10 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:red_sand"
+                              "Name": "minecraft:grass_block",
+                              "Properties": {
+                                "snowy": "false"
+                              }
                             }
                           }
                         },
@@ -442,7 +445,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:terracotta"
+                        "Name": "minecraft:dirt"
                       }
                     }
                   }
