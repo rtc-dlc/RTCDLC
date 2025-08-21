@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "rtc_extras:block/laerrockyellow",
+    "particle": "rtc_extras:block/laerrockyellow"
+  },
+  "render_type": "solid"
+}

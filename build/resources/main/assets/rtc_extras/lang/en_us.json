@@ -11,5 +11,9 @@
   "gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer": "Gene Sequencer",
   "block.rtc_extras.bioreactor": "Bioreactor",
   "biome.rtc_extras.gliese_bioprofusion": "Gliese Bioprofusion",
-  "item_group.rtc_extras.rtc_extras": "RTC Extras"
+  "item_group.rtc_extras.rtc_extras": "RTC Extras",
+  "block.rtc_extras.dirty_shale": "Dirty Shale",
+  "block.rtc_extras.yellow_layerrock": "Yellow Layerrock",
+  "block.rtc_extras.red_layerrock": "Red Layerrock",
+  "block.rtc_extras.orange_layerrock": "Orange Layerrock"
 }
