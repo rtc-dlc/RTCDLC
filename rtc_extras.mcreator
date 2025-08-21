@@ -9,9 +9,9 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java"
     ]
   },
   "foldersRoot": {
