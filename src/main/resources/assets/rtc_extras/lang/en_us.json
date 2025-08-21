@@ -1,5 +1,4 @@
 {
-  "biome.rtc_extras.gliese_biome": "Gliese Biome",
   "key.rtc_extras.switch_dimension": "Switch Dimension",
   "biome.rtc_extras.gliese_plains": "Gliese Plains",
   "biome.rtc_extras.gliese_shroomlands": "Gliese Shroomlands",
@@ -7,5 +6,7 @@
   "biome.rtc_extras.gliese_bioprofusion": "Gliese Bioprofusion",
   "item_group.rtc_extras.rtc_extras": "RTC Extras",
   "item.rtc_extras.bacterium": "Bacterium",
-  "item.rtc_extras.bacterium_dummy": "Bacterium"
+  "item.rtc_extras.bacterium_dummy": "Bacterium",
+  "block.rtc_extras.bioreactor": "Bioreactor",
+  "gui.rtc_extras.gui_bioreactor.label_bioreactor": "Bioreactor"
 }

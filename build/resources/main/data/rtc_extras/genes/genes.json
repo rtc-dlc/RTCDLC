@@ -5,6 +5,15 @@
     "exotic": 7
   },
   "genes": [
+  	{
+      "id": "sodium_excretion",
+      "name": "Sodium Excretion",
+      "tier": "common",
+      "interference": 0.08,
+      "effect": "Produces sodium chloride.",
+      "tags": ["production"],
+      "production": []
+    },
     {
       "id": "metabolism_boost",
       "name": "Metabolism Boost",
@@ -109,16 +118,16 @@
       "name": "Acetobacter Lineage",
       "tier": "common",
       "interference": 0.12,
-      "effect": "Produces acetic acid (vinegar).",
+      "effect": "Produces acetic acid.",
       "tags": ["production"],
-      "production": ["acetic_acid", "vinegar"]
+      "production": ["acetic_acid"]
     },
     {
-      "id": "methanogenesis",
-      "name": "Methanogenesis",
+      "id": "methylotrophy",
+      "name": "Methylotrophy",
       "tier": "common",
       "interference": 0.15,
-      "effect": "Generates methane gas for fuel.",
+      "effect": "Generates methanol.",
       "tags": ["production", "fuel"],
       "production": ["methane_gas", "bio_slurry"]
     },
@@ -159,15 +168,6 @@
       "production": ["amylase_enzyme", "simple_sugars"]
     },
     {
-      "id": "biocoal_synthesis",
-      "name": "Biocoal Synthesis",
-      "tier": "common",
-      "interference": 0.12,
-      "effect": "Converts biomass into biochar/biocoal.",
-      "tags": ["production", "fuel"],
-      "production": ["biochar", "compressed_biocoal"]
-    },
-    {
       "id": "slime_polysaccharide",
       "name": "Slime Polysaccharide",
       "tier": "common",
@@ -185,7 +185,6 @@
       "tags": ["production", "medicine"],
       "production": ["vitamin_b_complex", "vitamin_c"]
     },
-
     {
       "id": "neurotransmitter_boost",
       "name": "Neurotransmitter Boost",
@@ -263,7 +262,7 @@
       "name": "Thermogenesis",
       "tier": "rare",
       "interference": 0.25,
-      "effect": "Cold resist aura; tiny warmth to allies.",
+      "effect": "Enhanced cold climate boost; flame aura when hit.",
       "tags": ["player", "survival"],
       "production": ["brown_fat_biomass"]
     },
@@ -286,13 +285,13 @@
       "production": ["polycarbonate_pellet"]
     },
     {
-      "id": "nylon_precursors",
-      "name": "Nylon Precursors",
+      "id": "carbon_precursors",
+      "name": "Carbon Precursors",
       "tier": "rare",
       "interference": 0.30,
-      "effect": "Generates nylon precursor chemicals.",
+      "effect": "Generates carbon nanotube precursor chemicals.",
       "tags": ["production", "material"],
-      "production": ["adipic_like_acid", "hexamethylene_like_diamine"]
+      "production": ["cnt_precursor"]
     },
     {
       "id": "nitration_pack",
@@ -301,7 +300,7 @@
       "interference": 0.35,
       "effect": "Synthesizes explosive precursor mixes.",
       "tags": ["production", "energetic"],
-      "production": ["tnt_precursor_mix", "nitro_glyceride_precursor"]
+      "production": ["hydrazine", "hexamine"]
     },
     {
       "id": "broad_spectrum_antibiotic",
@@ -320,6 +319,15 @@
       "effect": "Synthesizes growth factor serum.",
       "tags": ["production", "medicine"],
       "production": ["growth_factor_serum"]
+    },
+    {
+      "id": "styrogenesis",
+      "name": "Styrogenesis",
+      "tier": "rare",
+      "interference": 0.35,
+      "effect": "Creates monomers, specifically: styrene.",
+      "tags": ["production", "material"],
+      "production": ["styrene"]
     },
     {
       "id": "bioplastic_refinery",

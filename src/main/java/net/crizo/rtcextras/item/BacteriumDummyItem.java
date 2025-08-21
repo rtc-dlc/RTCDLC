@@ -48,6 +48,8 @@ public class BacteriumDummyItem extends Item {
 		tag.putString("rtc_gene_tier", gene.tier());
 		tag.putFloat("rtc_gene_interference", gene.interference());
 		tag.putString("rtc_gene_effect", gene.effect());
+		// mark it researched by default
+		tag.putBoolean("researched", true);
 		net.crizo.rtcextras.item.BacteriumItem.setTag(stack, tag);
 	}
 
@@ -84,7 +86,7 @@ public class BacteriumDummyItem extends Item {
 			ItemStack newMaster = new ItemStack(net.crizo.rtcextras.init.RtcExtrasModItems.BACTERIUM.get());
 			BacteriumItem.setCreated(newMaster, createdForNew);
 			newMaster.setCount(1);
-			// assign its secret gene data
+			// assign its secret gene data + researched flag
 			assignGeneIfAbsent(level, newMaster);
 			p.getInventory().setItem(i, newMaster);
 			return true;
