@@ -475,6 +475,39 @@
         ]
       },
       "path": "~/blocks"
+    },
+    {
+      "name": "GeneSequencerBannerDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gene_sequencer_banner_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/GeneSequencerBannerDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "GeneSequencerBanner",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_sequencer_banner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/client/screens/GeneSequencerBannerOverlay.java"
+        ]
+      },
+      "path": "~/analyzer"
     }
   ],
   "variable_elements": [

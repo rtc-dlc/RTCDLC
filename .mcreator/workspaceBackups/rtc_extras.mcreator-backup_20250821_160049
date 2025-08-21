@@ -242,7 +242,7 @@
       "name": "GUIGeneSequencer",
       "type": "gui",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gui_gene_sequencer",
       "metadata": {
         "files": [
@@ -407,6 +407,113 @@
         ]
       },
       "path": "~/analyzer"
+    },
+    {
+      "name": "DirtyShale",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirty_shale",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/dirty_shale.json",
+          "src/main/java/net/crizo/rtcextras/block/DirtyShaleBlock.java",
+          "src/main/resources/assets/rtc_extras/blockstates/dirty_shale.json",
+          "src/main/resources/assets/rtc_extras/models/item/dirty_shale.json",
+          "src/main/resources/assets/rtc_extras/models/block/dirty_shale.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "YellowLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/YellowLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/yellow_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/yellow_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/yellow_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/yellow_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "RedLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/red_layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/RedLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/blockstates/red_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/item/red_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/red_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "OrangeLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/OrangeLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/orange_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/orange_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/orange_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/orange_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "GeneSequencerBannerDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gene_sequencer_banner_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/GeneSequencerBannerDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "LerpHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lerp_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/LerpHandlerProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
     }
   ],
   "variable_elements": [
@@ -432,7 +539,15 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS",
       "~Blocks.STONE#0"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:OrangeLayerrock",
+      "~CUSTOM:RedLayerrock",
+      "~CUSTOM:YellowLayerrock",
+      "~CUSTOM:DirtyShale"
     ]
   },
   "tab_element_order": {},
@@ -450,7 +565,11 @@
       "gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer": "Gene Sequencer",
       "block.rtc_extras.bioreactor": "Bioreactor",
       "biome.rtc_extras.gliese_bioprofusion": "Gliese Bioprofusion",
-      "item_group.rtc_extras.rtc_extras": "RTC Extras"
+      "item_group.rtc_extras.rtc_extras": "RTC Extras",
+      "block.rtc_extras.dirty_shale": "Dirty Shale",
+      "block.rtc_extras.yellow_layerrock": "Yellow Layerrock",
+      "block.rtc_extras.red_layerrock": "Red Layerrock",
+      "block.rtc_extras.orange_layerrock": "Orange Layerrock"
     }
   },
   "metadata": {
