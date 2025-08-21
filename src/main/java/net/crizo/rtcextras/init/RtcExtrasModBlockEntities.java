@@ -23,8 +23,8 @@ import net.crizo.rtcextras.RtcExtrasMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class RtcExtrasModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, RtcExtrasMod.MODID);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BioreactorBlockEntity>> BIOREACTOR = register("bioreactor", RtcExtrasModBlocks.BIOREACTOR, BioreactorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GeneSequencerBlockEntity>> GENE_SEQUENCER = register("gene_sequencer", RtcExtrasModBlocks.GENE_SEQUENCER, GeneSequencerBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BioreactorBlockEntity>> BIOREACTOR = register("bioreactor", RtcExtrasModBlocks.BIOREACTOR, BioreactorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -34,7 +34,7 @@ public class RtcExtrasModBlockEntities {
 
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BIOREACTOR.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, GENE_SEQUENCER.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BIOREACTOR.get(), SidedInvWrapper::new);
 	}
 }

@@ -62,32 +62,32 @@ public class RtcExtrasModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			clone.geneContent = original.geneContent;
 			if (!event.isWasDeath()) {
-				clone.geneReplacement = original.geneReplacement;
 				clone.geneReplacementCountdown = original.geneReplacementCountdown;
+				clone.geneReplacement = original.geneReplacement;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
 	}
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
-		public String geneContent = "\"\"";
-		public String geneReplacement = "\"\"";
 		public double geneReplacementCountdown = -1.0;
+		public String geneReplacement = "\"\"";
+		public String geneContent = "\"\"";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putString("geneContent", geneContent);
-			nbt.putString("geneReplacement", geneReplacement);
 			nbt.putDouble("geneReplacementCountdown", geneReplacementCountdown);
+			nbt.putString("geneReplacement", geneReplacement);
+			nbt.putString("geneContent", geneContent);
 			return nbt;
 		}
 
 		@Override
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
-			geneContent = nbt.getString("geneContent");
-			geneReplacement = nbt.getString("geneReplacement");
 			geneReplacementCountdown = nbt.getDouble("geneReplacementCountdown");
+			geneReplacement = nbt.getString("geneReplacement");
+			geneContent = nbt.getString("geneContent");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

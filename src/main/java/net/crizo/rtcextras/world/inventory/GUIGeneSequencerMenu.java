@@ -1,33 +1,6 @@
 package net.crizo.rtcextras.world.inventory;
 
-import net.neoforged.neoforge.items.wrapper.InvWrapper;
-import net.neoforged.neoforge.items.SlotItemHandler;
-import net.neoforged.neoforge.items.ItemStackHandler;
-import net.neoforged.neoforge.items.IItemHandlerModifiable;
-import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.capabilities.Capabilities;
-
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.core.BlockPos;
-
-import net.crizo.rtcextras.init.RtcExtrasModMenus;
-import net.crizo.rtcextras.init.RtcExtrasModItems;
-
-import java.util.function.Supplier;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collections;
+import net.crizo.rtcextras.RtcExtrasMod;
 
 public class GUIGeneSequencerMenu extends AbstractContainerMenu implements RtcExtrasModMenus.MenuAccessor {
 	public final Map<String, Object> menuState = new HashMap<>() {
@@ -97,7 +70,7 @@ public class GUIGeneSequencerMenu extends AbstractContainerMenu implements RtcEx
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return RtcExtrasModItems.BACTERIUM.get() == stack.getItem();
+				return RtcExtrasModItems.DELETED_MOD_ELEMENT.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 71, 26) {
@@ -107,7 +80,7 @@ public class GUIGeneSequencerMenu extends AbstractContainerMenu implements RtcEx
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return RtcExtrasModItems.GENE_SAMPLE.get() == stack.getItem();
+				return RtcExtrasModItems.DELETED_MOD_ELEMENT.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 107, 44) {
@@ -174,65 +147,7 @@ public class GUIGeneSequencerMenu extends AbstractContainerMenu implements RtcEx
 		return itemstack;
 	}
 
-	@Override
-	protected boolean moveItemStackTo(ItemStack p_38904_, int p_38905_, int p_38906_, boolean p_38907_) {
-		boolean flag = false;
-		int i = p_38905_;
-		if (p_38907_) {
-			i = p_38906_ - 1;
-		}
-		if (p_38904_.isStackable()) {
-			while (!p_38904_.isEmpty() && (p_38907_ ? i >= p_38905_ : i < p_38906_)) {
-				Slot slot = this.slots.get(i);
-				ItemStack itemstack = slot.getItem();
-				if (slot.mayPlace(itemstack) && !itemstack.isEmpty() && ItemStack.isSameItemSameComponents(p_38904_, itemstack)) {
-					int j = itemstack.getCount() + p_38904_.getCount();
-					int k = slot.getMaxStackSize(itemstack);
-					if (j <= k) {
-						p_38904_.setCount(0);
-						itemstack.setCount(j);
-						slot.set(itemstack);
-						flag = true;
-					} else if (itemstack.getCount() < k) {
-						p_38904_.shrink(k - itemstack.getCount());
-						itemstack.setCount(k);
-						slot.set(itemstack);
-						flag = true;
-					}
-				}
-				if (p_38907_) {
-					i--;
-				} else {
-					i++;
-				}
-			}
-		}
-		if (!p_38904_.isEmpty()) {
-			if (p_38907_) {
-				i = p_38906_ - 1;
-			} else {
-				i = p_38905_;
-			}
-			while (p_38907_ ? i >= p_38905_ : i < p_38906_) {
-				Slot slot1 = this.slots.get(i);
-				ItemStack itemstack1 = slot1.getItem();
-				if (itemstack1.isEmpty() && slot1.mayPlace(p_38904_)) {
-					int l = slot1.getMaxStackSize(p_38904_);
-					slot1.setByPlayer(p_38904_.split(Math.min(p_38904_.getCount(), l)));
-					slot1.setChanged();
-					flag = true;
-					break;
-				}
-				if (p_38907_) {
-					i--;
-				} else {
-					i++;
-				}
-			}
-		}
-		return flag;
-	}
-
+	@Override /* failed to load code for net.minecraft.world.inventory.AbstractContainerMenu */
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
