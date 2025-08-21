@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rtc_extras:block/dirtyshaletop",
+    "up": "rtc_extras:block/dirtyshaletop",
+    "north": "rtc_extras:block/dirtyshaleside",
+    "east": "rtc_extras:block/dirtyshaleside",
+    "south": "rtc_extras:block/dirtyshaleside",
+    "west": "rtc_extras:block/dirtyshaleside",
+    "particle": "rtc_extras:block/dirtyshaletop"
+  },
+  "render_type": "solid"
+}

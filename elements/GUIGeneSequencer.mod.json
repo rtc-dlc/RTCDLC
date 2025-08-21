@@ -24,8 +24,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 169,
-          "y": 89,
+          "x": 151,
+          "y": 98,
           "locked": false
         }
       },
@@ -43,7 +43,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 196,
+          "x": 151,
           "y": 62,
           "locked": false
         }
@@ -56,24 +56,28 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 232,
+          "x": 259,
           "y": 80,
           "locked": false
         }
       },
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_gene_sequencer",
-          "text": {
-            "fixedValue": "Gene Sequencer"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 133,
-          "y": 44,
+          "image": "picturescience.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progressbio.png",
+          "use1Xscale": false,
+          "x": 258,
+          "y": 64,
           "locked": false
         }
       }
@@ -83,7 +87,7 @@
       "sy": 18,
       "ox": 13,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

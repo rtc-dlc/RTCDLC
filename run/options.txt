@@ -1,5 +1,5 @@
 version:3955
-ao:false
+ao:true
 biomeBlendRadius:2
 enableVsync:false
 entityDistanceScaling:1.0
@@ -22,8 +22,8 @@ narrator:0
 particles:0
 reducedDebugInfo:false
 renderClouds:"false"
-renderDistance:8
-simulationDistance:12
+renderDistance:32
+simulationDistance:32
 screenEffectScale:1.0
 soundDevice:""
 autoJump:false
@@ -44,7 +44,7 @@ toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
 hideSplashTexts:false
-mouseSensitivity:0.25
+mouseSensitivity:0.5352112676056338
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
@@ -87,8 +87,8 @@ panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
 menuBackgroundBlurriness:5
-key_key.attack:key.mouse.right
-key_key.use:key.mouse.left
+key_key.attack:key.mouse.left
+key_key.use:key.mouse.right
 key_key.forward:key.keyboard.w
 key_key.left:key.keyboard.a
 key_key.back:key.keyboard.s

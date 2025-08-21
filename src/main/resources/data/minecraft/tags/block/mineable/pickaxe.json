@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "rtc_extras:red_layerrock",
+    "rtc_extras:orange_layerrock",
+    "rtc_extras:yellow_layerrock",
+    "rtc_extras:dirty_shale"
+  ]
+}

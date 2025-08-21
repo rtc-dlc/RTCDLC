@@ -23,5 +23,9 @@ public class RtcExtrasModTabs {
 				tabData.accept(RtcExtrasModItems.BACTERIUM.get());
 				tabData.accept(RtcExtrasModBlocks.BIOREACTOR.get().asItem());
 				tabData.accept(RtcExtrasModItems.GENE_SAMPLE.get());
+				tabData.accept(RtcExtrasModBlocks.ORANGE_LAYERROCK.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_LAYERROCK.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.DIRTY_SHALE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.YELLOW_LAYERROCK.get().asItem());
 			}).withSearchBar().build());
 }

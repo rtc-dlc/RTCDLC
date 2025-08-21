@@ -1,10 +1,14 @@
 package net.crizo.rtcextras.client.gui;
 
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
@@ -15,6 +19,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 
 public class GUIGeneSequencerScreen extends AbstractContainerScreen<GUIGeneSequencerMenu> implements RtcExtrasModScreens.ScreenAccessor {
 	private final Level world;
+	private double final_drawheight = 0;
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
@@ -36,7 +41,7 @@ public class GUIGeneSequencerScreen extends AbstractContainerScreen<GUIGeneSeque
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("rtc_extras:textures/screens/gui_gene_sequencer.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("rtc_extras:textures/screens/picturescience.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -46,10 +51,23 @@ public class GUIGeneSequencerScreen extends AbstractContainerScreen<GUIGeneSeque
 
 	@Override
 	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
+		int timer = (int) getBlockNBTNumber(world, BlockPos.containing(x, y, z), "timer");
+		int drawheight = 50 * timer / 200;
+		final_drawheight = Mth.lerp(0.2, final_drawheight, drawheight);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(ResourceLocation.parse("rtc_extras:textures/screens/picturescience.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(ResourceLocation.parse("rtc_extras:textures/screens/progressbio.png"), this.leftPos + 132, // screen X
+				this.topPos + 27, // screen Y
+				0, // U
+				0, // V
+				20, // width to draw
+				(int)final_drawheight, // height to draw
+				20, // texture width
+				50 // texture height
+		);
 		RenderSystem.disableBlend();
 	}
 
@@ -64,11 +82,17 @@ public class GUIGeneSequencerScreen extends AbstractContainerScreen<GUIGeneSeque
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer"), 7, 7, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

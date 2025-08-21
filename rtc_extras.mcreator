@@ -407,6 +407,74 @@
         ]
       },
       "path": "~/analyzer"
+    },
+    {
+      "name": "OrangeLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/OrangeLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/orange_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/orange_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/orange_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/orange_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "RedLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/block/red_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/red_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/item/red_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/red_layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/RedLayerrockBlock.java"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "DirtyShale",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirty_shale",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/item/dirty_shale.json",
+          "src/main/resources/assets/rtc_extras/models/block/dirty_shale.json",
+          "src/main/java/net/crizo/rtcextras/block/DirtyShaleBlock.java",
+          "src/main/resources/assets/rtc_extras/blockstates/dirty_shale.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/dirty_shale.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "YellowLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/block/yellow_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/yellow_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/yellow_layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/YellowLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/yellow_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
     }
   ],
   "variable_elements": [
@@ -435,6 +503,12 @@
       "~Blocks.DIRT#0",
       "~Blocks.GRASS",
       "~Blocks.STONE#0"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:YellowLayerrock",
+      "~CUSTOM:DirtyShale",
+      "~CUSTOM:RedLayerrock",
+      "~CUSTOM:OrangeLayerrock"
     ]
   },
   "tab_element_order": {},
@@ -458,17 +532,9 @@
   "metadata": {
     "files": [
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
       "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
-      "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlockEntities.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModItems.java"
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java"
     ]
   },
   "foldersRoot": {
@@ -488,6 +554,10 @@
       },
       {
         "name": "gliese",
+        "children": []
+      },
+      {
+        "name": "blocks",
         "children": []
       }
     ]

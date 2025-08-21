@@ -23,6 +23,10 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> BACTERIUM = REGISTRY.register("bacterium", BacteriumItem::new);
 	public static final DeferredItem<Item> BIOREACTOR = block(RtcExtrasModBlocks.BIOREACTOR);
 	public static final DeferredItem<Item> GENE_SAMPLE = REGISTRY.register("gene_sample", GeneSampleItem::new);
+	public static final DeferredItem<Item> ORANGE_LAYERROCK = block(RtcExtrasModBlocks.ORANGE_LAYERROCK);
+	public static final DeferredItem<Item> RED_LAYERROCK = block(RtcExtrasModBlocks.RED_LAYERROCK);
+	public static final DeferredItem<Item> DIRTY_SHALE = block(RtcExtrasModBlocks.DIRTY_SHALE);
+	public static final DeferredItem<Item> YELLOW_LAYERROCK = block(RtcExtrasModBlocks.YELLOW_LAYERROCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items
