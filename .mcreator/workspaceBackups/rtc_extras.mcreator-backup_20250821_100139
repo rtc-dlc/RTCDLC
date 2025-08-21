@@ -1,0 +1,512 @@
+{
+  "mod_elements": [
+    {
+      "name": "SwitchDimensionOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_dimension_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/SwitchDimensionOnKeyPressedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Gliese",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/world/dimension/GlieseDimension.java",
+          "src/main/resources/data/rtc_extras/dimension_type/gliese.json",
+          "src/main/resources/data/rtc_extras/dimension/gliese.json"
+        ]
+      }
+    },
+    {
+      "name": "SwitchDimension",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/network/SwitchDimensionMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "ProGlieseConditions",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pro_gliese_conditions",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/ProGlieseConditionsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BacteriumDummy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacterium_dummy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/item/BacteriumDummyItem.java",
+          "src/main/resources/assets/rtc_extras/models/item/bacterium_dummy.json"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "GeneSequencer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gene_sequencer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/entity/GeneSequencerBlockEntity.java",
+          "src/main/resources/assets/rtc_extras/models/item/gene_sequencer.json",
+          "src/main/resources/assets/rtc_extras/blockstates/gene_sequencer.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/gene_sequencer.json",
+          "src/main/java/net/crizo/rtcextras/block/GeneSequencerBlock.java",
+          "src/main/resources/assets/rtc_extras/models/block/gene_sequencer.json"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "GeneDecayLoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_decay_loot",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/GeneDecayLootProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "ContainerOpenDecayHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "container_open_decay_handler",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/ContainerOpenDecayHandlerProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "GeneSequencerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gene_sequencer_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/GeneSequencerOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "GliesePlains",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_plains",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_plains_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_plains.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_plains_tree.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "GlieseThicket",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_thicket",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_thicket.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_thicket_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_thicket_tree.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "BioreactorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bioreactor_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/BioreactorOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/bioreactor"
+    },
+    {
+      "name": "GlieseShroomlands",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_shroomlands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_shroomlands_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_shroomlands.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_shroomlands_tree.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "GUIBioreactor",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_bioreactor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUIBioreactorMenu.java",
+          "src/main/java/net/crizo/rtcextras/client/gui/GUIBioreactorScreen.java"
+        ]
+      },
+      "path": "~/bioreactor"
+    },
+    {
+      "name": "GUIGeneSequencer",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_gene_sequencer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/client/gui/GUIGeneSequencerScreen.java",
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUIGeneSequencerMenu.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "BacteriumShouldLive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacterium_should_live",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/BacteriumShouldLiveProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "Bacterium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacterium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/item/BacteriumItem.java",
+          "src/main/resources/assets/rtc_extras/models/item/bacterium.json"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "GeneData",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/GeneData.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "Bioreactor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bioreactor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/entity/BioreactorBlockEntity.java",
+          "src/main/resources/assets/rtc_extras/models/block/bioreactor.json",
+          "src/main/java/net/crizo/rtcextras/block/BioreactorBlock.java",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/bioreactor.json",
+          "src/main/resources/assets/rtc_extras/models/item/bioreactor.json",
+          "src/main/resources/assets/rtc_extras/blockstates/bioreactor.json"
+        ]
+      },
+      "path": "~/bioreactor"
+    },
+    {
+      "name": "GlieseBioprofusion",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_bioprofusion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_bioprofusion.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_bioprofusion_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_bioprofusion_tree.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "GeneRegistry",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_registry",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/GeneRegistry.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "StabilizeBacteria",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stabilize_bacteria",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/StabilizeBacteriaProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "RTCExtras",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtc_extras",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GeneSample",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_sample",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/item/gene_sample.json",
+          "src/main/java/net/crizo/rtcextras/item/GeneSampleItem.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "AnalyzeGeneSample",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "analyze_gene_sample",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/AnalyzeGeneSampleProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "geneReplacementCountdown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "-1.0"
+    },
+    {
+      "name": "geneReplacement",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "geneContent",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS",
+      "~Blocks.STONE#0"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "key.rtc_extras.switch_dimension": "Switch Dimension",
+      "item.rtc_extras.gene_sample": "Gene Sample",
+      "item.rtc_extras.bacterium_dummy": "Bacterium",
+      "item.rtc_extras.bacterium": "Bacterium",
+      "block.rtc_extras.gene_sequencer": "Gene Sequencer",
+      "biome.rtc_extras.gliese_plains": "Gliese Plains",
+      "biome.rtc_extras.gliese_thicket": "Gliese Thicket",
+      "biome.rtc_extras.gliese_shroomlands": "Gliese Shroomlands",
+      "gui.rtc_extras.gui_bioreactor.label_bioreactor": "Bioreactor",
+      "gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer": "Gene Sequencer",
+      "block.rtc_extras.bioreactor": "Bioreactor",
+      "biome.rtc_extras.gliese_bioprofusion": "Gliese Bioprofusion",
+      "item_group.rtc_extras.rtc_extras": "RTC Extras"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
+      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
+      "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlockEntities.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "bacteria",
+        "children": []
+      },
+      {
+        "name": "analyzer",
+        "children": []
+      },
+      {
+        "name": "bioreactor",
+        "children": []
+      },
+      {
+        "name": "gliese",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "rtc_extras",
+    "modName": "RTC: Extras",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.crizo.rtcextras"
+  },
+  "mcreatorVersion": 202500228610
+}
