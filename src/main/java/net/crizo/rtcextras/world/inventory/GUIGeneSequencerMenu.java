@@ -33,7 +33,7 @@ public class GUIGeneSequencerMenu extends AbstractContainerMenu implements RtcEx
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 4)
+			if (!this.containsKey(key) && this.size() >= 5)
 				return null;
 			return super.put(key, value);
 		}
@@ -90,7 +90,7 @@ public class GUIGeneSequencerMenu extends AbstractContainerMenu implements RtcEx
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 44, 53) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 62) {
 			private final int slot = 0;
 			private int x = GUIGeneSequencerMenu.this.x;
 			private int y = GUIGeneSequencerMenu.this.y;
@@ -100,7 +100,7 @@ public class GUIGeneSequencerMenu extends AbstractContainerMenu implements RtcEx
 				return RtcExtrasModItems.BACTERIUM.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 71, 26) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 26) {
 			private final int slot = 1;
 			private int x = GUIGeneSequencerMenu.this.x;
 			private int y = GUIGeneSequencerMenu.this.y;
@@ -110,7 +110,7 @@ public class GUIGeneSequencerMenu extends AbstractContainerMenu implements RtcEx
 				return RtcExtrasModItems.GENE_SAMPLE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 107, 44) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 134, 44) {
 			private final int slot = 2;
 			private int x = GUIGeneSequencerMenu.this.x;
 			private int y = GUIGeneSequencerMenu.this.y;
