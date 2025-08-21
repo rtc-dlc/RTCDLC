@@ -32,3 +32,17 @@
 /tick rate 200
 /give Dev rtc_extras:bacterium_dummy 64
 /tick rate 200
+/gamemode spectator
+/gamemode creative
+/locate biome rtc_extras:gliese_bioprofusion
+/locate biome rtc_extras:gliese_shroomlands
+/locate biome rtc_extras:gliese_thicket
+/locate biome rtc_extras:gliese_plains
+/gamemode spectator
+/gamemode creative
+/gamemode spectator
+/kill
+/give @p rtc_extras:gliese_fossil
+/give @p minecraft:structure_block
+/clear
+/gamemode spectator

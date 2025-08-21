@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "rtc_extras:block/tall_layerrock_roots"
+    },
+    "half=lower": {
+      "model": "rtc_extras:block/tall_layerrock_roots_bottom"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "rtc_extras:blocks/tall_layerrock_roots",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "rtc_extras:tall_layerrock_roots",
+          "conditions": [
+            {
+              "block": "rtc_extras:tall_layerrock_roots",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

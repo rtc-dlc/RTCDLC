@@ -28,6 +28,6 @@ public class LerpHandlerProcedure {
 		}
 		double current = player.getPersistentData().getDouble("BannerX");
 		double target = player.getPersistentData().getDouble("BannerXTarget");
-		player.getPersistentData().putDouble("BannerX", Mth.lerp(0.1, current, target));
+		player.getPersistentData().putDouble("BannerX", Mth.lerp(0.01, current, target));
 	}
 }

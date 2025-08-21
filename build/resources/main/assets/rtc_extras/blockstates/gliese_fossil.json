@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "rtc_extras:block/gliese_fossil",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "rtc_extras:block/gliese_fossil"
+    },
+    "axis=z": {
+      "model": "rtc_extras:block/gliese_fossil",
+      "x": 90
+    }
+  }
+}

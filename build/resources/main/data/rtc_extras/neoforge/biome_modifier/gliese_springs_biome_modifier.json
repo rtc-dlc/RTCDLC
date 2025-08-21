@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "rtc_extras:gliese_plains",
+    "rtc_extras:gliese_thicket"
+  ],
+  "features": "rtc_extras:gliese_springs",
+  "step": "surface_structures"
+}
