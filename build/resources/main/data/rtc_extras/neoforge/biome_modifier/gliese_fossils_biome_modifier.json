@@ -1,11 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": [
-    "rtc_extras:gliese_plains",
-    "rtc_extras:gliese_thicket",
-    "rtc_extras:gliese_shroomlands",
-    "rtc_extras:gliese_bioprofusion"
-  ],
+  "biomes": "rtc_extras:gliese_plains",
   "features": "rtc_extras:gliese_fossils",
   "step": "surface_structures"
 }

@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.crizo.rtcextras.world.features.StructureFeature;
 import net.crizo.rtcextras.network.RtcExtrasModVariables;
 import net.crizo.rtcextras.init.RtcExtrasModTabs;
 import net.crizo.rtcextras.init.RtcExtrasModMenus;
@@ -49,6 +50,8 @@ public class RtcExtrasMod {
 
 		RtcExtrasModTabs.REGISTRY.register(modEventBus);
 		RtcExtrasModVariables.ATTACHMENT_TYPES.register(modEventBus);
+
+		StructureFeature.REGISTRY.register(modEventBus);
 
 		RtcExtrasModMenus.REGISTRY.register(modEventBus);
 

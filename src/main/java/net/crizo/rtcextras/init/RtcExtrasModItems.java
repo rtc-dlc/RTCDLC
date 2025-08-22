@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.crizo.rtcextras.item.GeneSampleItem;
@@ -27,6 +28,11 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> RED_LAYERROCK = block(RtcExtrasModBlocks.RED_LAYERROCK);
 	public static final DeferredItem<Item> DIRTY_SHALE = block(RtcExtrasModBlocks.DIRTY_SHALE);
 	public static final DeferredItem<Item> YELLOW_LAYERROCK = block(RtcExtrasModBlocks.YELLOW_LAYERROCK);
+	public static final DeferredItem<Item> GLIESE_FOSSIL = block(RtcExtrasModBlocks.GLIESE_FOSSIL);
+	public static final DeferredItem<Item> LAYERROCK_ROOTS = block(RtcExtrasModBlocks.LAYERROCK_ROOTS);
+	public static final DeferredItem<Item> SHORT_LAYERROCK_ROOTS = block(RtcExtrasModBlocks.SHORT_LAYERROCK_ROOTS);
+	public static final DeferredItem<Item> TALL_LAYERROCK_ROOTS = doubleBlock(RtcExtrasModBlocks.TALL_LAYERROCK_ROOTS);
+	public static final DeferredItem<Item> BULBUSH = block(RtcExtrasModBlocks.BULBUSH);
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -36,5 +42,13 @@ public class RtcExtrasModItems {
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), properties));
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block) {
+		return doubleBlock(block, new Item.Properties());
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block, Item.Properties properties) {
+		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), properties));
 	}
 }

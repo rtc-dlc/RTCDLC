@@ -2,6 +2,10 @@
   "feature": "rtc_extras:gliese_fossils",
   "placement": [
     {
+      "type": "minecraft:rarity_filter",
+      "chance": 24
+    },
+    {
       "type": "minecraft:count",
       "count": {
         "type": "uniform",
@@ -22,7 +26,7 @@
         "type": "minecraft:solid",
         "offset": [
           0,
-          -1,
+          -2,
           0
         ]
       }
