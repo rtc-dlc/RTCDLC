@@ -35,6 +35,11 @@ public class RtcExtrasModTabs {
 				tabData.accept(RtcExtrasModBlocks.HELIX_SPLICER.get().asItem());
 				tabData.accept(RtcExtrasModBlocks.BIOCULTIVATOR.get().asItem());
 				tabData.accept(RtcExtrasModItems.JELLY.get());
+				tabData.accept(RtcExtrasModBlocks.LAYERROCK_BRICKS.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.CYANOSTONE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.LAYERROCK.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.CHISELED_LAYERROCK.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.POLISHED_LAYERROCK.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

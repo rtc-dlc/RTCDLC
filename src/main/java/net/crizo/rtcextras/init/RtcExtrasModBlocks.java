@@ -16,12 +16,17 @@ import net.crizo.rtcextras.block.YellowLayerrockBlock;
 import net.crizo.rtcextras.block.TallLayerrockRootsBlock;
 import net.crizo.rtcextras.block.ShortLayerrockRootsBlock;
 import net.crizo.rtcextras.block.RedLayerrockBlock;
+import net.crizo.rtcextras.block.PolishedLayerrockBlock;
 import net.crizo.rtcextras.block.OrangeLayerrockBlock;
 import net.crizo.rtcextras.block.LayerrockRootsBlock;
+import net.crizo.rtcextras.block.LayerrockBricksBlock;
+import net.crizo.rtcextras.block.LayerrockBlock;
 import net.crizo.rtcextras.block.HelixSplicerBlock;
 import net.crizo.rtcextras.block.GlieseFossilBlock;
 import net.crizo.rtcextras.block.GeneSequencerBlock;
 import net.crizo.rtcextras.block.DirtyShaleBlock;
+import net.crizo.rtcextras.block.CyanostoneBlock;
+import net.crizo.rtcextras.block.ChiseledLayerrockBlock;
 import net.crizo.rtcextras.block.BulbushBlock;
 import net.crizo.rtcextras.block.BioreactorBlock;
 import net.crizo.rtcextras.block.BiocultivatorBlock;
@@ -42,6 +47,11 @@ public class RtcExtrasModBlocks {
 	public static final DeferredBlock<Block> BULBUSH = REGISTRY.register("bulbush", BulbushBlock::new);
 	public static final DeferredBlock<Block> HELIX_SPLICER = REGISTRY.register("helix_splicer", HelixSplicerBlock::new);
 	public static final DeferredBlock<Block> BIOCULTIVATOR = REGISTRY.register("biocultivator", BiocultivatorBlock::new);
+	public static final DeferredBlock<Block> LAYERROCK_BRICKS = REGISTRY.register("layerrock_bricks", LayerrockBricksBlock::new);
+	public static final DeferredBlock<Block> CYANOSTONE = REGISTRY.register("cyanostone", CyanostoneBlock::new);
+	public static final DeferredBlock<Block> LAYERROCK = REGISTRY.register("layerrock", LayerrockBlock::new);
+	public static final DeferredBlock<Block> CHISELED_LAYERROCK = REGISTRY.register("chiseled_layerrock", ChiseledLayerrockBlock::new);
+	public static final DeferredBlock<Block> POLISHED_LAYERROCK = REGISTRY.register("polished_layerrock", PolishedLayerrockBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

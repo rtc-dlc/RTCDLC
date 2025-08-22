@@ -4,13 +4,13 @@
   "definition": {
     "name": "Gliese Bioprofusion",
     "groundBlock": {
-      "value": "CUSTOM:RedLayerrock"
+      "value": "Blocks.MYCELIUM"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:YellowLayerrock"
+      "value": "Blocks.DIRT#0"
     },
     "underwaterBlock": {
-      "value": "CUSTOM:OrangeLayerrock"
+      "value": "Blocks.DIRT#0"
     },
     "airColor": {
       "value": -11450816,

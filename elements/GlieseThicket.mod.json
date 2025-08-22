@@ -4,13 +4,13 @@
   "definition": {
     "name": "Gliese Thicket",
     "groundBlock": {
-      "value": "CUSTOM:RedLayerrock"
+      "value": "CUSTOM:Cyanostone"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:OrangeLayerrock"
+      "value": "CUSTOM:Cyanostone"
     },
     "underwaterBlock": {
-      "value": "CUSTOM:DirtyShale"
+      "value": "CUSTOM:Cyanostone"
     },
     "airColor": {
       "value": -11450816,

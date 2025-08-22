@@ -37,6 +37,11 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> HELIX_SPLICER = block(RtcExtrasModBlocks.HELIX_SPLICER);
 	public static final DeferredItem<Item> BIOCULTIVATOR = block(RtcExtrasModBlocks.BIOCULTIVATOR);
 	public static final DeferredItem<Item> JELLY = REGISTRY.register("jelly", JellyItem::new);
+	public static final DeferredItem<Item> LAYERROCK_BRICKS = block(RtcExtrasModBlocks.LAYERROCK_BRICKS);
+	public static final DeferredItem<Item> CYANOSTONE = block(RtcExtrasModBlocks.CYANOSTONE);
+	public static final DeferredItem<Item> LAYERROCK = block(RtcExtrasModBlocks.LAYERROCK);
+	public static final DeferredItem<Item> CHISELED_LAYERROCK = block(RtcExtrasModBlocks.CHISELED_LAYERROCK);
+	public static final DeferredItem<Item> POLISHED_LAYERROCK = block(RtcExtrasModBlocks.POLISHED_LAYERROCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

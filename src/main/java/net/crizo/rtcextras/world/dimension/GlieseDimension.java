@@ -17,7 +17,7 @@ public class GlieseDimension {
 			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(192f, true, DimensionSpecialEffects.SkyType.NORMAL, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
-					return new Vec3(1, 0.6, 0.6);
+					return new Vec3(0.5568627451, 0.3333333333, 0.3333333333).multiply(sunHeight * 0.94 + 0.06, sunHeight * 0.94 + 0.06, sunHeight * 0.91 + 0.09);
 				}
 
 				@Override
