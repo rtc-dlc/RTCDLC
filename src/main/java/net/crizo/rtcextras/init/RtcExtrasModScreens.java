@@ -8,7 +8,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.crizo.rtcextras.client.gui.GUISplicerScreen;
 import net.crizo.rtcextras.client.gui.GUIGeneSequencerScreen;
+import net.crizo.rtcextras.client.gui.GUICultivatorScreen;
 import net.crizo.rtcextras.client.gui.GUIBioreactorScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -17,6 +19,8 @@ public class RtcExtrasModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(RtcExtrasModMenus.GUI_BIOREACTOR.get(), GUIBioreactorScreen::new);
 		event.register(RtcExtrasModMenus.GUI_GENE_SEQUENCER.get(), GUIGeneSequencerScreen::new);
+		event.register(RtcExtrasModMenus.GUI_SPLICER.get(), GUISplicerScreen::new);
+		event.register(RtcExtrasModMenus.GUI_CULTIVATOR.get(), GUICultivatorScreen::new);
 	}
 
 	public interface ScreenAccessor {

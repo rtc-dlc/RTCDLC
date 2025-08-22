@@ -1,5 +1,3 @@
-/give Dev rtc_extras:bacterium 64
-/give Dev rtc_extras:bacterium_dummy
 /tick rate 5000
 /tick rate 20
 /give Dev rtc_extras:bacterium_dummy
@@ -48,3 +46,5 @@
 /tick rate 2000
 /tick rate 20
 /tick rate 2000
+/gamemode survival
+/gamemode creative

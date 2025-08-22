@@ -100,7 +100,7 @@ public class GUISplicerMenu extends AbstractContainerMenu implements RtcExtrasMo
 				return RtcExtrasModItems.GENE_SAMPLE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 11, 34) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 12, 34) {
 			private final int slot = 1;
 			private int x = GUISplicerMenu.this.x;
 			private int y = GUISplicerMenu.this.y;
@@ -120,7 +120,7 @@ public class GUISplicerMenu extends AbstractContainerMenu implements RtcExtrasMo
 				return RtcExtrasModItems.GENE_SAMPLE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 135, 38) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 135, 34) {
 			private final int slot = 3;
 			private int x = GUISplicerMenu.this.x;
 			private int y = GUISplicerMenu.this.y;
