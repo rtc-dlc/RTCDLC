@@ -2,10 +2,16 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0,
+  "projectBrowserSplitPos": 280,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, RTC: Extras]"
+      "[, External libraries]",
+      "[, External libraries, Gradle: neoforge-21.1.176]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, client]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, client, event]"
     ]
   }
 }

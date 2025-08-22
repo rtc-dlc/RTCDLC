@@ -80,11 +80,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/crizo/rtcextras/block/entity/GeneSequencerBlockEntity.java",
-          "src/main/resources/assets/rtc_extras/blockstates/gene_sequencer.json",
-          "src/main/resources/assets/rtc_extras/models/block/gene_sequencer.json",
           "src/main/resources/assets/rtc_extras/models/item/gene_sequencer.json",
+          "src/main/resources/assets/rtc_extras/blockstates/gene_sequencer.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/gene_sequencer.json",
           "src/main/java/net/crizo/rtcextras/block/GeneSequencerBlock.java",
-          "src/main/resources/data/rtc_extras/loot_table/blocks/gene_sequencer.json"
+          "src/main/resources/assets/rtc_extras/models/block/gene_sequencer.json"
         ]
       },
       "path": "~/analyzer"
@@ -156,9 +156,9 @@
       "registry_name": "gliese_plains",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_plains_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_plains_tree.json",
           "src/main/resources/data/rtc_extras/worldgen/biome/gliese_plains.json",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_plains_tree.json"
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_plains_tree.json"
         ]
       },
       "path": "~/gliese"
@@ -217,9 +217,9 @@
       "registry_name": "gliese_shroomlands",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_shroomlands_tree.json",
           "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_shroomlands_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_shroomlands.json"
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_shroomlands.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_shroomlands_tree.json"
         ]
       },
       "path": "~/gliese"
@@ -246,8 +246,8 @@
       "registry_name": "gui_gene_sequencer",
       "metadata": {
         "files": [
-          "src/main/java/net/crizo/rtcextras/world/inventory/GUIGeneSequencerMenu.java",
-          "src/main/java/net/crizo/rtcextras/client/gui/GUIGeneSequencerScreen.java"
+          "src/main/java/net/crizo/rtcextras/client/gui/GUIGeneSequencerScreen.java",
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUIGeneSequencerMenu.java"
         ]
       },
       "path": "~/analyzer"
@@ -301,12 +301,12 @@
       "registry_name": "bioreactor",
       "metadata": {
         "files": [
-          "src/main/java/net/crizo/rtcextras/block/BioreactorBlock.java",
           "src/main/java/net/crizo/rtcextras/block/entity/BioreactorBlockEntity.java",
-          "src/main/resources/assets/rtc_extras/blockstates/bioreactor.json",
-          "src/main/resources/assets/rtc_extras/models/item/bioreactor.json",
+          "src/main/resources/assets/rtc_extras/models/block/bioreactor.json",
+          "src/main/java/net/crizo/rtcextras/block/BioreactorBlock.java",
           "src/main/resources/data/rtc_extras/loot_table/blocks/bioreactor.json",
-          "src/main/resources/assets/rtc_extras/models/block/bioreactor.json"
+          "src/main/resources/assets/rtc_extras/models/item/bioreactor.json",
+          "src/main/resources/assets/rtc_extras/blockstates/bioreactor.json"
         ]
       },
       "path": "~/bioreactor"
@@ -319,9 +319,9 @@
       "registry_name": "gliese_bioprofusion",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_bioprofusion_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_bioprofusion.json",
           "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_bioprofusion_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_bioprofusion.json"
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_bioprofusion_tree.json"
         ]
       },
       "path": "~/gliese"
@@ -409,35 +409,18 @@
       "path": "~/analyzer"
     },
     {
-      "name": "DirtyShale",
+      "name": "OrangeLayerrock",
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dirty_shale",
+      "registry_name": "orange_layerrock",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/loot_table/blocks/dirty_shale.json",
-          "src/main/java/net/crizo/rtcextras/block/DirtyShaleBlock.java",
-          "src/main/resources/assets/rtc_extras/blockstates/dirty_shale.json",
-          "src/main/resources/assets/rtc_extras/models/item/dirty_shale.json",
-          "src/main/resources/assets/rtc_extras/models/block/dirty_shale.json"
-        ]
-      },
-      "path": "~/blocks"
-    },
-    {
-      "name": "YellowLayerrock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yellow_layerrock",
-      "metadata": {
-        "files": [
-          "src/main/java/net/crizo/rtcextras/block/YellowLayerrockBlock.java",
-          "src/main/resources/assets/rtc_extras/models/item/yellow_layerrock.json",
-          "src/main/resources/assets/rtc_extras/blockstates/yellow_layerrock.json",
-          "src/main/resources/assets/rtc_extras/models/block/yellow_layerrock.json",
-          "src/main/resources/data/rtc_extras/loot_table/blocks/yellow_layerrock.json"
+          "src/main/java/net/crizo/rtcextras/block/OrangeLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/orange_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/orange_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/orange_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/orange_layerrock.json"
         ]
       },
       "path": "~/blocks"
@@ -450,28 +433,45 @@
       "registry_name": "red_layerrock",
       "metadata": {
         "files": [
+          "src/main/resources/assets/rtc_extras/models/block/red_layerrock.json",
           "src/main/resources/data/rtc_extras/loot_table/blocks/red_layerrock.json",
-          "src/main/java/net/crizo/rtcextras/block/RedLayerrockBlock.java",
-          "src/main/resources/assets/rtc_extras/blockstates/red_layerrock.json",
           "src/main/resources/assets/rtc_extras/models/item/red_layerrock.json",
-          "src/main/resources/assets/rtc_extras/models/block/red_layerrock.json"
+          "src/main/resources/assets/rtc_extras/blockstates/red_layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/RedLayerrockBlock.java"
         ]
       },
       "path": "~/blocks"
     },
     {
-      "name": "OrangeLayerrock",
+      "name": "DirtyShale",
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "orange_layerrock",
+      "registry_name": "dirty_shale",
       "metadata": {
         "files": [
-          "src/main/java/net/crizo/rtcextras/block/OrangeLayerrockBlock.java",
-          "src/main/resources/assets/rtc_extras/models/item/orange_layerrock.json",
-          "src/main/resources/assets/rtc_extras/models/block/orange_layerrock.json",
-          "src/main/resources/assets/rtc_extras/blockstates/orange_layerrock.json",
-          "src/main/resources/data/rtc_extras/loot_table/blocks/orange_layerrock.json"
+          "src/main/resources/assets/rtc_extras/models/item/dirty_shale.json",
+          "src/main/resources/assets/rtc_extras/models/block/dirty_shale.json",
+          "src/main/java/net/crizo/rtcextras/block/DirtyShaleBlock.java",
+          "src/main/resources/assets/rtc_extras/blockstates/dirty_shale.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/dirty_shale.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "YellowLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/block/yellow_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/yellow_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/yellow_layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/YellowLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/yellow_layerrock.json"
         ]
       },
       "path": "~/blocks"
@@ -500,15 +500,15 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0",
       "~Blocks.DIRT#0",
-      "~Blocks.GRASS",
-      "~Blocks.STONE#0"
+      "~Blocks.GRASS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:OrangeLayerrock",
-      "~CUSTOM:RedLayerrock",
       "~CUSTOM:YellowLayerrock",
-      "~CUSTOM:DirtyShale"
+      "~CUSTOM:DirtyShale",
+      "~CUSTOM:RedLayerrock",
+      "~CUSTOM:OrangeLayerrock"
     ]
   },
   "tab_element_order": {},
@@ -527,21 +527,21 @@
       "block.rtc_extras.bioreactor": "Bioreactor",
       "biome.rtc_extras.gliese_bioprofusion": "Gliese Bioprofusion",
       "item_group.rtc_extras.rtc_extras": "RTC Extras",
-      "block.rtc_extras.dirty_shale": "Dirty Shale",
-      "block.rtc_extras.yellow_layerrock": "Yellow Layerrock",
+      "block.rtc_extras.orange_layerrock": "Orange Layerrock",
       "block.rtc_extras.red_layerrock": "Red Layerrock",
-      "block.rtc_extras.orange_layerrock": "Orange Layerrock"
+      "block.rtc_extras.dirty_shale": "Dirty Shale",
+      "block.rtc_extras.yellow_layerrock": "Yellow Layerrock"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
-      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
+      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
+      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
       "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",
