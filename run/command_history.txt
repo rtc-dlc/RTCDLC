@@ -46,3 +46,4 @@
 /give @p minecraft:structure_block
 /clear
 /gamemode spectator
+/give Dev rtc_extras:helix_splicer

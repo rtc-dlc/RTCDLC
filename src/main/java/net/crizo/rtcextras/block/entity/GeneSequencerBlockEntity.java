@@ -113,6 +113,10 @@ public class GeneSequencerBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
+		if (index == 0)
+			return false;
+		if (index == 1)
+			return false;
 		return true;
 	}
 }

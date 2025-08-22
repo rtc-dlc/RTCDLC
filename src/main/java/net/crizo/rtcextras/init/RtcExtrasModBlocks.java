@@ -18,6 +18,7 @@ import net.crizo.rtcextras.block.ShortLayerrockRootsBlock;
 import net.crizo.rtcextras.block.RedLayerrockBlock;
 import net.crizo.rtcextras.block.OrangeLayerrockBlock;
 import net.crizo.rtcextras.block.LayerrockRootsBlock;
+import net.crizo.rtcextras.block.HelixSplicerBlock;
 import net.crizo.rtcextras.block.GlieseFossilBlock;
 import net.crizo.rtcextras.block.GeneSequencerBlock;
 import net.crizo.rtcextras.block.DirtyShaleBlock;
@@ -38,6 +39,7 @@ public class RtcExtrasModBlocks {
 	public static final DeferredBlock<Block> SHORT_LAYERROCK_ROOTS = REGISTRY.register("short_layerrock_roots", ShortLayerrockRootsBlock::new);
 	public static final DeferredBlock<Block> TALL_LAYERROCK_ROOTS = REGISTRY.register("tall_layerrock_roots", TallLayerrockRootsBlock::new);
 	public static final DeferredBlock<Block> BULBUSH = REGISTRY.register("bulbush", BulbushBlock::new);
+	public static final DeferredBlock<Block> HELIX_SPLICER = REGISTRY.register("helix_splicer", HelixSplicerBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

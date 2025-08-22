@@ -33,6 +33,7 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> SHORT_LAYERROCK_ROOTS = block(RtcExtrasModBlocks.SHORT_LAYERROCK_ROOTS);
 	public static final DeferredItem<Item> TALL_LAYERROCK_ROOTS = doubleBlock(RtcExtrasModBlocks.TALL_LAYERROCK_ROOTS);
 	public static final DeferredItem<Item> BULBUSH = block(RtcExtrasModBlocks.BULBUSH);
+	public static final DeferredItem<Item> HELIX_SPLICER = block(RtcExtrasModBlocks.HELIX_SPLICER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

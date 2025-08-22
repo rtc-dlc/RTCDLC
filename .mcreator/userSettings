@@ -5,13 +5,11 @@
   "projectBrowserSplitPos": 280,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, External libraries]",
-      "[, External libraries, Gradle: neoforge-21.1.176]",
-      "[, External libraries, Gradle: neoforge-21.1.176, net]",
-      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged]",
-      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge]",
-      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, client]",
-      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, client, event]"
+      "[, RTC: Extras]",
+      "[, RTC: Extras, Resources (Gradle)]",
+      "[, RTC: Extras, Resources (Gradle), C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\resources\\data]",
+      "[, RTC: Extras, Resources (Gradle), C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\resources\\data, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\resources\\data\\rtc_extras]",
+      "[, RTC: Extras, Resources (Gradle), C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\resources\\data, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\resources\\data\\rtc_extras, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\resources\\data\\rtc_extras\\genes]"
     ]
   }
 }
