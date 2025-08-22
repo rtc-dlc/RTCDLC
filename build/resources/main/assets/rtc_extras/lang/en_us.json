@@ -26,5 +26,8 @@
   "gui.rtc_extras.gui_splicer.label_gene1": "gene1",
   "gui.rtc_extras.gui_splicer.label_warn": "Warn",
   "gui.rtc_extras.gui_splicer.label_gene2": "gene2",
-  "gui.rtc_extras.gui_splicer.label_gene3": "gene3"
+  "gui.rtc_extras.gui_splicer.label_gene3": "gene3",
+  "block.rtc_extras.biocultivator": "Biocultivator",
+  "gui.rtc_extras.gui_cultivator.label_total": "total",
+  "gui.rtc_extras.gui_cultivator.label_status": "status"
 }

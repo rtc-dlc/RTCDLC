@@ -16,7 +16,8 @@
         "files": [
           "src/main/java/net/crizo/rtcextras/procedures/SwitchDimensionOnKeyPressedProcedure.java"
         ]
-      }
+      },
+      "path": "~/gliese"
     },
     {
       "name": "Gliese",
@@ -30,7 +31,8 @@
           "src/main/resources/data/rtc_extras/dimension_type/gliese.json",
           "src/main/resources/data/rtc_extras/dimension/gliese.json"
         ]
-      }
+      },
+      "path": "~/gliese"
     },
     {
       "name": "SwitchDimension",
@@ -42,7 +44,8 @@
         "files": [
           "src/main/java/net/crizo/rtcextras/network/SwitchDimensionMessage.java"
         ]
-      }
+      },
+      "path": "~/gliese"
     },
     {
       "name": "ProGlieseConditions",
@@ -55,7 +58,8 @@
         "files": [
           "src/main/java/net/crizo/rtcextras/procedures/ProGlieseConditionsProcedure.java"
         ]
-      }
+      },
+      "path": "~/gliese"
     },
     {
       "name": "BacteriumDummy",
@@ -931,6 +935,250 @@
         ]
       },
       "path": "~/Splicing"
+    },
+    {
+      "name": "Biocultivator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biocultivator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/blockstates/biocultivator.json",
+          "src/main/java/net/crizo/rtcextras/block/BiocultivatorBlock.java",
+          "src/main/java/net/crizo/rtcextras/block/entity/BiocultivatorBlockEntity.java",
+          "src/main/resources/assets/rtc_extras/models/block/biocultivator.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/biocultivator.json",
+          "src/main/resources/assets/rtc_extras/models/item/biocultivator.json"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "GeneGrowthData",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_growth_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/GeneGrowthData.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "BacteriaGrowthCalculator",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacteria_growth_calculator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/BacteriaGrowthCalculator.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "GUICultivator",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_cultivator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/network/GUICultivatorButtonMessage.java",
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUICultivatorMenu.java",
+          "src/main/java/net/crizo/rtcextras/client/gui/GUICultivatorScreen.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "BiocultivatorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "biocultivator_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/BiocultivatorOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "CultivatorButtonRequestBacteria",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_button_request_bacteria",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/CultivatorButtonRequestBacteriaProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "CultivatorButtonStatus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_button_status",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/CultivatorButtonStatusProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "CultivatorButtonCount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_button_count",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/CultivatorButtonCountProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "CultivatorButtonPurge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_button_purge",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/CultivatorButtonPurgeProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "Jelly",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jelly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/item/JellyItem.java",
+          "src/main/resources/assets/rtc_extras/models/item/jelly.json"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "JellyPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jelly_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/JellyPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
     }
   ],
   "variable_elements": [
@@ -1005,7 +1253,11 @@
       "gui.rtc_extras.gui_splicer.label_gene1": "gene1",
       "gui.rtc_extras.gui_splicer.label_warn": "Warn",
       "gui.rtc_extras.gui_splicer.label_gene2": "gene2",
-      "gui.rtc_extras.gui_splicer.label_gene3": "gene3"
+      "gui.rtc_extras.gui_splicer.label_gene3": "gene3",
+      "block.rtc_extras.biocultivator": "Biocultivator",
+      "gui.rtc_extras.gui_cultivator.label_total": "total",
+      "gui.rtc_extras.gui_cultivator.label_status": "status",
+      "item.rtc_extras.jelly": "Jelly"
     }
   },
   "metadata": {
@@ -1052,6 +1304,14 @@
       },
       {
         "name": "Splicing",
+        "children": []
+      },
+      {
+        "name": "cultivation",
+        "children": []
+      },
+      {
+        "name": "items",
         "children": []
       }
     ]

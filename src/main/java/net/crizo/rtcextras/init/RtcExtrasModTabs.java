@@ -32,6 +32,9 @@ public class RtcExtrasModTabs {
 				tabData.accept(RtcExtrasModBlocks.RED_LAYERROCK.get().asItem());
 				tabData.accept(RtcExtrasModBlocks.DIRTY_SHALE.get().asItem());
 				tabData.accept(RtcExtrasModBlocks.YELLOW_LAYERROCK.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.HELIX_SPLICER.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BIOCULTIVATOR.get().asItem());
+				tabData.accept(RtcExtrasModItems.JELLY.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -41,6 +44,8 @@ public class RtcExtrasModTabs {
 			tabData.accept(RtcExtrasModBlocks.SHORT_LAYERROCK_ROOTS.get().asItem());
 			tabData.accept(RtcExtrasModBlocks.TALL_LAYERROCK_ROOTS.get().asItem());
 			tabData.accept(RtcExtrasModBlocks.BULBUSH.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(RtcExtrasModItems.JELLY.get());
 		}
 	}
 }

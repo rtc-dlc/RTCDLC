@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.crizo.rtcextras.item.JellyItem;
 import net.crizo.rtcextras.item.GeneSampleItem;
 import net.crizo.rtcextras.item.BacteriumItem;
 import net.crizo.rtcextras.item.BacteriumDummyItem;
@@ -34,6 +35,8 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> TALL_LAYERROCK_ROOTS = doubleBlock(RtcExtrasModBlocks.TALL_LAYERROCK_ROOTS);
 	public static final DeferredItem<Item> BULBUSH = block(RtcExtrasModBlocks.BULBUSH);
 	public static final DeferredItem<Item> HELIX_SPLICER = block(RtcExtrasModBlocks.HELIX_SPLICER);
+	public static final DeferredItem<Item> BIOCULTIVATOR = block(RtcExtrasModBlocks.BIOCULTIVATOR);
+	public static final DeferredItem<Item> JELLY = REGISTRY.register("jelly", JellyItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

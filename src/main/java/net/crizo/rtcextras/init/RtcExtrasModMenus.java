@@ -17,6 +17,7 @@ import net.minecraft.client.Minecraft;
 
 import net.crizo.rtcextras.world.inventory.GUISplicerMenu;
 import net.crizo.rtcextras.world.inventory.GUIGeneSequencerMenu;
+import net.crizo.rtcextras.world.inventory.GUICultivatorMenu;
 import net.crizo.rtcextras.world.inventory.GUIBioreactorMenu;
 import net.crizo.rtcextras.network.MenuStateUpdateMessage;
 import net.crizo.rtcextras.RtcExtrasMod;
@@ -28,6 +29,7 @@ public class RtcExtrasModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<GUIBioreactorMenu>> GUI_BIOREACTOR = REGISTRY.register("gui_bioreactor", () -> IMenuTypeExtension.create(GUIBioreactorMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GUIGeneSequencerMenu>> GUI_GENE_SEQUENCER = REGISTRY.register("gui_gene_sequencer", () -> IMenuTypeExtension.create(GUIGeneSequencerMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GUISplicerMenu>> GUI_SPLICER = REGISTRY.register("gui_splicer", () -> IMenuTypeExtension.create(GUISplicerMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUICultivatorMenu>> GUI_CULTIVATOR = REGISTRY.register("gui_cultivator", () -> IMenuTypeExtension.create(GUICultivatorMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
