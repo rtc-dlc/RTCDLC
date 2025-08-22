@@ -4,7 +4,6 @@
     "rtc_extras:red_layerrock",
     "rtc_extras:orange_layerrock",
     "rtc_extras:yellow_layerrock",
-    "rtc_extras:dirty_shale",
-    "rtc_extras:gliese_fossil"
+    "rtc_extras:dirty_shale"
   ]
 }

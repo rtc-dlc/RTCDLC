@@ -1,12 +1,8 @@
 {
   "replace": false,
   "values": [
-    "rtc_extras:red_layerrock",
-    "rtc_extras:orange_layerrock",
     "minecraft:grass_block",
-    "rtc_extras:yellow_layerrock",
     "minecraft:dirt",
-    "minecraft:stone",
-    "rtc_extras:dirty_shale"
+    "minecraft:stone"
   ]
 }
