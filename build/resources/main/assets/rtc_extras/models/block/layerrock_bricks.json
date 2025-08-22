@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rtc_extras:block/layerstone_bricks",
+    "up": "rtc_extras:block/layerstone_bricks",
+    "north": "rtc_extras:block/layerstone_bricks",
+    "east": "rtc_extras:block/layerstone_bricks",
+    "south": "rtc_extras:block/layerstone_bricks",
+    "west": "rtc_extras:block/layerstone_bricks",
+    "particle": "rtc_extras:block/layerstone_bricks"
+  },
+  "render_type": "solid"
+}

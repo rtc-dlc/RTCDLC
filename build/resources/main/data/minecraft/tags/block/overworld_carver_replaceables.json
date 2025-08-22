@@ -6,6 +6,9 @@
     "minecraft:grass_block",
     "rtc_extras:yellow_layerrock",
     "minecraft:dirt",
+    "rtc_extras:cyanostone",
+    "minecraft:deepslate",
+    "minecraft:mycelium",
     "minecraft:stone",
     "rtc_extras:dirty_shale"
   ]

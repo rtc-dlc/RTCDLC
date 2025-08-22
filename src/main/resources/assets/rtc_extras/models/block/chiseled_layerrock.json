@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rtc_extras:block/polished_layerrock",
+    "up": "rtc_extras:block/polished_layerrock",
+    "north": "rtc_extras:block/chiseled_layerrock",
+    "east": "rtc_extras:block/chiseled_layerrock",
+    "south": "rtc_extras:block/chiseled_layerrock",
+    "west": "rtc_extras:block/chiseled_layerrock",
+    "particle": "rtc_extras:block/polished_layerrock"
+  },
+  "render_type": "solid"
+}

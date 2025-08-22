@@ -4,13 +4,13 @@
   "definition": {
     "name": "Gliese Plains",
     "groundBlock": {
-      "value": "CUSTOM:RedLayerrock"
+      "value": "Blocks.DEEPSLATE"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:YellowLayerrock"
+      "value": "Blocks.STONE#0"
     },
     "underwaterBlock": {
-      "value": "CUSTOM:OrangeLayerrock"
+      "value": "Blocks.STONE#0"
     },
     "airColor": {
       "value": -11450816,

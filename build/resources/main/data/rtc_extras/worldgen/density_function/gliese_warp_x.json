@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:mul",
+    "argument1": 96.0,
+    "argument2": {
+      "type": "minecraft:flat_cache",
+      "argument": {
+        "type": "minecraft:cache_2d",
+        "argument": { "type": "minecraft:shift_a", "argument": "minecraft:offset" }
+      }
+    }
+  },
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": 32.0,
+    "argument2": {
+      "type": "minecraft:noise",
+      "noise": "rtc_extras:gliese_continents",
+      "xz_scale": 0.75,
+      "y_scale": 0.0
+    }
+  }
+}

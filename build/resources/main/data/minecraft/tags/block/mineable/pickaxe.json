@@ -2,9 +2,14 @@
   "replace": false,
   "values": [
     "rtc_extras:red_layerrock",
+    "rtc_extras:chiseled_layerrock",
     "rtc_extras:orange_layerrock",
     "rtc_extras:yellow_layerrock",
+    "rtc_extras:cyanostone",
     "rtc_extras:dirty_shale",
-    "rtc_extras:gliese_fossil"
+    "rtc_extras:layerrock",
+    "rtc_extras:gliese_fossil",
+    "rtc_extras:layerrock_bricks",
+    "rtc_extras:polished_layerrock"
   ]
 }

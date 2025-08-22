@@ -1,40 +1,3 @@
-/give Dev rtc_extras:bacterium 64
-/give Dev rtc_extras:bacterium_dummy
-/tick rate 5000
-/tick rate 20
-/give Dev rtc_extras:bacterium_dummy
-/time add 1d
-/tick rate 5000
-/tick rate 10000
-/tick rate 20
-/give Dev rtc_extras:bacterium_dummy
-/tick rate 200
-/give Dev rtc_extras:bacterium_dummy
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 200
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 200
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 200
-/give Dev rtc_extras:bacterium_dummy 64
-/give Dev rtc_extras:bacterium_dummy 1
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 2000
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 2000
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 20
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 200
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 200
-/give Dev rtc_extras:bacterium_dummy 64
-/tick rate 200
-/gamemode spectator
-/gamemode creative
-/locate biome rtc_extras:gliese_bioprofusion
-/locate biome rtc_extras:gliese_shroomlands
-/locate biome rtc_extras:gliese_thicket
 /locate biome rtc_extras:gliese_plains
 /gamemode spectator
 /gamemode creative
@@ -48,3 +11,40 @@
 /tick rate 2000
 /tick rate 20
 /tick rate 2000
+/locate biome rtc_extras:gliese_thicket
+/locate biome rtc_extras:gliese_shroomlands
+/locate biome rtc_extras:gliese_bioprofusion
+/tp @s 1779 91 2625
+/locate biome rtc_extras:gliese_thicket
+/tp @s 1563 133 2874
+/tp ~10000 ~ ~
+/locate biome rtc_extras:gliese_thicket
+/tp @s 10257 106 227
+/tp ~10000 ~ ~
+/tp ~-10000 ~ ~
+/tp ~10000 ~ ~
+/kill
+/tp ~-10000 ~ ~
+/execute in minecraft:overworld run tp ~ ~ ~
+/tp ~-10000 ~ ~
+/execute in minecraft:overworld run tp ~ ~ ~
+/locate biome rtc_extras:gliese_bioprofusion
+/tp ~-10000 ~ ~
+/tp ~-10000 ~ ~10000
+/tp ~ ~ ~10000
+/execute in minecraft:overworld run tp ~ ~ ~
+/kill
+/execute in minecraft:overworld run tp ~ ~ ~
+/effect give Dev minecraft:night_vision
+/effect give Dev minecraft:night_vision infinite 0 true
+/execute in minecraft:overworld run tp ~ ~ ~
+/effect give Dev minecraft:night_vision infinite 0 true
+/tp ~ ~ ~10000
+/execute in minecraft:overworld run tp ~ ~ ~
+/tp ~ ~ ~10000
+/execute in minecraft:overworld run tp ~ ~ ~
+/tp ~ ~ ~10000
+/locate biome rtc_extras:gliese_shroomlands
+/tp @s -1082 118 42776
+/execute in minecraft:overworld run tp ~ ~ ~
+/tp ~ ~ ~10000
