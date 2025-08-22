@@ -572,8 +572,8 @@
         "has_nbt_structure": true,
         "files": [
           "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_fossils_biome_modifier.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_fossils.json",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_fossils.json"
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_fossils.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_fossils.json"
         ]
       },
       "path": "~/gliese"
@@ -731,16 +731,16 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
-      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/crizo/rtcextras/world/features/StructureFeature.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
+      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
       "src/main/java/net/crizo/rtcextras/world/features/configurations/StructureFeatureConfiguration.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
+      "src/main/java/net/crizo/rtcextras/world/features/StructureFeature.java",
       "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",

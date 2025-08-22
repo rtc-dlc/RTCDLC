@@ -544,6 +544,120 @@
         ]
       },
       "path": "~/gliese"
+    },
+    {
+      "name": "GlieseFossil",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_fossil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/GlieseFossilBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/gliese_fossil.json",
+          "src/main/resources/assets/rtc_extras/blockstates/gliese_fossil.json",
+          "src/main/resources/assets/rtc_extras/models/block/gliese_fossil.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/gliese_fossil.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "GlieseFossils",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_fossils",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_fossils_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_fossils.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_fossils.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "LayerrockRoots",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layerrock_roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/layerrock_roots_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/blockstates/layerrock_roots.json",
+          "src/main/java/net/crizo/rtcextras/block/LayerrockRootsBlock.java",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/item/layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/block/layerrock_roots.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "ShortLayerrockRoots",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_layerrock_roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/short_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/item/short_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/short_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/block/short_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/short_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/blockstates/short_layerrock_roots.json",
+          "src/main/java/net/crizo/rtcextras/block/ShortLayerrockRootsBlock.java",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/short_layerrock_roots_biome_modifier.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "TallLayerrockRoots",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_layerrock_roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/tall_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/blockstates/tall_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/tall_layerrock_roots.json",
+          "src/main/java/net/crizo/rtcextras/block/TallLayerrockRootsBlock.java",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/tall_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/item/tall_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/block/tall_layerrock_roots_bottom.json",
+          "src/main/resources/assets/rtc_extras/models/block/tall_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/tall_layerrock_roots_biome_modifier.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "Bulbush",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulbush",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/BulbushBlock.java",
+          "src/main/resources/assets/rtc_extras/blockstates/bulbush.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/bulbush.json",
+          "src/main/resources/assets/rtc_extras/models/item/bulbush.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/bulbush.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/bulbush.json",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/bulbush_biome_modifier.json",
+          "src/main/resources/assets/rtc_extras/models/block/bulbush.json"
+        ]
+      },
+      "path": "~/gliese"
     }
   ],
   "variable_elements": [
@@ -578,10 +692,14 @@
       "~Blocks.GRASS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:GlieseFossil",
       "~CUSTOM:YellowLayerrock",
       "~CUSTOM:DirtyShale",
       "~CUSTOM:RedLayerrock",
       "~CUSTOM:OrangeLayerrock"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:GlieseFossil"
     ]
   },
   "tab_element_order": {},
@@ -603,19 +721,26 @@
       "block.rtc_extras.orange_layerrock": "Orange Layerrock",
       "block.rtc_extras.red_layerrock": "Red Layerrock",
       "block.rtc_extras.dirty_shale": "Dirty Shale",
-      "block.rtc_extras.yellow_layerrock": "Yellow Layerrock"
+      "block.rtc_extras.yellow_layerrock": "Yellow Layerrock",
+      "block.rtc_extras.gliese_fossil": "Gliese Fossil",
+      "block.rtc_extras.layerrock_roots": "Layerrock Roots",
+      "block.rtc_extras.short_layerrock_roots": "Short Layerrock Roots",
+      "block.rtc_extras.tall_layerrock_roots": "Tall Layerrock Roots",
+      "block.rtc_extras.bulbush": "Bulbush"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
-      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
+      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
+      "src/main/java/net/crizo/rtcextras/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/crizo/rtcextras/world/features/StructureFeature.java",
       "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",

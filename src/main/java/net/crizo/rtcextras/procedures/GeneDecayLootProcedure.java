@@ -173,6 +173,10 @@ public class GeneDecayLootProcedure {
 			case "amylase_pack" -> List.of();
 			case "slime_polysaccharide" -> List.of(io("minecraft:slimeball", 0.04));
 			case "vitamin_pathway_basic" -> List.of();
+			case "aquagenic_growth" -> List.of();
+			case "cancerous_growth" -> List.of();
+			case "sickle_cell_trait" -> List.of();
+			case "brittle_bones" -> List.of();
 			// ---------- RARE ----------
 			case "neurotransmitter_boost" -> List.of();
 			//eventually makes LDOPA and Serotonin
@@ -196,6 +200,8 @@ public class GeneDecayLootProcedure {
 			case "antifungal_serum" -> List.of();
 			case "collagen_weave" -> List.of();
 			case "chemoautotrophy_pack" -> List.of(io("rtc:niter", 0.04));
+			case "fibroblast_growth" -> List.of();
+			case "hemophilia" -> List.of();
 			// ---------- EXOTIC ----------
 			case "neural_overclock" -> List.of();
 			case "quantum_enzyme" -> List.of();
@@ -217,6 +223,7 @@ public class GeneDecayLootProcedure {
 			case "hardened_carapace" -> List.of();
 			case "photoshade_negentropy" -> List.of();
 			case "void_pressure_tolerance" -> List.of();
+			case "prion_instability" -> List.of();
 			// ===== default/testing =====
 			default -> List.of(); // or: List.of(io("minecraft:diamond"))
 		};

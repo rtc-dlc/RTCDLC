@@ -1,8 +1,8 @@
 {
   "rarity_weights": {
     "common": 60,
-    "rare": 33,
-    "exotic": 7
+    "rare": 35,
+    "exotic": 5
   },
   "genes": [
   	{
@@ -14,6 +14,42 @@
       "tags": ["production"],
       "production": []
     },
+	{
+		"id": "sickle_cell_trait",
+		"name": "Sickle Cell Trait",
+		"tier": "common",
+		"interference": 0.18,
+		"effect": "Slight stamina drain; strong resistance to poison/malaria-like effects.",
+		"tags": ["player", "resistance"],
+		"production": ["sickle_erythrocyte"]
+	},
+	{
+		"id": "brittle_bones",
+		"name": "Brittle Bone Disease",
+		"tier": "common",
+		"interference": 0.20,
+		"effect": "Greatly increased fall and impact damage; extra harm from knockback.",
+		"tags": ["player", "negative"],
+		"production": ["fragile_collagen"]
+	},
+    {
+	  "id": "cancerous_growth",
+	  "name": "Cancerous Growth",
+	  "tier": "common",
+	  "interference": 0.15,
+	  "effect": "Random health degeneration over time; reduced healing efficiency.",
+	  "tags": ["player", "negative"],
+	  "production": ["tumor_mass"]
+	},
+    {
+	  "id": "aquagenic_allergy",
+	  "name": "Aquagenic Allergy",
+	  "tier": "common",
+	  "interference": 0.05,
+	  "effect": "Contact with water causes brief damage and nausea.",
+	  "tags": ["player", "negative"],
+	  "production": []
+	},
     {
       "id": "metabolism_boost",
       "name": "Metabolism Boost",
@@ -184,6 +220,24 @@
       "effect": "Synthesizes common vitamins.",
       "tags": ["production", "medicine"],
       "production": ["vitamin_b_complex", "vitamin_c"]
+    },
+	{
+	  "id": "hemophilia",
+	  "name": "Hemophilia",
+	  "tier": "rare",
+	  "interference": 0.22,
+	  "effect": "You bleed on damage (DoT); while bleeding gain brief strength and haste bursts.",
+	  "tags": ["player", "negative", "combat"],
+	  "production": ["coagulation_factor"]
+	 },
+     {
+	  "id": "fibroblast_growth",
+	  "name": "Fibroblast Growth",
+	  "tier": "rare",
+	  "interference": 0.08,
+	  "effect": "Mutates the FGFR3 gene, leading to short stature.",
+	  "tags": ["player"],
+	  "production": []
     },
     {
       "id": "neurotransmitter_boost",
@@ -374,7 +428,15 @@
       "tags": ["production", "fuel"],
       "production": ["biofuel_oil_phase", "nitrate_salts"]
     },
-
+	{
+	  "id": "marfan_syndrome",
+	  "name": "Marfan Syndrome",
+	  "tier": "rare",
+	  "interference": 0.28,
+	  "effect": "Extends melee/build reach; slight reduction in max health.",
+	  "tags": ["player", "reach", "rare"],
+	  "production": []
+	},
     {
       "id": "neural_overclock",
       "name": "Neural Overclock",
@@ -554,6 +616,15 @@
       "effect": "Immunity to vacuum/pressure damage; slight speed loss.",
       "tags": ["player", "survival", "exotic"],
       "production": ["pressure_protein_coil"]
+    },
+    {
+      "id": "prion_instability",
+      "name": "Prion Instability",
+      "tier": "exotic",
+      "interference": 0.58,
+      "effect": "Progressive degeneration over time; occasional chaotic surges in other gene effects.",
+      "tags": ["player", "negative", "exotic"],
+      "production": ["misfolded_protein"]
     }
   ]
 }
