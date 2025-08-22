@@ -1,5 +1,6 @@
 package net.crizo.rtcextras.procedures;
 
+import org.checkerframework.checker.units.qual.t;
 import org.checkerframework.checker.units.qual.s;
 
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
@@ -31,6 +32,8 @@ public class BiocultivatorOnTickUpdateProcedure {
 	private static final int DEFAULT_CAPACITY = 64_000_000; // hard cap
 	private static final double CONTAM_HARM_FRAC = 0.00025; // 0.025% per bad slot per tick (gentle)
 	private static final TagKey<Item> TAG_CULTIVATOR_FOOD = TagKey.create(Registries.ITEM, ResourceLocation.parse("rtc_extras:cultivator_food"));
+	// “what counts as perishable” for auto-stabilize
+	private static final TagKey<Item> TAG_PERISHABLE = TagKey.create(Registries.ITEM, ResourceLocation.parse("rtc_extras:perishable"));
 
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		BlockPos pos = BlockPos.containing(x, y, z);
@@ -101,6 +104,8 @@ public class BiocultivatorOnTickUpdateProcedure {
 				setStatus(tag, "Contamination penalty (-" + harm + ")");
 			}
 		}
+		// ========= 2.5) STABILIZE PERISHABLE FOOD IN SLOTS 2..7 =========
+		stabilizePerishablesInFoodSlots(world, handler);
 		// ========= 3) GROWTH / DECAY (calculator consumes <=1 food item/tick) =========
 		String[] genes = readActiveGenes(tag);
 		if (genes != null && genes.length > 0 && !genes[0].isEmpty()) {
@@ -178,6 +183,42 @@ public class BiocultivatorOnTickUpdateProcedure {
 	}
 
 	// ------ Helpers ------
+	/** 
+	* For slots 2..7: if an item is tagged rtc_extras:perishable, mark it stabilized and
+	* refresh its creation timestamp so it has a full frozen lifetime while in the machine.
+	*/
+	private static void stabilizePerishablesInFoodSlots(LevelAccessor world, IItemHandler handler) {
+		if (!(world instanceof Level lvl))
+			return;
+		final long now = lvl.getGameTime();
+		final String TAG_CREATED = "rtc_created";
+		final String TAG_STABILIZED = "rtc_stabilized";
+		final String TAG_FROZEN_LEFT = "rtc_frozen_left";
+		// same lifetime math as your BacteriumItem/PerishableMerge
+		final long PER_ITEM_TICKS = 750L; // 48,000 / 64
+		for (int i = 2; i <= 7 && i < handler.getSlots(); i++) {
+			ItemStack st = handler.getStackInSlot(i);
+			if (st.isEmpty())
+				continue;
+			if (!st.is(TAG_PERISHABLE))
+				continue; // only items explicitly tagged as perishable
+			// Compute a full lifetime for the current count, freeze it, and stamp created=now
+			long fullFrozen = PER_ITEM_TICKS * Math.max(1, st.getCount());
+			CompoundTag t = st.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
+			t.putBoolean(TAG_STABILIZED, true);
+			t.putLong(TAG_FROZEN_LEFT, fullFrozen);
+			// "Updating their creation date" — set to now.
+			// If you prefer "only set if missing", replace with:
+			// if (!t.contains(TAG_CREATED) || t.getLong(TAG_CREATED) == 0L) t.putLong(TAG_CREATED, now);
+			t.putLong(TAG_CREATED, now);
+			st.set(DataComponents.CUSTOM_DATA, CustomData.of(t));
+			// no need to replace the stack in the slot; ItemStack mutation is enough
+			// but if you’d rather be explicit:
+			if (handler instanceof IItemHandlerModifiable mod)
+				mod.setStackInSlot(i, st);
+		}
+	}
+
 	private static String parseGeneIdsString(CompoundTag itemTag) {
 		if (itemTag == null)
 			return "";
