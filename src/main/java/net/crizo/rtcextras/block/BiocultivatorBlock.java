@@ -30,7 +30,7 @@ import io.netty.buffer.Unpooled;
 
 public class BiocultivatorBlock extends Block implements EntityBlock {
 	public BiocultivatorBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f));
 	}
 
 	@Override

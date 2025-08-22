@@ -7,15 +7,16 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.crizo.rtcextras.procedures.JellyPlayerFinishesUsingItemProcedure;
+import net.crizo.rtcextras.PerishableItemBase;
 
-public class JellyItem extends Item {
+public class JellyItem extends PerishableItemBase {
 	public JellyItem() {
-		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(3).saturationModifier(0.6f).build()));
+		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(3).saturationModifier(0.6f).alwaysEdible().build()));
 	}
 
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 0;
+		return 20;
 	}
 
 	@Override
@@ -24,7 +25,7 @@ public class JellyItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		JellyPlayerFinishesUsingItemProcedure.execute();
+		JellyPlayerFinishesUsingItemProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 }

@@ -29,5 +29,6 @@
   "gui.rtc_extras.gui_splicer.label_gene3": "gene3",
   "block.rtc_extras.biocultivator": "Biocultivator",
   "gui.rtc_extras.gui_cultivator.label_total": "total",
-  "gui.rtc_extras.gui_cultivator.label_status": "status"
+  "gui.rtc_extras.gui_cultivator.label_status": "status",
+  "item.rtc_extras.jelly": "Jelly"
 }

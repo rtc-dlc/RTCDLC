@@ -20,7 +20,7 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 20,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -57,7 +57,7 @@
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {

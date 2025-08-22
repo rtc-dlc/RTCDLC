@@ -1156,7 +1156,7 @@
       "name": "Jelly",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "jelly",
       "metadata": {
         "files": [
@@ -1173,12 +1173,104 @@
       "locked_code": false,
       "registry_name": "jelly_player_finishes_using_item",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/crizo/rtcextras/procedures/JellyPlayerFinishesUsingItemProcedure.java"
         ]
       },
       "path": "~/bacteria"
+    },
+    {
+      "name": "PerishableStacks",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_stacks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishableStacks.java"
+        ]
+      }
+    },
+    {
+      "name": "PerishableItemBase",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_item_base",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishableItemBase.java"
+        ]
+      }
+    },
+    {
+      "name": "PerishableEvents",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_events",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishableEvents.java"
+        ]
+      }
+    },
+    {
+      "name": "JellyFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jelly_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "PerishableMerge",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_merge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishableMerge.java"
+        ]
+      }
+    },
+    {
+      "name": "PerishablePickupMerge",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_pickup_merge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishablePickupMerge.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1221,6 +1313,9 @@
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:GlieseFossil"
+    ],
+    "ITEMS:rtc_extras:perishable": [
+      "CUSTOM:Jelly"
     ]
   },
   "tab_element_order": {},
@@ -1273,6 +1368,7 @@
       "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
+      "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlockEntities.java",

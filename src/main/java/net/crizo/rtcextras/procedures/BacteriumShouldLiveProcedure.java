@@ -17,7 +17,7 @@ import net.minecraft.core.component.DataComponents;
  */
 public final class BacteriumShouldLiveProcedure {
 	// Match BacteriumItem lifetime math
-	private static final long FULL_STACK_LIFETIME_TICKS = 2L * 2400L; // 48,000 ticks = 2 MC days
+	private static final long FULL_STACK_LIFETIME_TICKS = 2L * 24000L; // 48,000 ticks = 2 MC days
 	private static final int STACK_UNIT = 64;
 	private static final long PER_ITEM_TICKS = FULL_STACK_LIFETIME_TICKS / STACK_UNIT; // 750
 
