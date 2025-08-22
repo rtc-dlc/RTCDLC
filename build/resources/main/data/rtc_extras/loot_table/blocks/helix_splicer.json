@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "rtc_extras:blocks/helix_splicer",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "rtc_extras:helix_splicer"
+        }
+      ]
+    }
+  ]
+}

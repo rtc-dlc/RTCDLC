@@ -20,5 +20,15 @@
   "block.rtc_extras.layerrock_roots": "Layerrock Roots",
   "block.rtc_extras.short_layerrock_roots": "Short Layerrock Roots",
   "block.rtc_extras.tall_layerrock_roots": "Tall Layerrock Roots",
-  "block.rtc_extras.bulbush": "Bulbush"
+  "block.rtc_extras.bulbush": "Bulbush",
+  "block.rtc_extras.helix_splicer": "Helix Splicer",
+  "gui.rtc_extras.gui_splicer.label_success_chance": "Success chance",
+  "gui.rtc_extras.gui_splicer.label_gene1": "gene1",
+  "gui.rtc_extras.gui_splicer.label_warn": "Warn",
+  "gui.rtc_extras.gui_splicer.label_gene2": "gene2",
+  "gui.rtc_extras.gui_splicer.label_gene3": "gene3",
+  "block.rtc_extras.biocultivator": "Biocultivator",
+  "gui.rtc_extras.gui_cultivator.label_total": "total",
+  "gui.rtc_extras.gui_cultivator.label_status": "status",
+  "item.rtc_extras.jelly": "Jelly"
 }

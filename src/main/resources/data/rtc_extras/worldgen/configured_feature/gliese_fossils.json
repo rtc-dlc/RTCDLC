@@ -9,7 +9,12 @@
             "structure": "rtc_extras:gliesefossil1",
             "random_rotation": true,
             "random_mirror": true,
-            "ignored_blocks": "minecraft:air"
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              0,
+              -4,
+              0
+            ]
           }
         },
         "placement": []
@@ -21,7 +26,12 @@
             "structure": "rtc_extras:gliesefossil2",
             "random_rotation": true,
             "random_mirror": true,
-            "ignored_blocks": "minecraft:air"
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              0,
+              -4,
+              0
+            ]
           }
         },
         "placement": []
@@ -33,7 +43,12 @@
             "structure": "rtc_extras:gliesefossil3",
             "random_rotation": true,
             "random_mirror": true,
-            "ignored_blocks": "minecraft:air"
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              0,
+              -4,
+              0
+            ]
           }
         },
         "placement": []
@@ -45,7 +60,12 @@
             "structure": "rtc_extras:gliesefossil4",
             "random_rotation": true,
             "random_mirror": true,
-            "ignored_blocks": "minecraft:air"
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              0,
+              -4,
+              0
+            ]
           }
         },
         "placement": []

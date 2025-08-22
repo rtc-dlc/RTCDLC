@@ -1,110 +1,73 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2025-08-21 04:18:17 -0400"
+      "unlock_right_away": "2025-08-21 21:02:37 -0500"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:beach": "2025-08-21 04:18:18 -0400",
-      "minecraft:plains": "2025-08-21 04:18:32 -0400"
+      "minecraft:taiga": "2025-08-21 21:02:38 -0500"
     },
     "done": false
   },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "has_lots_of_items": "2025-08-21 04:19:06 -0400"
+      "has_lots_of_items": "2025-08-21 22:47:00 -0500"
     },
     "done": true
   },
-  "minecraft:adventure/root": {
+  "minecraft:recipes/transportation/mangrove_boat": {
     "criteria": {
-      "killed_something": "2025-08-21 05:04:13 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_helmet": {
+  "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
-      "has_leather": "2025-08-21 05:04:14 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_leggings": {
+  "minecraft:recipes/transportation/cherry_boat": {
     "criteria": {
-      "has_leather": "2025-08-21 05:04:14 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/item_frame": {
+  "minecraft:recipes/transportation/bamboo_raft": {
     "criteria": {
-      "has_leather": "2025-08-21 05:04:14 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_chestplate": {
+  "minecraft:recipes/transportation/spruce_boat": {
     "criteria": {
-      "has_leather": "2025-08-21 05:04:14 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_boots": {
+  "minecraft:recipes/transportation/birch_boat": {
     "criteria": {
-      "has_leather": "2025-08-21 05:04:14 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/misc/leather_horse_armor": {
+  "minecraft:recipes/transportation/oak_boat": {
     "criteria": {
-      "has_leather": "2025-08-21 05:04:14 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/combat/turtle_helmet": {
+  "minecraft:recipes/transportation/jungle_boat": {
     "criteria": {
-      "has_turtle_scute": "2025-08-21 06:28:43 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/combat/bow": {
+  "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
-      "has_string": "2025-08-21 06:35:46 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/fishing_rod": {
-    "criteria": {
-      "has_string": "2025-08-21 06:35:46 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/white_wool_from_string": {
-    "criteria": {
-      "has_string": "2025-08-21 06:35:46 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/tripwire_hook": {
-    "criteria": {
-      "has_string": "2025-08-21 06:35:46 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/crossbow": {
-    "criteria": {
-      "has_string": "2025-08-21 06:35:46 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/candle": {
-    "criteria": {
-      "has_string": "2025-08-21 06:35:46 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/loom": {
-    "criteria": {
-      "has_string": "2025-08-21 06:35:46 -0400"
+      "in_water": "2025-08-21 23:10:23 -0500"
     },
     "done": true
   },

@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="rtcdlc2"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="rtcdlc"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.neoforged.devlaunch.Main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @C:\\Users\\crizo\\MCreatorWorkspaces\\rtcdlc2\\build\\moddev\\clientRunProgramArgs.txt"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @C:\\Users\\crizo\\MCreatorWorkspaces\\rtcdlc2\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\Users\\crizo\\MCreatorWorkspaces\\rtcdlc2\\bin\\main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\crizo\MCreatorWorkspaces\rtcdlc2\run"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\build\\moddev\\clientRunProgramArgs.txt"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\bin\\main"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\starf\MCreatorWorkspaces\rtcdlc\run"></stringAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"></booleanAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"></booleanAttribute>
 </launchConfiguration>

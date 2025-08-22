@@ -31,7 +31,7 @@ public class BacteriumItem extends Item {
 	private static final String TAG_FROZEN_LEFT = "rtc_frozen_left"; // NEW: long remaining ticks while stabilized
 	// ===== Scaling lifetime by stack size =====
 	private static final int STACK_UNIT = 64; // full stack size
-	private static final long FULL_STACK_LIFETIME_TICKS = 2L * 2400L; // 2 MC days = 48,000 ticks
+	private static final long FULL_STACK_LIFETIME_TICKS = 2L * 24000L; // 2 MC days = 48,000 ticks
 	private static final long PER_ITEM_TICKS = FULL_STACK_LIFETIME_TICKS / STACK_UNIT; // 750 ticks (~37.5s)
 
 	public BacteriumItem(ResourceLocation ignored) {

@@ -6,7 +6,7 @@ entityDistanceScaling:1.0
 entityShadows:true
 forceUnicodeFont:false
 japaneseGlyphVariants:false
-fov:0.0
+fov:0.5
 fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
@@ -122,10 +122,10 @@ key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_key.rtc_extras.switch_dimension:key.keyboard.0
-soundCategory_master:0.0
+soundCategory_master:0.3079470198675497
 soundCategory_music:0.1056338028169014
 soundCategory_record:1.0
-soundCategory_weather:1.0
+soundCategory_weather:0.0
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0

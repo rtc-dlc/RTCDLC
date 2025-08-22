@@ -49,7 +49,7 @@ public class BacteriumDummyItem extends Item {
 		tag.putFloat("rtc_gene_interference", gene.interference());
 		tag.putString("rtc_gene_effect", gene.effect());
 		// mark it researched by default
-		tag.putBoolean("researched", false);
+		tag.putBoolean("researched", true);
 		net.crizo.rtcextras.item.BacteriumItem.setTag(stack, tag);
 	}
 

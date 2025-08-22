@@ -113,6 +113,8 @@ public class BioreactorBlockEntity extends RandomizableContainerBlockEntity impl
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
+		if (index == 0)
+			return false;
 		return true;
 	}
 }
