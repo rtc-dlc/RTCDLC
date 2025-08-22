@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "rtc_extras:block/bulbbush",
+    "particle": "rtc_extras:block/bulbbush"
+  },
+  "render_type": "cutout"
+}

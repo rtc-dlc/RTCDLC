@@ -15,5 +15,10 @@
   "block.rtc_extras.orange_layerrock": "Orange Layerrock",
   "block.rtc_extras.red_layerrock": "Red Layerrock",
   "block.rtc_extras.dirty_shale": "Dirty Shale",
-  "block.rtc_extras.yellow_layerrock": "Yellow Layerrock"
+  "block.rtc_extras.yellow_layerrock": "Yellow Layerrock",
+  "block.rtc_extras.gliese_fossil": "Gliese Fossil",
+  "block.rtc_extras.layerrock_roots": "Layerrock Roots",
+  "block.rtc_extras.short_layerrock_roots": "Short Layerrock Roots",
+  "block.rtc_extras.tall_layerrock_roots": "Tall Layerrock Roots",
+  "block.rtc_extras.bulbush": "Bulbush"
 }

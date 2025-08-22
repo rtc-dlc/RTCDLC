@@ -18,7 +18,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "CUSTOM:RedLayerrock"
     },
     "fluidBlock": {
       "value": "Blocks.WATER"

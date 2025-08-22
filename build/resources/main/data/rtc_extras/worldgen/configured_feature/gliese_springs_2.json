@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:disk",
+          "config": {
+            "radius": {
+              "type": "uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 3
+            },
+            "half_height": 1,
+            "target": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "rtc_extras:red_layerrock",
+                "rtc_extras:orange_layerrock"
+              ]
+            },
+            "state_provider": {
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "rtc_extras:yellow_layerrock"
+                }
+              },
+              "rules": []
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:disk",
+          "config": {
+            "radius": {
+              "type": "uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 3
+            },
+            "half_height": 1,
+            "target": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "rtc_extras:yellow_layerrock",
+                "rtc_extras:orange_layerrock"
+              ]
+            },
+            "state_provider": {
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "rtc_extras:red_layerrock"
+                }
+              },
+              "rules": []
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:disk",
+          "config": {
+            "radius": {
+              "type": "uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 3
+            },
+            "half_height": 1,
+            "target": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "rtc_extras:yellow_layerrock",
+                "rtc_extras:red_layerrock"
+              ]
+            },
+            "state_provider": {
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "rtc_extras:orange_layerrock"
+                }
+              },
+              "rules": []
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

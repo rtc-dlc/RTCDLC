@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "rtc_extras:block/talllayerrockrootstop",
+    "particle": "rtc_extras:block/talllayerrockrootstop"
+  },
+  "render_type": "cutout"
+}

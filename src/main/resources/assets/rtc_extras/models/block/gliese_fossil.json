@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rtc_extras:block/gliesefossiltop",
+    "up": "rtc_extras:block/gliesefossiltop",
+    "north": "rtc_extras:block/gliesefossilside",
+    "east": "rtc_extras:block/gliesefossilside",
+    "south": "rtc_extras:block/gliesefossilside",
+    "west": "rtc_extras:block/gliesefossilside",
+    "particle": "rtc_extras:block/gliesefossiltop"
+  },
+  "render_type": "solid"
+}

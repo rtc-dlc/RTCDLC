@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "rtc_extras:gliese_plains",
+    "rtc_extras:gliese_thicket",
+    "rtc_extras:gliese_shroomlands",
+    "rtc_extras:gliese_bioprofusion"
+  ],
+  "features": "rtc_extras:tall_layerrock_roots",
+  "step": "vegetal_decoration"
+}

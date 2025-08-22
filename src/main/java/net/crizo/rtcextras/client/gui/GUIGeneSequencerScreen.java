@@ -1,19 +1,26 @@
 package net.crizo.rtcextras.client.gui;
 
+import org.checkerframework.checker.units.qual.h;
+
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.util.Mth;
+import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.Font;
+import net.minecraft.client.Minecraft;
 
 import net.crizo.rtcextras.world.inventory.GUIGeneSequencerMenu;
 import net.crizo.rtcextras.init.RtcExtrasModScreens;
+
+import java.util.List;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -47,6 +54,28 @@ public class GUIGeneSequencerScreen extends AbstractContainerScreen<GUIGeneSeque
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		int w = guiGraphics.guiWidth();
+		int h = guiGraphics.guiHeight();
+		Level world = null;
+		double x = 0;
+		double y = 0;
+		double z = 0;
+		Player entity = Minecraft.getInstance().player;
+		if (entity != null) {
+			world = entity.level();
+			x = entity.getX();
+			y = entity.getY();
+			z = entity.getZ();
+		}
+		{
+			{
+				Font font = Minecraft.getInstance().font;
+				String text = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.";
+				double curX = entity.getPersistentData().getDouble("BannerX");
+				double targX = entity.getPersistentData().getDouble("BannerXTarget");
+				drawWrappedText(guiGraphics, font, text, (int) curX, ((h / 2) + 30) + -40, 190, 0xFFFFFF);
+			}
+		}
 	}
 
 	@Override
@@ -94,5 +123,31 @@ public class GUIGeneSequencerScreen extends AbstractContainerScreen<GUIGeneSeque
 		if (blockEntity != null)
 			return blockEntity.getPersistentData().getDouble(tag);
 		return -1;
+	}
+
+	public static void drawWrappedText(GuiGraphics guiGraphics, Font font, String text, int x, int y, int maxWidth, int color) {
+		List<FormattedCharSequence> lines = font.split(Component.literal(text), maxWidth);
+		int lineSpacing = 3;
+		int boxHeight = (lines.size() * (font.lineHeight + lineSpacing) - lineSpacing + 10) + 16;
+		int boxWidth = 224;
+		int topHeight = 10;
+		int bottomHeight = 10;
+		int middleHeight = boxHeight - topHeight - bottomHeight;
+		ResourceLocation tex = (ResourceLocation.parse("rtc_extras:textures/screens/hallelughaj.png"));
+		// Top part
+		guiGraphics.blit(tex, x, y, 0, 0, boxWidth, topHeight, boxWidth, 154);
+		// Middle
+		int currentY = y + topHeight;
+		int sliceHeight = 1;
+		int sourceY = topHeight;
+		for (int i = 0; i < middleHeight; i += sliceHeight) {
+			int drawHeight = Math.min(sliceHeight, middleHeight - i);
+			guiGraphics.blit(tex, x, currentY + i, 0, sourceY, boxWidth, drawHeight, boxWidth, 154);
+		}
+		// Bottom
+		guiGraphics.blit(tex, x, y + topHeight + middleHeight, 0, 144, boxWidth, bottomHeight, boxWidth, 154);
+		for (int i = 0; i < lines.size(); i++) {
+			guiGraphics.drawString(font, lines.get(i), x + 10, y + topHeight + i * (font.lineHeight + lineSpacing), color, true);
+		}
 	}
 }
