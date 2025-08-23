@@ -63,7 +63,7 @@
       "aquifers_enabled": true,
       "ore_veins_enabled": true,
       "default_block": {
-        "Name": "rtc_extras:red_layerrock"
+        "Name": "rtc_extras:layerrock"
       },
       "default_fluid": {
         "Name": "minecraft:water",
@@ -503,6 +503,25 @@
               }
             }
           },
+
+
+          
+          {
+		  "type": "minecraft:condition",
+		  "if_true": {
+		    "type": "minecraft:vertical_gradient",
+		    "random_name": "rtc_extras:deep_layer_transition",
+		    "true_at_and_below": { "absolute": -40 },
+		    "false_at_and_above": { "absolute": 16 }
+		  },
+		  "then_run": {
+		    "type": "minecraft:block",
+		    "result_state": { "Name": "rtc_extras:dirty_shale" }
+		  }
+		},
+
+
+
           {
             "type": "minecraft:condition",
             "if_true": {
@@ -551,13 +570,73 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 1.8,
+                            "max_threshold": 2.0
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:yellow_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
                             "min_threshold": -2.0,
+                            "max_threshold": -1.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:yellow_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 1.2,
+                            "max_threshold": 1.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:orange_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": -1.8,
                             "max_threshold": -1.2
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
                               "Name": "rtc_extras:orange_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 0.8,
+                            "max_threshold": 1.2
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:red_layerrock"
                             }
                           }
                         },
@@ -581,13 +660,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": 0.8,
-                            "max_threshold": 1.2
+                            "min_threshold": 0.55,
+                            "max_threshold": 0.65
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "rtc_extras:layerrock"
+                              "Name": "rtc_extras:cyanostone"
                             }
                           }
                         },
@@ -596,13 +675,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": 1.2,
-                            "max_threshold": 2.0
+                            "min_threshold": 0.35,
+                            "max_threshold": 0.45
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "rtc_extras:yellow_layerrock"
+                              "Name": "rtc_extras:innoculite"
                             }
                           }
                         },
@@ -611,13 +690,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": -0.8,
-                            "max_threshold": 0.8
+                            "min_threshold": 0.15,
+                            "max_threshold": 0.25
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "rtc_extras:layerrock"
+                              "Name": "rtc_extras:hemolith"
                             }
                           }
                         },
@@ -698,13 +777,73 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 1.8,
+                            "max_threshold": 2.0
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:yellow_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
                             "min_threshold": -2.0,
+                            "max_threshold": -1.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:yellow_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 1.2,
+                            "max_threshold": 1.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:orange_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": -1.8,
                             "max_threshold": -1.2
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
                               "Name": "rtc_extras:orange_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 0.8,
+                            "max_threshold": 1.2
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:red_layerrock"
                             }
                           }
                         },
@@ -728,8 +867,8 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": 0.8,
-                            "max_threshold": 1.2
+                            "min_threshold": 0.55,
+                            "max_threshold": 0.65
                           },
                           "then_run": {
                             "type": "minecraft:block",
@@ -743,13 +882,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": 1.2,
-                            "max_threshold": 2.0
+                            "min_threshold": 0.35,
+                            "max_threshold": 0.45
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "rtc_extras:yellow_layerrock"
+                              "Name": "rtc_extras:innoculite"
                             }
                           }
                         },
@@ -758,13 +897,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": -0.8,
-                            "max_threshold": 0.8
+                            "min_threshold": 0.15,
+                            "max_threshold": 0.25
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "rtc_extras:cyanostone"
+                              "Name": "rtc_extras:hemolith"
                             }
                           }
                         },
@@ -836,7 +975,22 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "rtc_extras:dirty_shale"
+                              "Name": "rtc_extras:innoculite"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 1.8,
+                            "max_threshold": 2.0
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:yellow_layerrock"
                             }
                           }
                         },
@@ -846,6 +1000,36 @@
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
                             "min_threshold": -2.0,
+                            "max_threshold": -1.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:yellow_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 1.2,
+                            "max_threshold": 1.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:orange_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": -1.8,
                             "max_threshold": -1.2
                           },
                           "then_run": {
@@ -860,13 +1044,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": -1.2,
-                            "max_threshold": -0.8
+                            "min_threshold": 0.8,
+                            "max_threshold": 1.2
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "rtc_extras:yellow_layerrock"
+                              "Name": "rtc_extras:red_layerrock"
                             }
                           }
                         },
@@ -875,8 +1059,23 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": 0.8,
-                            "max_threshold": 1.2
+                            "min_threshold": -1.2,
+                            "max_threshold": -0.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:red_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 0.55,
+                            "max_threshold": 0.65
                           },
                           "then_run": {
                             "type": "minecraft:block",
@@ -890,8 +1089,8 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": 1.2,
-                            "max_threshold": 2.0
+                            "min_threshold": 0.35,
+                            "max_threshold": 0.45
                           },
                           "then_run": {
                             "type": "minecraft:block",
@@ -905,20 +1104,20 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": -0.8,
-                            "max_threshold": 0.8
+                            "min_threshold": 0.15,
+                            "max_threshold": 0.25
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "rtc_extras:red_layerrock"
+                              "Name": "rtc_extras:hemolith"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "rtc_extras:red_layerrock"
+                            "Name": "rtc_extras:innoculite"
                           }
                         }
                       ]
@@ -936,7 +1135,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "rtc_extras:yellow_layerrock"
+                        "Name": "rtc_extras:innoculite"
                       }
                     }
                   }
@@ -983,10 +1182,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:mycelium",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "rtc_extras:innoculite"
                             }
                           }
                         },
@@ -995,16 +1191,58 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": -1.2,
-                            "max_threshold": -0.8
+                            "min_threshold": 1.8,
+                            "max_threshold": 2.0
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:mycelium",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "rtc_extras:yellow_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": -2.0,
+                            "max_threshold": -1.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:yellow_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 1.2,
+                            "max_threshold": 1.8
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:orange_layerrock"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": -1.8,
+                            "max_threshold": -1.2
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:orange_layerrock"
                             }
                           }
                         },
@@ -1019,10 +1257,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:mycelium",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "rtc_extras:red_layerrock"
                             }
                           }
                         },
@@ -1031,13 +1266,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": -0.8,
-                            "max_threshold": 0.8
+                            "min_threshold": -1.2,
+                            "max_threshold": -0.8
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:dirt"
+                              "Name": "rtc_extras:red_layerrock"
                             }
                           }
                         },
@@ -1046,13 +1281,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": -2.0,
-                            "max_threshold": -1.2
+                            "min_threshold": 0.55,
+                            "max_threshold": 0.65
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:dirt"
+                              "Name": "rtc_extras:layerrock"
                             }
                           }
                         },
@@ -1061,20 +1296,35 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "rtc_extras:gliese_surface",
-                            "min_threshold": 1.2,
-                            "max_threshold": 2.0
+                            "min_threshold": 0.35,
+                            "max_threshold": 0.45
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:dirt"
+                              "Name": "rtc_extras:cyanostone"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "rtc_extras:gliese_surface",
+                            "min_threshold": 0.15,
+                            "max_threshold": 0.25
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "rtc_extras:innoculite"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:dirt"
+                            "Name": "rtc_extras:hemolith"
                           }
                         }
                       ]
@@ -1092,7 +1342,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "rtc_extras:dirty_shale"
                       }
                     }
                   }

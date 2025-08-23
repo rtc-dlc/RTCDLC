@@ -37,7 +37,8 @@ public class ShortLayerrockRootsBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(RtcExtrasModBlocks.ORANGE_LAYERROCK.get()) || groundState.is(RtcExtrasModBlocks.RED_LAYERROCK.get()) || groundState.is(RtcExtrasModBlocks.DIRTY_SHALE.get()) || groundState.is(RtcExtrasModBlocks.YELLOW_LAYERROCK.get());
+		return groundState.is(RtcExtrasModBlocks.ORANGE_LAYERROCK.get()) || groundState.is(RtcExtrasModBlocks.RED_LAYERROCK.get()) || groundState.is(RtcExtrasModBlocks.DIRTY_SHALE.get()) || groundState.is(RtcExtrasModBlocks.YELLOW_LAYERROCK.get())
+				|| groundState.is(RtcExtrasModBlocks.CYANOSTONE.get());
 	}
 
 	@Override

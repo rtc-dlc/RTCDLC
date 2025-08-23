@@ -35,5 +35,7 @@
   "block.rtc_extras.layerrock": "Layerrock",
   "block.rtc_extras.polished_layerrock": "Polished Layerrock",
   "block.rtc_extras.chiseled_layerrock": "Chiseled Layerrock",
-  "block.rtc_extras.layerrock_bricks": "Layerrock Bricks"
+  "block.rtc_extras.layerrock_bricks": "Layerrock Bricks",
+  "block.rtc_extras.innoculite": "Innoculite",
+  "block.rtc_extras.hemolith": "Hemolith"
 }

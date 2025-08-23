@@ -42,6 +42,8 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> POLISHED_LAYERROCK = block(RtcExtrasModBlocks.POLISHED_LAYERROCK);
 	public static final DeferredItem<Item> CHISELED_LAYERROCK = block(RtcExtrasModBlocks.CHISELED_LAYERROCK);
 	public static final DeferredItem<Item> LAYERROCK_BRICKS = block(RtcExtrasModBlocks.LAYERROCK_BRICKS);
+	public static final DeferredItem<Item> INNOCULITE = block(RtcExtrasModBlocks.INNOCULITE);
+	public static final DeferredItem<Item> HEMOLITH = block(RtcExtrasModBlocks.HEMOLITH);
 
 	// Start of user code block custom items
 	// End of user code block custom items

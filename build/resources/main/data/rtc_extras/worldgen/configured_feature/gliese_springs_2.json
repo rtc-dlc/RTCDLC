@@ -8,15 +8,19 @@
           "config": {
             "radius": {
               "type": "uniform",
-              "min_inclusive": 2,
-              "max_inclusive": 3
+              "min_inclusive": 3,
+              "max_inclusive": 8
             },
             "half_height": 1,
             "target": {
               "type": "minecraft:matching_blocks",
               "blocks": [
                 "rtc_extras:red_layerrock",
-                "rtc_extras:orange_layerrock"
+                "rtc_extras:orange_layerrock",
+                "rtc_extras:layerrock",
+                "rtc_extras:cyanostone",
+                "rtc_extras:innoculite",
+                "rtc_extras:hemolith"
               ]
             },
             "state_provider": {
@@ -38,15 +42,19 @@
           "config": {
             "radius": {
               "type": "uniform",
-              "min_inclusive": 2,
-              "max_inclusive": 3
+              "min_inclusive": 3,
+              "max_inclusive": 8
             },
             "half_height": 1,
             "target": {
               "type": "minecraft:matching_blocks",
               "blocks": [
                 "rtc_extras:yellow_layerrock",
-                "rtc_extras:orange_layerrock"
+                "rtc_extras:orange_layerrock",
+                "rtc_extras:layerrock",
+                "rtc_extras:cyanostone",
+                "rtc_extras:innoculite",
+                "rtc_extras:hemolith"
               ]
             },
             "state_provider": {
@@ -68,15 +76,19 @@
           "config": {
             "radius": {
               "type": "uniform",
-              "min_inclusive": 2,
-              "max_inclusive": 3
+              "min_inclusive": 3,
+              "max_inclusive": 8
             },
             "half_height": 1,
             "target": {
               "type": "minecraft:matching_blocks",
               "blocks": [
                 "rtc_extras:yellow_layerrock",
-                "rtc_extras:red_layerrock"
+                "rtc_extras:red_layerrock",
+                "rtc_extras:layerrock",
+                "rtc_extras:cyanostone",
+                "rtc_extras:innoculite",
+                "rtc_extras:hemolith"
               ]
             },
             "state_provider": {
@@ -84,6 +96,130 @@
                 "type": "minecraft:simple_state_provider",
                 "state": {
                   "Name": "rtc_extras:orange_layerrock"
+                }
+              },
+              "rules": []
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:disk",
+          "config": {
+            "radius": {
+              "type": "uniform",
+              "min_inclusive": 3,
+              "max_inclusive": 8
+            },
+            "half_height": 1,
+            "target": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "rtc_extras:cyanostone",
+                "rtc_extras:innoculite",
+                "rtc_extras:hemolith"
+              ]
+            },
+            "state_provider": {
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "rtc_extras:layerrock"
+                }
+              },
+              "rules": []
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:disk",
+          "config": {
+            "radius": {
+              "type": "uniform",
+              "min_inclusive": 3,
+              "max_inclusive": 8
+            },
+            "half_height": 1,
+            "target": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "rtc_extras:layerrock",
+                "rtc_extras:innoculite",
+                "rtc_extras:hemolith"
+              ]
+            },
+            "state_provider": {
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "rtc_extras:cyanostone"
+                }
+              },
+              "rules": []
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:disk",
+          "config": {
+            "radius": {
+              "type": "uniform",
+              "min_inclusive": 3,
+              "max_inclusive": 8
+            },
+            "half_height": 1,
+            "target": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "rtc_extras:layerrock",
+                "rtc_extras:cyanostone",
+                "rtc_extras:hemolith"
+              ]
+            },
+            "state_provider": {
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "rtc_extras:innoculite"
+                }
+              },
+              "rules": []
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:disk",
+          "config": {
+            "radius": {
+              "type": "uniform",
+              "min_inclusive": 3,
+              "max_inclusive": 8
+            },
+            "half_height": 1,
+            "target": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "rtc_extras:layerrock",
+                "rtc_extras:cyanostone",
+                "rtc_extras:innoculite"
+              ]
+            },
+            "state_provider": {
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "rtc_extras:hemolith"
                 }
               },
               "rules": []

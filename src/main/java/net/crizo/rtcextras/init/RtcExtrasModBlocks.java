@@ -21,6 +21,8 @@ import net.crizo.rtcextras.block.OrangeLayerrockBlock;
 import net.crizo.rtcextras.block.LayerrockRootsBlock;
 import net.crizo.rtcextras.block.LayerrockBricksBlock;
 import net.crizo.rtcextras.block.LayerrockBlock;
+import net.crizo.rtcextras.block.InnoculiteBlock;
+import net.crizo.rtcextras.block.HemolithBlock;
 import net.crizo.rtcextras.block.HelixSplicerBlock;
 import net.crizo.rtcextras.block.GlieseFossilBlock;
 import net.crizo.rtcextras.block.GeneSequencerBlock;
@@ -52,6 +54,8 @@ public class RtcExtrasModBlocks {
 	public static final DeferredBlock<Block> POLISHED_LAYERROCK = REGISTRY.register("polished_layerrock", PolishedLayerrockBlock::new);
 	public static final DeferredBlock<Block> CHISELED_LAYERROCK = REGISTRY.register("chiseled_layerrock", ChiseledLayerrockBlock::new);
 	public static final DeferredBlock<Block> LAYERROCK_BRICKS = REGISTRY.register("layerrock_bricks", LayerrockBricksBlock::new);
+	public static final DeferredBlock<Block> INNOCULITE = REGISTRY.register("innoculite", InnoculiteBlock::new);
+	public static final DeferredBlock<Block> HEMOLITH = REGISTRY.register("hemolith", HemolithBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

@@ -111,6 +111,9 @@
       },
       {
         "value": "CUSTOM:YellowLayerrock"
+      },
+      {
+        "value": "CUSTOM:Cyanostone"
       }
     ],
     "isBonemealable": false,

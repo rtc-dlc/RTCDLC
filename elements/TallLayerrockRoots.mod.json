@@ -101,13 +101,16 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [
       {
+        "value": "CUSTOM:Cyanostone"
+      },
+      {
+        "value": "CUSTOM:DirtyShale"
+      },
+      {
         "value": "CUSTOM:OrangeLayerrock"
       },
       {
         "value": "CUSTOM:RedLayerrock"
-      },
-      {
-        "value": "CUSTOM:DirtyShale"
       },
       {
         "value": "CUSTOM:YellowLayerrock"

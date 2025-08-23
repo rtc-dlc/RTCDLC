@@ -97,7 +97,6 @@
     },
     "defaultFeatures": [
       "Caves",
-      "Ores",
       "FrozenTopLayer"
     ],
     "spawnStronghold": false,
