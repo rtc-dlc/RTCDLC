@@ -5,13 +5,7 @@
   "projectBrowserSplitPos": 0,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, RTC: Extras]",
-      "[, RTC: Extras, Source (Gradle)]",
-      "[, RTC: Extras, Source (Gradle), C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net]",
-      "[, RTC: Extras, Source (Gradle), C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo]",
-      "[, RTC: Extras, Source (Gradle), C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo\\rtcextras]",
-      "[, RTC: Extras, Source (Gradle), C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo\\rtcextras, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo\\rtcextras\\block]",
-      "[, RTC: Extras, Source (Gradle), C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo\\rtcextras, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo\\rtcextras\\block, C:\\Users\\starf\\MCreatorWorkspaces\\rtcdlc\\src\\main\\java\\net\\crizo\\rtcextras\\block\\entity]"
+      "[, RTC: Extras]"
     ]
   }
 }

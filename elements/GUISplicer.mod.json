@@ -43,7 +43,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 136,
+          "x": 137,
           "y": 70,
           "locked": false
         }
@@ -76,7 +76,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 260,
-          "y": 74,
+          "y": 70,
           "locked": false
         }
       },
@@ -106,8 +106,8 @@
           "onClick": {
             "name": "SplicerButtonClicked"
           },
-          "x": 236,
-          "y": 74,
+          "x": 234,
+          "y": 71,
           "locked": false
         }
       },

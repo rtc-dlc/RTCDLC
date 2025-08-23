@@ -85,7 +85,7 @@ public class GUISplicerScreen extends AbstractContainerScreen<GUISplicerMenu> im
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_art = new ImageButton(this.leftPos + 110, this.topPos + 37, 16, 16, new WidgetSprites(ResourceLocation.parse("rtc_extras:textures/screens/art.png"), ResourceLocation.parse("rtc_extras:textures/screens/tra.png")), e -> {
+		imagebutton_art = new ImageButton(this.leftPos + 108, this.topPos + 34, 16, 16, new WidgetSprites(ResourceLocation.parse("rtc_extras:textures/screens/art.png"), ResourceLocation.parse("rtc_extras:textures/screens/tra.png")), e -> {
 			int x = GUISplicerScreen.this.x;
 			int y = GUISplicerScreen.this.y;
 			if (true) {

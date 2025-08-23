@@ -44,6 +44,12 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> LAYERROCK_BRICKS = block(RtcExtrasModBlocks.LAYERROCK_BRICKS);
 	public static final DeferredItem<Item> INNOCULITE = block(RtcExtrasModBlocks.INNOCULITE);
 	public static final DeferredItem<Item> HEMOLITH = block(RtcExtrasModBlocks.HEMOLITH);
+	public static final DeferredItem<Item> BROWN_VELUTIPE_MUSHROOM = block(RtcExtrasModBlocks.BROWN_VELUTIPE_MUSHROOM);
+	public static final DeferredItem<Item> RED_VELUTIPE_MUSHROOM_STEM = block(RtcExtrasModBlocks.RED_VELUTIPE_MUSHROOM_STEM);
+	public static final DeferredItem<Item> GREEN_VELUTIPE_MUSHROOM_STEM = block(RtcExtrasModBlocks.GREEN_VELUTIPE_MUSHROOM_STEM);
+	public static final DeferredItem<Item> RED_VELUTIPE_MUSHROOM = block(RtcExtrasModBlocks.RED_VELUTIPE_MUSHROOM);
+	public static final DeferredItem<Item> BLUE_VELUTIPE_MUSHROOM_STEM = block(RtcExtrasModBlocks.BLUE_VELUTIPE_MUSHROOM_STEM);
+	public static final DeferredItem<Item> MAGENTA_VELUTIPE_MUSHROOM = block(RtcExtrasModBlocks.MAGENTA_VELUTIPE_MUSHROOM);
 
 	// Start of user code block custom items
 	// End of user code block custom items

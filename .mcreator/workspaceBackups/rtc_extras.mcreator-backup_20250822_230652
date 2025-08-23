@@ -1,0 +1,1555 @@
+{
+  "mod_elements": [
+    {
+      "name": "SwitchDimensionOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_dimension_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/SwitchDimensionOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "Gliese",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gliese",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/world/dimension/GlieseDimension.java",
+          "src/main/resources/data/rtc_extras/dimension_type/gliese.json",
+          "src/main/resources/data/rtc_extras/dimension/gliese.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "SwitchDimension",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/network/SwitchDimensionMessage.java"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "ProGlieseConditions",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pro_gliese_conditions",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/ProGlieseConditionsProcedure.java"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "BacteriumDummy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacterium_dummy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/item/BacteriumDummyItem.java",
+          "src/main/resources/assets/rtc_extras/models/item/bacterium_dummy.json"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "GeneSequencer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gene_sequencer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/entity/GeneSequencerBlockEntity.java",
+          "src/main/resources/assets/rtc_extras/blockstates/gene_sequencer.json",
+          "src/main/resources/assets/rtc_extras/models/block/gene_sequencer.json",
+          "src/main/resources/assets/rtc_extras/models/item/gene_sequencer.json",
+          "src/main/java/net/crizo/rtcextras/block/GeneSequencerBlock.java",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/gene_sequencer.json"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "GeneDecayLoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_decay_loot",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/GeneDecayLootProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "ContainerOpenDecayHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "container_open_decay_handler",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/ContainerOpenDecayHandlerProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "GeneSequencerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gene_sequencer_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/GeneSequencerOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "GliesePlains",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_plains",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_plains_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_plains.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_plains_tree.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "GlieseThicket",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_thicket",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_thicket.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_thicket_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_thicket_tree.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "BioreactorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bioreactor_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/BioreactorOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/bioreactor"
+    },
+    {
+      "name": "GlieseShroomlands",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_shroomlands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_shroomlands_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_shroomlands_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_shroomlands.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "GUIBioreactor",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_bioreactor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUIBioreactorMenu.java",
+          "src/main/java/net/crizo/rtcextras/client/gui/GUIBioreactorScreen.java"
+        ]
+      },
+      "path": "~/bioreactor"
+    },
+    {
+      "name": "GUIGeneSequencer",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gui_gene_sequencer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/client/gui/GUIGeneSequencerScreen.java",
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUIGeneSequencerMenu.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "BacteriumShouldLive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacterium_should_live",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/BacteriumShouldLiveProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "Bacterium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacterium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/item/BacteriumItem.java",
+          "src/main/resources/assets/rtc_extras/models/item/bacterium.json"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "GeneData",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/GeneData.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "Bioreactor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bioreactor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/BioreactorBlock.java",
+          "src/main/java/net/crizo/rtcextras/block/entity/BioreactorBlockEntity.java",
+          "src/main/resources/assets/rtc_extras/blockstates/bioreactor.json",
+          "src/main/resources/assets/rtc_extras/models/item/bioreactor.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/bioreactor.json",
+          "src/main/resources/assets/rtc_extras/models/block/bioreactor.json"
+        ]
+      },
+      "path": "~/bioreactor"
+    },
+    {
+      "name": "GlieseBioprofusion",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_bioprofusion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_bioprofusion_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_bioprofusion_tree.json",
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_bioprofusion.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "GeneRegistry",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_registry",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/GeneRegistry.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "StabilizeBacteria",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stabilize_bacteria",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/StabilizeBacteriaProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "RTCExtras",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtc_extras",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GeneSample",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_sample",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/item/gene_sample.json",
+          "src/main/java/net/crizo/rtcextras/item/GeneSampleItem.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "AnalyzeGeneSample",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "analyze_gene_sample",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/AnalyzeGeneSampleProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "OrangeLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/OrangeLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/orange_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/orange_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/orange_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/orange_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "RedLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/red_layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/RedLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/blockstates/red_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/item/red_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/red_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "DirtyShale",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirty_shale",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/dirty_shale.json",
+          "src/main/java/net/crizo/rtcextras/block/DirtyShaleBlock.java",
+          "src/main/resources/assets/rtc_extras/blockstates/dirty_shale.json",
+          "src/main/resources/assets/rtc_extras/models/item/dirty_shale.json",
+          "src/main/resources/assets/rtc_extras/models/block/dirty_shale.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "YellowLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/YellowLayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/yellow_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/yellow_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/yellow_layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/yellow_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "GeneSequencerBannerDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gene_sequencer_banner_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/GeneSequencerBannerDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "LerpHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lerp_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/LerpHandlerProcedure.java"
+        ]
+      },
+      "path": "~/analyzer"
+    },
+    {
+      "name": "GlieseSprings",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_springs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_springs_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_springs.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_springs.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "GlieseSprings2",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_springs_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_springs_2_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_springs_2.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_springs_2.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "GlieseFossil",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_fossil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/GlieseFossilBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/gliese_fossil.json",
+          "src/main/resources/assets/rtc_extras/blockstates/gliese_fossil.json",
+          "src/main/resources/assets/rtc_extras/models/block/gliese_fossil.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/gliese_fossil.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "GlieseFossils",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gliese_fossils",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_fossils_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_fossils.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_fossils.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "LayerrockRoots",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layerrock_roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/layerrock_roots_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/blockstates/layerrock_roots.json",
+          "src/main/java/net/crizo/rtcextras/block/LayerrockRootsBlock.java",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/item/layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/block/layerrock_roots.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "ShortLayerrockRoots",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_layerrock_roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/short_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/item/short_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/short_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/block/short_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/short_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/blockstates/short_layerrock_roots.json",
+          "src/main/java/net/crizo/rtcextras/block/ShortLayerrockRootsBlock.java",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/short_layerrock_roots_biome_modifier.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "TallLayerrockRoots",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_layerrock_roots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/tall_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/blockstates/tall_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/tall_layerrock_roots.json",
+          "src/main/java/net/crizo/rtcextras/block/TallLayerrockRootsBlock.java",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/tall_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/item/tall_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/block/tall_layerrock_roots_bottom.json",
+          "src/main/resources/assets/rtc_extras/models/block/tall_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/tall_layerrock_roots_biome_modifier.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "Bulbush",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulbush",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/BulbushBlock.java",
+          "src/main/resources/assets/rtc_extras/blockstates/bulbush.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/bulbush.json",
+          "src/main/resources/assets/rtc_extras/models/item/bulbush.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/bulbush.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/bulbush.json",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/bulbush_biome_modifier.json",
+          "src/main/resources/assets/rtc_extras/models/block/bulbush.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "PlayerGeneticTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "player_genetic_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/PlayerGeneticTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "HelixSplicer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "helix_splicer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/entity/HelixSplicerBlockEntity.java",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/helix_splicer.json",
+          "src/main/resources/assets/rtc_extras/blockstates/helix_splicer.json",
+          "src/main/resources/assets/rtc_extras/models/block/helix_splicer.json",
+          "src/main/resources/assets/rtc_extras/models/item/helix_splicer.json",
+          "src/main/java/net/crizo/rtcextras/block/HelixSplicerBlock.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "GUISplicer",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_splicer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/client/gui/GUISplicerScreen.java",
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUISplicerMenu.java",
+          "src/main/java/net/crizo/rtcextras/network/GUISplicerButtonMessage.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "HelixSplicerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "helix_splicer_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/HelixSplicerOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "SplicerButtonClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splicer_button_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/SplicerButtonClickedProcedure.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "SplicerShowGene1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splicer_show_gene_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/SplicerShowGene1Procedure.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "SplicerShowGene2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splicer_show_gene_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/SplicerShowGene2Procedure.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "SplicerShowGene3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splicer_show_gene_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/SplicerShowGene3Procedure.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "SplicerShowStatus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splicer_show_status",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/SplicerShowStatusProcedure.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "SplicerShowInterference",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splicer_show_interference",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/SplicerShowInterferenceProcedure.java"
+        ]
+      },
+      "path": "~/Splicing"
+    },
+    {
+      "name": "Biocultivator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biocultivator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/BiocultivatorBlock.java",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/biocultivator.json",
+          "src/main/java/net/crizo/rtcextras/block/entity/BiocultivatorBlockEntity.java",
+          "src/main/resources/assets/rtc_extras/blockstates/biocultivator.json",
+          "src/main/resources/assets/rtc_extras/models/item/biocultivator.json",
+          "src/main/resources/assets/rtc_extras/models/block/biocultivator.json"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "GeneGrowthData",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gene_growth_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/GeneGrowthData.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "BacteriaGrowthCalculator",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bacteria_growth_calculator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/BacteriaGrowthCalculator.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "GUICultivator",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_cultivator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/network/GUICultivatorButtonMessage.java",
+          "src/main/java/net/crizo/rtcextras/world/inventory/GUICultivatorMenu.java",
+          "src/main/java/net/crizo/rtcextras/client/gui/GUICultivatorScreen.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "BiocultivatorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "biocultivator_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/BiocultivatorOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "CultivatorButtonRequestBacteria",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_button_request_bacteria",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/CultivatorButtonRequestBacteriaProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "CultivatorButtonStatus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_button_status",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/CultivatorButtonStatusProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "CultivatorButtonCount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_button_count",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/CultivatorButtonCountProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "CultivatorButtonPurge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_button_purge",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/CultivatorButtonPurgeProcedure.java"
+        ]
+      },
+      "path": "~/cultivation"
+    },
+    {
+      "name": "Jelly",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "jelly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/item/JellyItem.java",
+          "src/main/resources/assets/rtc_extras/models/item/jelly.json"
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "JellyPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jelly_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/JellyPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/bacteria"
+    },
+    {
+      "name": "PerishableStacks",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_stacks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishableStacks.java"
+        ]
+      }
+    },
+    {
+      "name": "PerishableItemBase",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_item_base",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishableItemBase.java"
+        ]
+      }
+    },
+    {
+      "name": "PerishableEvents",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_events",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishableEvents.java"
+        ]
+      }
+    },
+    {
+      "name": "JellyFuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jelly_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "PerishableMerge",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_merge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishableMerge.java"
+        ]
+      }
+    },
+    {
+      "name": "PerishablePickupMerge",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perishable_pickup_merge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/PerishablePickupMerge.java"
+        ]
+      }
+    },
+    {
+      "name": "LayerrockBricks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layerrock_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/item/layerrock_bricks.json",
+          "src/main/resources/assets/rtc_extras/models/block/layerrock_bricks.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/layerrock_bricks.json",
+          "src/main/resources/assets/rtc_extras/blockstates/layerrock_bricks.json",
+          "src/main/java/net/crizo/rtcextras/block/LayerrockBricksBlock.java"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "Cyanostone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyanostone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/crizo/rtcextras/block/CyanostoneBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/cyanostone.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/cyanostone.json",
+          "src/main/resources/assets/rtc_extras/blockstates/cyanostone.json",
+          "src/main/resources/assets/rtc_extras/models/block/cyanostone.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "Layerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layerrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/block/layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/LayerrockBlock.java",
+          "src/main/resources/assets/rtc_extras/models/item/layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/layerrock.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "ChiseledLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/block/chiseled_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/item/chiseled_layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/ChiseledLayerrockBlock.java",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/chiseled_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/chiseled_layerrock.json"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "PolishedLayerrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_layerrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/loot_table/blocks/polished_layerrock.json",
+          "src/main/resources/assets/rtc_extras/blockstates/polished_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/block/polished_layerrock.json",
+          "src/main/resources/assets/rtc_extras/models/item/polished_layerrock.json",
+          "src/main/java/net/crizo/rtcextras/block/PolishedLayerrockBlock.java"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "RedVelutipeMushroom",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_velutipe_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/blockstates/red_velutipe_mushroom.json",
+          "src/main/resources/assets/rtc_extras/models/block/red_velutipe_mushroom.json",
+          "src/main/resources/assets/rtc_extras/models/item/red_velutipe_mushroom.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/red_velutipe_mushroom.json",
+          "src/main/java/net/crizo/rtcextras/block/RedVelutipeMushroomBlock.java"
+        ]
+      },
+      "path": "~/blocks"
+    },
+    {
+      "name": "BlueVelutipeMushroom",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_velutipe_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rtc_extras/models/item/blue_velutipe_mushroom.json",
+          "src/main/java/net/crizo/rtcextras/block/BlueVelutipeMushroomBlock.java",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/blue_velutipe_mushroom.json",
+          "src/main/resources/assets/rtc_extras/models/block/blue_velutipe_mushroom.json",
+          "src/main/resources/assets/rtc_extras/blockstates/blue_velutipe_mushroom.json"
+        ]
+      },
+      "path": "~/blocks"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "geneReplacementCountdown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "-1.0"
+    },
+    {
+      "name": "geneReplacement",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
+    },
+    {
+      "name": "geneContent",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:PolishedLayerrock",
+      "~CUSTOM:ChiseledLayerrock",
+      "~CUSTOM:Layerrock",
+      "~CUSTOM:Cyanostone",
+      "~CUSTOM:LayerrockBricks",
+      "~CUSTOM:GlieseFossil",
+      "~CUSTOM:YellowLayerrock",
+      "~CUSTOM:DirtyShale",
+      "~CUSTOM:RedLayerrock",
+      "~CUSTOM:OrangeLayerrock"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:GlieseFossil"
+    ],
+    "ITEMS:rtc_extras:perishable": [
+      "CUSTOM:Jelly"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "key.rtc_extras.switch_dimension": "Switch Dimension",
+      "item.rtc_extras.gene_sample": "Gene Sample",
+      "item.rtc_extras.bacterium_dummy": "Bacterium",
+      "item.rtc_extras.bacterium": "Bacterium",
+      "block.rtc_extras.gene_sequencer": "Gene Sequencer",
+      "biome.rtc_extras.gliese_plains": "Gliese Plains",
+      "biome.rtc_extras.gliese_thicket": "Gliese Thicket",
+      "biome.rtc_extras.gliese_shroomlands": "Gliese Shroomlands",
+      "gui.rtc_extras.gui_bioreactor.label_bioreactor": "Bioreactor",
+      "gui.rtc_extras.gui_gene_sequencer.label_gene_sequencer": "Gene Sequencer",
+      "block.rtc_extras.bioreactor": "Bioreactor",
+      "biome.rtc_extras.gliese_bioprofusion": "Gliese Bioprofusion",
+      "item_group.rtc_extras.rtc_extras": "RTC Extras",
+      "block.rtc_extras.orange_layerrock": "Orange Layerrock",
+      "block.rtc_extras.red_layerrock": "Red Layerrock",
+      "block.rtc_extras.dirty_shale": "Dirty Shale",
+      "block.rtc_extras.yellow_layerrock": "Yellow Layerrock",
+      "block.rtc_extras.gliese_fossil": "Gliese Fossil",
+      "block.rtc_extras.layerrock_roots": "Layerrock Roots",
+      "block.rtc_extras.short_layerrock_roots": "Short Layerrock Roots",
+      "block.rtc_extras.tall_layerrock_roots": "Tall Layerrock Roots",
+      "block.rtc_extras.bulbush": "Bulbush",
+      "block.rtc_extras.helix_splicer": "Helix Splicer",
+      "gui.rtc_extras.gui_splicer.label_success_chance": "Success chance",
+      "gui.rtc_extras.gui_splicer.label_gene1": "gene1",
+      "gui.rtc_extras.gui_splicer.label_warn": "Warn",
+      "gui.rtc_extras.gui_splicer.label_gene2": "gene2",
+      "gui.rtc_extras.gui_splicer.label_gene3": "gene3",
+      "block.rtc_extras.biocultivator": "Biocultivator",
+      "gui.rtc_extras.gui_cultivator.label_total": "total",
+      "gui.rtc_extras.gui_cultivator.label_status": "status",
+      "item.rtc_extras.jelly": "Jelly",
+      "block.rtc_extras.layerrock_bricks": "Layerrock Bricks",
+      "block.rtc_extras.cyanostone": "Cyanostone",
+      "block.rtc_extras.layerrock": "Layerrock",
+      "block.rtc_extras.chiseled_layerrock": "Chiseled Layerrock",
+      "block.rtc_extras.polished_layerrock": "Polished Layerrock",
+      "block.rtc_extras.red_velutipe_mushroom": "Red Velutipe Mushroom",
+      "block.rtc_extras.blue_velutipe_mushroom": "Red Velutipe Mushroom"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
+      "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/crizo/rtcextras/world/features/StructureFeature.java",
+      "src/main/java/net/crizo/rtcextras/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModScreens.java",
+      "src/main/java/net/crizo/rtcextras/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModMenus.java",
+      "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModKeyMappings.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlocks.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModBlockEntities.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "bacteria",
+        "children": []
+      },
+      {
+        "name": "analyzer",
+        "children": []
+      },
+      {
+        "name": "cultivation",
+        "children": []
+      },
+      {
+        "name": "bioreactor",
+        "children": []
+      },
+      {
+        "name": "Splicing",
+        "children": []
+      },
+      {
+        "name": "gliese",
+        "children": []
+      },
+      {
+        "name": "items",
+        "children": []
+      },
+      {
+        "name": "blocks",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "rtc_extras",
+    "modName": "RTC: Extras",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.crizo.rtcextras"
+  },
+  "mcreatorVersion": 202500228610
+}

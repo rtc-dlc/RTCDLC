@@ -1,0 +1,160 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:simple_random_selector",
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "type": "minecraft:huge_red_mushroom",
+                  "config": {
+                    "cap_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:red_velutipe_mushroom"
+                      }
+                    },
+                    "stem_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:red_velutipe_mushroom_stem"
+                      }
+                    }
+                  }
+                },
+                "placement": []
+              },
+              {
+                "feature": {
+                  "type": "minecraft:huge_red_mushroom",
+                  "config": {
+                    "cap_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:red_velutipe_mushroom"
+                      }
+                    },
+                    "stem_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:red_velutipe_mushroom_stem"
+                      }
+                    },
+                    "foliage_radius": 3
+                  }
+                },
+                "placement": []
+              }
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:simple_random_selector",
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "type": "minecraft:huge_red_mushroom",
+                  "config": {
+                    "cap_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:magenta_velutipe_mushroom"
+                      }
+                    },
+                    "stem_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:blue_velutipe_mushroom_stem"
+                      }
+                    }
+                  }
+                },
+                "placement": []
+              },
+              {
+                "feature": {
+                  "type": "minecraft:huge_red_mushroom",
+                  "config": {
+                    "cap_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:magenta_velutipe_mushroom"
+                      }
+                    },
+                    "stem_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:blue_velutipe_mushroom_stem"
+                      }
+                    },
+                    "foliage_radius": 4
+                  }
+                },
+                "placement": []
+              }
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:simple_random_selector",
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "type": "minecraft:huge_red_mushroom",
+                  "config": {
+                    "cap_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:brown_velutipe_mushroom"
+                      }
+                    },
+                    "stem_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:green_velutipe_mushroom_stem"
+                      }
+                    }
+                  }
+                },
+                "placement": []
+              },
+              {
+                "feature": {
+                  "type": "minecraft:huge_red_mushroom",
+                  "config": {
+                    "cap_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:brown_velutipe_mushroom"
+                      }
+                    },
+                    "stem_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "rtc_extras:green_velutipe_mushroom_stem"
+                      }
+                    },
+                    "foliage_radius": 3
+                  }
+                },
+                "placement": []
+              }
+            ]
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

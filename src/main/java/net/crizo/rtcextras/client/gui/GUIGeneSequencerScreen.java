@@ -70,8 +70,8 @@ public class GUIGeneSequencerScreen extends AbstractContainerScreen<GUIGeneSeque
 		{
 			{
 				Font font = Minecraft.getInstance().font;
-				String text = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.";
 				double curX = entity.getPersistentData().getDouble("BannerX");
+				String text = "Yo adrian explain our friend group";
 				double targX = entity.getPersistentData().getDouble("BannerXTarget");
 				drawWrappedText(guiGraphics, font, text, (int) curX, ((h / 2) + 30) + -40, 190, 0xFFFFFF);
 			}
