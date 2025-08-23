@@ -79,21 +79,21 @@
       "min": -1.0,
       "max": 1.0
     },
-    "treesPerChunk": 2,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Birch trees",
-    "treeType": 0,
-    "minHeight": 7,
+    "treeType": 1,
+    "minHeight": 0,
     "treeStem": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "defaultFeatures": [
       "Caves",

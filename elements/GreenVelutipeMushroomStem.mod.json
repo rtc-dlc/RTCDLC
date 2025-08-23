@@ -10,7 +10,7 @@
     "textureBack": "velutipestemgreen",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 5,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -48,7 +48,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:RTCExtras"
+      }
+    ],
     "destroyTool": "axe",
     "customDrop": {
       "value": ""
@@ -85,7 +89,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "FUNGUS"
     },
     "breakSound": {
       "value": ""

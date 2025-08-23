@@ -37,5 +37,12 @@
   "block.rtc_extras.chiseled_layerrock": "Chiseled Layerrock",
   "block.rtc_extras.layerrock_bricks": "Layerrock Bricks",
   "block.rtc_extras.innoculite": "Innoculite",
-  "block.rtc_extras.hemolith": "Hemolith"
+  "block.rtc_extras.hemolith": "Hemolith",
+  "block.rtc_extras.brown_velutipe_mushroom": "Brown Velutipe Mushroom",
+  "block.rtc_extras.red_velutipe_mushroom_stem": "Red Velutipe Mushroom Stem",
+  "block.rtc_extras.green_velutipe_mushroom_stem": "Green Velutipe Mushroom Stem",
+  "block.rtc_extras.red_velutipe_mushroom": "Red Velutipe Mushroom",
+  "block.rtc_extras.blue_velutipe_mushroom_stem": "Blue Velutipe Mushroom Stem",
+  "block.rtc_extras.magenta_velutipe_mushroom": "Magenta Velutipe Mushroom",
+  "subtitles.shroom_explode": ""
 }

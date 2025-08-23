@@ -1,17 +1,3 @@
-/gamemode creative
-/gamemode spectator
-/kill
-/give @p rtc_extras:gliese_fossil
-/give @p minecraft:structure_block
-/clear
-/gamemode spectator
-/give Dev rtc_extras:helix_splicer
-/tick rate 2000
-/tick rate 20
-/tick rate 2000
-/locate biome rtc_extras:gliese_thicket
-/locate biome rtc_extras:gliese_shroomlands
-/locate biome rtc_extras:gliese_bioprofusion
 /tp @s 1779 91 2625
 /locate biome rtc_extras:gliese_thicket
 /tp @s 1563 133 2874
@@ -48,3 +34,17 @@
 /tp ~ ~ ~10000
 /effect give Dev minecraft:night_vision infinite 0 true
 /tp ~ ~ ~10000
+/feature
+/tp ~ ~ ~10000
+/tp ~ ~ ~1000
+/tp ~ ~ ~10000
+/effect clear
+/tp ~ ~ ~10000
+/time set noon
+/gamerule randomTickSpeed 30
+/gamerule randomTickSpeed 300
+/gamerule randomTickSpeed 3
+/tp ~ ~ ~10000
+/gamerule randomTickSpeed 300
+/effect give Dev minecraft:haste infinite 10
+/effect clear

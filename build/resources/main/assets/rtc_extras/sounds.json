@@ -1,0 +1,10 @@
+{
+  "shroom_explode": {
+    "sounds": [
+      {
+        "name": "rtc_extras:shroom_explode",
+        "stream": false
+      }
+    ]
+  }
+}

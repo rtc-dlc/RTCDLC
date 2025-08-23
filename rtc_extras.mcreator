@@ -160,9 +160,7 @@
       "registry_name": "gliese_plains",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_plains_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_plains.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_plains_tree.json"
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_plains.json"
         ]
       },
       "path": "~/gliese"
@@ -175,9 +173,7 @@
       "registry_name": "gliese_thicket",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_thicket.json",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_thicket_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_thicket_tree.json"
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_thicket.json"
         ]
       },
       "path": "~/gliese"
@@ -221,9 +217,7 @@
       "registry_name": "gliese_shroomlands",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_shroomlands_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_shroomlands.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_shroomlands_tree.json"
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_shroomlands.json"
         ]
       },
       "path": "~/gliese"
@@ -323,9 +317,7 @@
       "registry_name": "gliese_bioprofusion",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_bioprofusion.json",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_bioprofusion_tree.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_bioprofusion_tree.json"
+          "src/main/resources/data/rtc_extras/worldgen/biome/gliese_bioprofusion.json"
         ]
       },
       "path": "~/gliese"
@@ -527,24 +519,9 @@
       "registry_name": "gliese_springs",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_springs_biome_modifier.json",
           "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_springs.json",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_springs_biome_modifier.json",
           "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_springs.json"
-        ]
-      },
-      "path": "~/gliese"
-    },
-    {
-      "name": "GlieseSprings2",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gliese_springs_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_springs_2_biome_modifier.json",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_springs_2.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_springs_2.json"
         ]
       },
       "path": "~/gliese"
@@ -557,11 +534,11 @@
       "registry_name": "gliese_fossil",
       "metadata": {
         "files": [
-          "src/main/java/net/crizo/rtcextras/block/GlieseFossilBlock.java",
-          "src/main/resources/assets/rtc_extras/models/item/gliese_fossil.json",
           "src/main/resources/assets/rtc_extras/blockstates/gliese_fossil.json",
+          "src/main/java/net/crizo/rtcextras/block/GlieseFossilBlock.java",
           "src/main/resources/assets/rtc_extras/models/block/gliese_fossil.json",
-          "src/main/resources/data/rtc_extras/loot_table/blocks/gliese_fossil.json"
+          "src/main/resources/data/rtc_extras/loot_table/blocks/gliese_fossil.json",
+          "src/main/resources/assets/rtc_extras/models/item/gliese_fossil.json"
         ]
       },
       "path": "~/blocks"
@@ -590,14 +567,14 @@
       "registry_name": "layerrock_roots",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/layerrock_roots_biome_modifier.json",
           "src/main/resources/data/rtc_extras/worldgen/placed_feature/layerrock_roots.json",
           "src/main/resources/data/rtc_extras/loot_table/blocks/layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/block/layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/layerrock_roots_biome_modifier.json",
           "src/main/resources/assets/rtc_extras/blockstates/layerrock_roots.json",
-          "src/main/java/net/crizo/rtcextras/block/LayerrockRootsBlock.java",
           "src/main/resources/data/rtc_extras/worldgen/configured_feature/layerrock_roots.json",
           "src/main/resources/assets/rtc_extras/models/item/layerrock_roots.json",
-          "src/main/resources/assets/rtc_extras/models/block/layerrock_roots.json"
+          "src/main/java/net/crizo/rtcextras/block/LayerrockRootsBlock.java"
         ]
       },
       "path": "~/gliese"
@@ -610,14 +587,14 @@
       "registry_name": "short_layerrock_roots",
       "metadata": {
         "files": [
-          "src/main/resources/data/rtc_extras/loot_table/blocks/short_layerrock_roots.json",
           "src/main/resources/assets/rtc_extras/models/item/short_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/short_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/loot_table/blocks/short_layerrock_roots.json",
           "src/main/resources/data/rtc_extras/worldgen/configured_feature/short_layerrock_roots.json",
           "src/main/resources/assets/rtc_extras/models/block/short_layerrock_roots.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/short_layerrock_roots.json",
-          "src/main/resources/assets/rtc_extras/blockstates/short_layerrock_roots.json",
           "src/main/java/net/crizo/rtcextras/block/ShortLayerrockRootsBlock.java",
-          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/short_layerrock_roots_biome_modifier.json"
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/short_layerrock_roots_biome_modifier.json",
+          "src/main/resources/assets/rtc_extras/blockstates/short_layerrock_roots.json"
         ]
       },
       "path": "~/gliese"
@@ -631,14 +608,14 @@
       "metadata": {
         "files": [
           "src/main/resources/data/rtc_extras/loot_table/blocks/tall_layerrock_roots.json",
-          "src/main/resources/assets/rtc_extras/blockstates/tall_layerrock_roots.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/tall_layerrock_roots.json",
-          "src/main/java/net/crizo/rtcextras/block/TallLayerrockRootsBlock.java",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/tall_layerrock_roots.json",
-          "src/main/resources/assets/rtc_extras/models/item/tall_layerrock_roots.json",
-          "src/main/resources/assets/rtc_extras/models/block/tall_layerrock_roots_bottom.json",
           "src/main/resources/assets/rtc_extras/models/block/tall_layerrock_roots.json",
-          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/tall_layerrock_roots_biome_modifier.json"
+          "src/main/resources/assets/rtc_extras/blockstates/tall_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/item/tall_layerrock_roots.json",
+          "src/main/java/net/crizo/rtcextras/block/TallLayerrockRootsBlock.java",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/tall_layerrock_roots.json",
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/tall_layerrock_roots_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/tall_layerrock_roots.json",
+          "src/main/resources/assets/rtc_extras/models/block/tall_layerrock_roots_bottom.json"
         ]
       },
       "path": "~/gliese"
@@ -651,13 +628,13 @@
       "registry_name": "bulbush",
       "metadata": {
         "files": [
-          "src/main/java/net/crizo/rtcextras/block/BulbushBlock.java",
-          "src/main/resources/assets/rtc_extras/blockstates/bulbush.json",
-          "src/main/resources/data/rtc_extras/worldgen/configured_feature/bulbush.json",
-          "src/main/resources/assets/rtc_extras/models/item/bulbush.json",
           "src/main/resources/data/rtc_extras/loot_table/blocks/bulbush.json",
-          "src/main/resources/data/rtc_extras/worldgen/placed_feature/bulbush.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/bulbush.json",
+          "src/main/resources/assets/rtc_extras/blockstates/bulbush.json",
           "src/main/resources/data/rtc_extras/neoforge/biome_modifier/bulbush_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/bulbush.json",
+          "src/main/resources/assets/rtc_extras/models/item/bulbush.json",
+          "src/main/java/net/crizo/rtcextras/block/BulbushBlock.java",
           "src/main/resources/assets/rtc_extras/models/block/bulbush.json"
         ]
       },
@@ -1402,7 +1379,6 @@
           "src/main/resources/assets/rtc_extras/models/block/brown_velutipe_mushroom.json",
           "src/main/java/net/crizo/rtcextras/block/BrownVelutipeMushroomBlock.java",
           "src/main/resources/assets/rtc_extras/models/item/brown_velutipe_mushroom.json",
-          "src/main/resources/data/rtc_extras/loot_table/blocks/brown_velutipe_mushroom.json",
           "src/main/resources/assets/rtc_extras/blockstates/brown_velutipe_mushroom.json"
         ]
       },
@@ -1452,7 +1428,6 @@
         "files": [
           "src/main/resources/assets/rtc_extras/models/block/red_velutipe_mushroom.json",
           "src/main/java/net/crizo/rtcextras/block/RedVelutipeMushroomBlock.java",
-          "src/main/resources/data/rtc_extras/loot_table/blocks/red_velutipe_mushroom.json",
           "src/main/resources/assets/rtc_extras/blockstates/red_velutipe_mushroom.json",
           "src/main/resources/assets/rtc_extras/models/item/red_velutipe_mushroom.json"
         ]
@@ -1487,8 +1462,7 @@
           "src/main/resources/assets/rtc_extras/models/item/magenta_velutipe_mushroom.json",
           "src/main/java/net/crizo/rtcextras/block/MagentaVelutipeMushroomBlock.java",
           "src/main/resources/assets/rtc_extras/models/block/magenta_velutipe_mushroom.json",
-          "src/main/resources/assets/rtc_extras/blockstates/magenta_velutipe_mushroom.json",
-          "src/main/resources/data/rtc_extras/loot_table/blocks/magenta_velutipe_mushroom.json"
+          "src/main/resources/assets/rtc_extras/blockstates/magenta_velutipe_mushroom.json"
         ]
       },
       "path": "~/blocks"
@@ -1507,6 +1481,56 @@
         ]
       },
       "path": "~/gliese"
+    },
+    {
+      "name": "GlieseSplotch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gliese_splotch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rtc_extras/neoforge/biome_modifier/gliese_splotch_biome_modifier.json",
+          "src/main/resources/data/rtc_extras/worldgen/configured_feature/gliese_splotch.json",
+          "src/main/resources/data/rtc_extras/worldgen/placed_feature/gliese_splotch.json"
+        ]
+      },
+      "path": "~/gliese"
+    },
+    {
+      "name": "ProShroomExplode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pro_shroom_explode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/crizo/rtcextras/procedures/ProShroomExplodeProcedure.java"
+        ]
+      },
+      "path": "~/blocks"
     }
   ],
   "variable_elements": [
@@ -1529,20 +1553,18 @@
       "value": ""
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "shroom_explode",
+      "files": [
+        "shroom_explode"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.MYCELIUM",
-      "~CUSTOM:Cyanostone",
-      "~Blocks.DEEPSLATE",
-      "~CUSTOM:DirtyShale",
-      "~CUSTOM:OrangeLayerrock",
-      "~CUSTOM:YellowLayerrock",
-      "~CUSTOM:RedLayerrock",
-      "~Blocks.STONE#0",
-      "~Blocks.DIRT#0",
-      "~Blocks.GRASS"
-    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Innoculite",
       "~CUSTOM:LayerrockBricks",
@@ -1566,6 +1588,37 @@
       "~CUSTOM:BlueVelutipeMushroomStem",
       "~CUSTOM:GreenVelutipeMushroomStem",
       "~CUSTOM:RedVelutipeMushroomStem"
+    ],
+    "BLOCKS:minecraft:dirt": [
+      "CUSTOM:Innoculite"
+    ],
+    "BLOCKS:minecraft:mushroom_grow_block": [
+      "CUSTOM:Innoculite"
+    ],
+    "BLOCKS:minecraft:logs": [
+      "CUSTOM:RedVelutipeMushroomStem",
+      "CUSTOM:GreenVelutipeMushroomStem",
+      "CUSTOM:BlueVelutipeMushroomStem"
+    ],
+    "BLOCKS:minecraft:logs_that_burn": [
+      "CUSTOM:RedVelutipeMushroomStem",
+      "CUSTOM:GreenVelutipeMushroomStem",
+      "CUSTOM:BlueVelutipeMushroomStem"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "CUSTOM:BrownVelutipeMushroom",
+      "CUSTOM:RedVelutipeMushroom",
+      "CUSTOM:MagentaVelutipeMushroom"
+    ],
+    "BLOCKS:rtc_extras:mushroom_caps": [
+      "CUSTOM:BrownVelutipeMushroom",
+      "CUSTOM:RedVelutipeMushroom",
+      "CUSTOM:MagentaVelutipeMushroom"
+    ],
+    "BLOCKS:rtc_extras:mushroom_logs": [
+      "CUSTOM:RedVelutipeMushroomStem",
+      "CUSTOM:GreenVelutipeMushroomStem",
+      "CUSTOM:BlueVelutipeMushroomStem"
     ]
   },
   "tab_element_order": {},
@@ -1607,7 +1660,16 @@
       "block.rtc_extras.layerrock": "Layerrock",
       "block.rtc_extras.polished_layerrock": "Polished Layerrock",
       "block.rtc_extras.chiseled_layerrock": "Chiseled Layerrock",
-      "block.rtc_extras.layerrock_bricks": "Layerrock Bricks"
+      "block.rtc_extras.layerrock_bricks": "Layerrock Bricks",
+      "block.rtc_extras.innoculite": "Innoculite",
+      "block.rtc_extras.hemolith": "Hemolith",
+      "block.rtc_extras.brown_velutipe_mushroom": "Brown Velutipe Mushroom",
+      "block.rtc_extras.red_velutipe_mushroom_stem": "Red Velutipe Mushroom Stem",
+      "block.rtc_extras.green_velutipe_mushroom_stem": "Green Velutipe Mushroom Stem",
+      "block.rtc_extras.red_velutipe_mushroom": "Red Velutipe Mushroom",
+      "block.rtc_extras.blue_velutipe_mushroom_stem": "Blue Velutipe Mushroom Stem",
+      "block.rtc_extras.magenta_velutipe_mushroom": "Magenta Velutipe Mushroom",
+      "subtitles.shroom_explode": ""
     }
   },
   "metadata": {
@@ -1616,7 +1678,9 @@
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/crizo/rtcextras/network/RtcExtrasModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/assets/rtc_extras/sounds.json",
       "src/main/java/net/crizo/rtcextras/init/RtcExtrasModTabs.java",
+      "src/main/java/net/crizo/rtcextras/init/RtcExtrasModSounds.java",
       "src/main/java/net/crizo/rtcextras/RtcExtrasMod.java",
       "src/main/java/net/crizo/rtcextras/world/features/configurations/StructureFeatureConfiguration.java",
       "src/main/java/net/crizo/rtcextras/world/features/StructureFeature.java",

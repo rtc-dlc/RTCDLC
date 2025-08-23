@@ -21,6 +21,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.crizo.rtcextras.world.features.StructureFeature;
 import net.crizo.rtcextras.network.RtcExtrasModVariables;
 import net.crizo.rtcextras.init.RtcExtrasModTabs;
+import net.crizo.rtcextras.init.RtcExtrasModSounds;
 import net.crizo.rtcextras.init.RtcExtrasModMenus;
 import net.crizo.rtcextras.init.RtcExtrasModItems;
 import net.crizo.rtcextras.init.RtcExtrasModBlocks;
@@ -43,7 +44,7 @@ public class RtcExtrasMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-
+		RtcExtrasModSounds.REGISTRY.register(modEventBus);
 		RtcExtrasModBlocks.REGISTRY.register(modEventBus);
 		RtcExtrasModBlockEntities.REGISTRY.register(modEventBus);
 		RtcExtrasModItems.REGISTRY.register(modEventBus);

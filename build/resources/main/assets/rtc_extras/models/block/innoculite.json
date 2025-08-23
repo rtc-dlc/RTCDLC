@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "rtc_extras:block/art",
-    "up": "rtc_extras:block/art",
-    "north": "rtc_extras:block/art",
-    "east": "rtc_extras:block/art",
-    "south": "rtc_extras:block/art",
-    "west": "rtc_extras:block/art",
-    "particle": "rtc_extras:block/art"
+    "down": "rtc_extras:block/innoculite",
+    "up": "rtc_extras:block/innoculite",
+    "north": "rtc_extras:block/innoculite",
+    "east": "rtc_extras:block/innoculite",
+    "south": "rtc_extras:block/innoculite",
+    "west": "rtc_extras:block/innoculite",
+    "particle": "rtc_extras:block/innoculite"
   },
   "render_type": "solid"
 }

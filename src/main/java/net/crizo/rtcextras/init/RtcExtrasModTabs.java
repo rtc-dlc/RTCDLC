@@ -40,6 +40,12 @@ public class RtcExtrasModTabs {
 				tabData.accept(RtcExtrasModBlocks.POLISHED_LAYERROCK.get().asItem());
 				tabData.accept(RtcExtrasModBlocks.CHISELED_LAYERROCK.get().asItem());
 				tabData.accept(RtcExtrasModBlocks.LAYERROCK_BRICKS.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BROWN_VELUTIPE_MUSHROOM.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_MUSHROOM_STEM.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GREEN_VELUTIPE_MUSHROOM_STEM.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_MUSHROOM.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_MUSHROOM_STEM.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.MAGENTA_VELUTIPE_MUSHROOM.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

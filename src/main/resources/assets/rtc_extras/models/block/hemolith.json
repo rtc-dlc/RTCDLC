@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "rtc_extras:block/tra",
-    "up": "rtc_extras:block/tra",
-    "north": "rtc_extras:block/tra",
-    "east": "rtc_extras:block/tra",
-    "south": "rtc_extras:block/tra",
-    "west": "rtc_extras:block/tra",
-    "particle": "rtc_extras:block/tra"
+    "down": "rtc_extras:block/hemolith",
+    "up": "rtc_extras:block/hemolith",
+    "north": "rtc_extras:block/hemolith",
+    "east": "rtc_extras:block/hemolith",
+    "south": "rtc_extras:block/hemolith",
+    "west": "rtc_extras:block/hemolith",
+    "particle": "rtc_extras:block/hemolith"
   },
   "render_type": "solid"
 }
