@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rtc_extras:block/velutipestemgreentop",
+    "up": "rtc_extras:block/velutipecapbrown",
+    "north": "rtc_extras:block/velutipecapbrown",
+    "east": "rtc_extras:block/velutipecapbrown",
+    "south": "rtc_extras:block/velutipecapbrown",
+    "west": "rtc_extras:block/velutipecapbrown",
+    "particle": "rtc_extras:block/velutipestemgreentop"
+  },
+  "render_type": "solid"
+}

@@ -15,19 +15,25 @@ import net.minecraft.world.level.block.Block;
 import net.crizo.rtcextras.block.YellowLayerrockBlock;
 import net.crizo.rtcextras.block.TallLayerrockRootsBlock;
 import net.crizo.rtcextras.block.ShortLayerrockRootsBlock;
+import net.crizo.rtcextras.block.RedVelutipeMushroomStemBlock;
+import net.crizo.rtcextras.block.RedVelutipeMushroomBlock;
 import net.crizo.rtcextras.block.RedLayerrockBlock;
 import net.crizo.rtcextras.block.PolishedLayerrockBlock;
 import net.crizo.rtcextras.block.OrangeLayerrockBlock;
+import net.crizo.rtcextras.block.MagentaVelutipeMushroomBlock;
 import net.crizo.rtcextras.block.LayerrockRootsBlock;
 import net.crizo.rtcextras.block.LayerrockBricksBlock;
 import net.crizo.rtcextras.block.LayerrockBlock;
 import net.crizo.rtcextras.block.HelixSplicerBlock;
+import net.crizo.rtcextras.block.GreenVelutipeMushroomStemBlock;
 import net.crizo.rtcextras.block.GlieseFossilBlock;
 import net.crizo.rtcextras.block.GeneSequencerBlock;
 import net.crizo.rtcextras.block.DirtyShaleBlock;
 import net.crizo.rtcextras.block.CyanostoneBlock;
 import net.crizo.rtcextras.block.ChiseledLayerrockBlock;
 import net.crizo.rtcextras.block.BulbushBlock;
+import net.crizo.rtcextras.block.BrownVelutipeMushroomBlock;
+import net.crizo.rtcextras.block.BlueVelutipeMushroomStemBlock;
 import net.crizo.rtcextras.block.BioreactorBlock;
 import net.crizo.rtcextras.block.BiocultivatorBlock;
 import net.crizo.rtcextras.RtcExtrasMod;
@@ -52,6 +58,12 @@ public class RtcExtrasModBlocks {
 	public static final DeferredBlock<Block> LAYERROCK = REGISTRY.register("layerrock", LayerrockBlock::new);
 	public static final DeferredBlock<Block> CHISELED_LAYERROCK = REGISTRY.register("chiseled_layerrock", ChiseledLayerrockBlock::new);
 	public static final DeferredBlock<Block> POLISHED_LAYERROCK = REGISTRY.register("polished_layerrock", PolishedLayerrockBlock::new);
+	public static final DeferredBlock<Block> RED_VELUTIPE_MUSHROOM = REGISTRY.register("red_velutipe_mushroom", RedVelutipeMushroomBlock::new);
+	public static final DeferredBlock<Block> MAGENTA_VELUTIPE_MUSHROOM = REGISTRY.register("magenta_velutipe_mushroom", MagentaVelutipeMushroomBlock::new);
+	public static final DeferredBlock<Block> BROWN_VELUTIPE_MUSHROOM = REGISTRY.register("brown_velutipe_mushroom", BrownVelutipeMushroomBlock::new);
+	public static final DeferredBlock<Block> RED_VELUTIPE_MUSHROOM_STEM = REGISTRY.register("red_velutipe_mushroom_stem", RedVelutipeMushroomStemBlock::new);
+	public static final DeferredBlock<Block> BLUE_VELUTIPE_MUSHROOM_STEM = REGISTRY.register("blue_velutipe_mushroom_stem", BlueVelutipeMushroomStemBlock::new);
+	public static final DeferredBlock<Block> GREEN_VELUTIPE_MUSHROOM_STEM = REGISTRY.register("green_velutipe_mushroom_stem", GreenVelutipeMushroomStemBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
