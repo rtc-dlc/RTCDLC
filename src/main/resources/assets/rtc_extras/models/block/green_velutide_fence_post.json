@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "rtc_extras:block/green_velutide_planks",
+    "particle": "rtc_extras:block/green_velutide_planks"
+  },
+  "render_type": "solid"
+}

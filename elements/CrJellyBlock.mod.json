@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Jelly"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Jelly"
+      },
+      {
+        "value": "CUSTOM:Jelly"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Jelly"
+      },
+      {
+        "value": "CUSTOM:Jelly"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:JellyBlock"
+    },
+    "name": "cr_jelly_block",
+    "namespace": "mod"
+  }
+}

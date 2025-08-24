@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "rtc_extras:jelly_block"
+    }
+  ],
+  "result": {
+    "id": "rtc_extras:jelly",
+    "count": 4
+  }
+}

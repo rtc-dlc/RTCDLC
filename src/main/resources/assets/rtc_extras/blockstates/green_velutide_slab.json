@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "rtc_extras:block/green_velutide_slab"
+    },
+    "type=top": {
+      "model": "rtc_extras:block/green_velutide_slab_top"
+    },
+    "type=double": {
+      "model": "rtc_extras:block/green_velutide_slab_full"
+    }
+  }
+}

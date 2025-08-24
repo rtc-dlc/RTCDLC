@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "rtc_extras:block/blue_velutide_planks",
+    "bottom": "rtc_extras:block/blue_velutide_planks",
+    "top": "rtc_extras:block/blue_velutide_planks",
+    "side": "rtc_extras:block/blue_velutide_planks"
+  },
+  "render_type": "solid"
+}

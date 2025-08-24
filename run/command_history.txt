@@ -1,12 +1,3 @@
-/tp @s 1779 91 2625
-/locate biome rtc_extras:gliese_thicket
-/tp @s 1563 133 2874
-/tp ~10000 ~ ~
-/locate biome rtc_extras:gliese_thicket
-/tp @s 10257 106 227
-/tp ~10000 ~ ~
-/tp ~-10000 ~ ~
-/tp ~10000 ~ ~
 /kill
 /tp ~-10000 ~ ~
 /execute in minecraft:overworld run tp ~ ~ ~
@@ -48,3 +39,12 @@
 /gamerule randomTickSpeed 300
 /effect give Dev minecraft:haste infinite 10
 /effect clear
+/time set day
+/tick rate 5
+/gamerule randomTickSpeed 300
+/gamerule randomTickSpeed 1000
+/gamerule randomTickSpeed 300
+/gamerule randomTickSpeed 1000
+/gamerule randomTickSpeed 300
+/gamerule randomTickSpeed 3
+/gamerule randomTickSpeed 300

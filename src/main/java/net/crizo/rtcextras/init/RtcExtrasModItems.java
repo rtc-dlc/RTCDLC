@@ -12,8 +12,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.crizo.rtcextras.item.RedSporeSingletItem;
+import net.crizo.rtcextras.item.RedSporeItem;
+import net.crizo.rtcextras.item.MagentaSporeSingletItem;
+import net.crizo.rtcextras.item.MagentaSporeItem;
 import net.crizo.rtcextras.item.JellyItem;
 import net.crizo.rtcextras.item.GeneSampleItem;
+import net.crizo.rtcextras.item.BrownSporeSingletItem;
+import net.crizo.rtcextras.item.BrownSporeItem;
 import net.crizo.rtcextras.item.BacteriumItem;
 import net.crizo.rtcextras.item.BacteriumDummyItem;
 import net.crizo.rtcextras.RtcExtrasMod;
@@ -50,6 +56,37 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> RED_VELUTIPE_MUSHROOM = block(RtcExtrasModBlocks.RED_VELUTIPE_MUSHROOM);
 	public static final DeferredItem<Item> BLUE_VELUTIPE_MUSHROOM_STEM = block(RtcExtrasModBlocks.BLUE_VELUTIPE_MUSHROOM_STEM);
 	public static final DeferredItem<Item> MAGENTA_VELUTIPE_MUSHROOM = block(RtcExtrasModBlocks.MAGENTA_VELUTIPE_MUSHROOM);
+	public static final DeferredItem<Item> RED_VELUTIPE_PLANKS = block(RtcExtrasModBlocks.RED_VELUTIPE_PLANKS);
+	public static final DeferredItem<Item> RED_VELUTIPE_STAIRS = block(RtcExtrasModBlocks.RED_VELUTIPE_STAIRS);
+	public static final DeferredItem<Item> RED_VELUTIPE_SLAB = block(RtcExtrasModBlocks.RED_VELUTIPE_SLAB);
+	public static final DeferredItem<Item> RED_VELUTIPE_FENCE = block(RtcExtrasModBlocks.RED_VELUTIPE_FENCE);
+	public static final DeferredItem<Item> RED_VELUTIPE_FENCE_GATE = block(RtcExtrasModBlocks.RED_VELUTIPE_FENCE_GATE);
+	public static final DeferredItem<Item> RED_VELUTIPE_PRESSURE_PLATE = block(RtcExtrasModBlocks.RED_VELUTIPE_PRESSURE_PLATE);
+	public static final DeferredItem<Item> RED_VELUTIPE_BUTTON = block(RtcExtrasModBlocks.RED_VELUTIPE_BUTTON);
+	public static final DeferredItem<Item> BLUE_VELUTIPE_PLANKS = block(RtcExtrasModBlocks.BLUE_VELUTIPE_PLANKS);
+	public static final DeferredItem<Item> BLUE_VELUTIPE_STAIRS = block(RtcExtrasModBlocks.BLUE_VELUTIPE_STAIRS);
+	public static final DeferredItem<Item> BLUE_VELUTIPE_SLAB = block(RtcExtrasModBlocks.BLUE_VELUTIPE_SLAB);
+	public static final DeferredItem<Item> BLUE_VELUTIPE_FENCE = block(RtcExtrasModBlocks.BLUE_VELUTIPE_FENCE);
+	public static final DeferredItem<Item> BLUE_VELUTIPE_FENCE_GATE = block(RtcExtrasModBlocks.BLUE_VELUTIPE_FENCE_GATE);
+	public static final DeferredItem<Item> BLUE_VELUTIPE_PRESSURE_PLATE = block(RtcExtrasModBlocks.BLUE_VELUTIPE_PRESSURE_PLATE);
+	public static final DeferredItem<Item> BLUE_VELUTIPE_BUTTON = block(RtcExtrasModBlocks.BLUE_VELUTIPE_BUTTON);
+	public static final DeferredItem<Item> GREEN_VELUTIDE_PLANKS = block(RtcExtrasModBlocks.GREEN_VELUTIDE_PLANKS);
+	public static final DeferredItem<Item> GREEN_VELUTIDE_STAIRS = block(RtcExtrasModBlocks.GREEN_VELUTIDE_STAIRS);
+	public static final DeferredItem<Item> GREEN_VELUTIDE_SLAB = block(RtcExtrasModBlocks.GREEN_VELUTIDE_SLAB);
+	public static final DeferredItem<Item> GREEN_VELUTIDE_FENCE = block(RtcExtrasModBlocks.GREEN_VELUTIDE_FENCE);
+	public static final DeferredItem<Item> GREEN_VELUTIDE_FENCE_GATE = block(RtcExtrasModBlocks.GREEN_VELUTIDE_FENCE_GATE);
+	public static final DeferredItem<Item> GREEN_VELUTIDE_PRESSURE_PLATE = block(RtcExtrasModBlocks.GREEN_VELUTIDE_PRESSURE_PLATE);
+	public static final DeferredItem<Item> GREEN_VELUTIDE_BUTTON = block(RtcExtrasModBlocks.GREEN_VELUTIDE_BUTTON);
+	public static final DeferredItem<Item> RED_SPORE = REGISTRY.register("red_spore", RedSporeItem::new);
+	public static final DeferredItem<Item> BROWN_SPORE = REGISTRY.register("brown_spore", BrownSporeItem::new);
+	public static final DeferredItem<Item> MAGENTA_SPORE = REGISTRY.register("magenta_spore", MagentaSporeItem::new);
+	public static final DeferredItem<Item> RED_VELUTIPE_SHROOMLING = block(RtcExtrasModBlocks.RED_VELUTIPE_SHROOMLING);
+	public static final DeferredItem<Item> BROWN_VELUTIPE_SHROOMLING = block(RtcExtrasModBlocks.BROWN_VELUTIPE_SHROOMLING);
+	public static final DeferredItem<Item> MAGENTA_VELUTIPE_SHROOMLING = block(RtcExtrasModBlocks.MAGENTA_VELUTIPE_SHROOMLING);
+	public static final DeferredItem<Item> JELLY_BLOCK = block(RtcExtrasModBlocks.JELLY_BLOCK);
+	public static final DeferredItem<Item> RED_SPORE_SINGLET = REGISTRY.register("red_spore_singlet", RedSporeSingletItem::new);
+	public static final DeferredItem<Item> BROWN_SPORE_SINGLET = REGISTRY.register("brown_spore_singlet", BrownSporeSingletItem::new);
+	public static final DeferredItem<Item> MAGENTA_SPORE_SINGLET = REGISTRY.register("magenta_spore_singlet", MagentaSporeSingletItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

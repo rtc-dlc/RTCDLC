@@ -1,0 +1,9 @@
+{
+  "parent": "rtc_extras:custom/jellyblock2",
+  "textures": {
+    "all": "rtc_extras:block/jellyblock",
+    "particle": "rtc_extras:block/jellyblock_outside",
+    "0": "rtc_extras:block/jellyblock"
+  },
+  "render_type": "translucent"
+}

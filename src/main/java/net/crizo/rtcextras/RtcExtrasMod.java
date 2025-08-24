@@ -24,6 +24,7 @@ import net.crizo.rtcextras.init.RtcExtrasModTabs;
 import net.crizo.rtcextras.init.RtcExtrasModSounds;
 import net.crizo.rtcextras.init.RtcExtrasModMenus;
 import net.crizo.rtcextras.init.RtcExtrasModItems;
+import net.crizo.rtcextras.init.RtcExtrasModEntities;
 import net.crizo.rtcextras.init.RtcExtrasModBlocks;
 import net.crizo.rtcextras.init.RtcExtrasModBlockEntities;
 
@@ -48,7 +49,7 @@ public class RtcExtrasMod {
 		RtcExtrasModBlocks.REGISTRY.register(modEventBus);
 		RtcExtrasModBlockEntities.REGISTRY.register(modEventBus);
 		RtcExtrasModItems.REGISTRY.register(modEventBus);
-
+		RtcExtrasModEntities.REGISTRY.register(modEventBus);
 		RtcExtrasModTabs.REGISTRY.register(modEventBus);
 		RtcExtrasModVariables.ATTACHMENT_TYPES.register(modEventBus);
 

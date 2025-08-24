@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "rtc_extras:blue_velutipe_mushroom_stem"
+    }
+  ],
+  "result": {
+    "id": "rtc_extras:blue_velutipe_planks",
+    "count": 4
+  }
+}

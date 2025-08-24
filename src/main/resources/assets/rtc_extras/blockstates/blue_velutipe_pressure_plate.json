@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "rtc_extras:block/blue_velutipe_pressure_plate"
+    },
+    "powered=true": {
+      "model": "rtc_extras:block/blue_velutipe_pressure_plate_down"
+    }
+  }
+}

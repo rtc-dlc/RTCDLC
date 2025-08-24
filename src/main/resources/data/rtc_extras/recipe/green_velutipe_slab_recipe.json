@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "rtc_extras:green_velutide_planks"
+    }
+  },
+  "result": {
+    "id": "rtc_extras:green_velutide_slab",
+    "count": 6
+  }
+}

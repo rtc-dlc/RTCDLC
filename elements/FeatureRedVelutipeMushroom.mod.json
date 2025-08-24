@@ -1,0 +1,10 @@
+{
+  "_fv": 79,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": true,
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"14\" y=\"-21\"><value name=\"feature\"><block type=\"feature_huge_red_mushroom\"><field name=\"radius\">2</field><value name=\"cap\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:RedVelutipeMushroom</field></block></value><value name=\"stem\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:RedVelutipeMushroomStem</field></block></value></block></value><next><block type=\"placement_fixed\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"x0\">0</field><field name=\"y0\">0</field><field name=\"z0\">0</field></block></next></block><block type=\"feature_huge_fungus\" x=\"566\" y=\"181\"><field name=\"planted\">FALSE</field><value name=\"stem\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\"></field></block></value><value name=\"hat\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\"></field></block></value><value name=\"decor\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\"></field></block></value><value name=\"ground\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\"></field></block></value><value name=\"replaceable_blocks\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><value name=\"blockSet\"><block type=\"block_holderset_tag\"><field name=\"tag\">replaceable_by_trees</field></block></value></block></value></block></xml>"
+  }
+}

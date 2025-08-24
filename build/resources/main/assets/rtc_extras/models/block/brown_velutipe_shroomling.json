@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "rtc_extras:block/brown_shroomling",
+    "particle": "rtc_extras:block/brown_shroomling"
+  },
+  "render_type": "cutout"
+}

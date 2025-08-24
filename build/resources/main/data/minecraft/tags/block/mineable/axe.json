@@ -1,8 +1,14 @@
 {
   "replace": false,
   "values": [
+    "rtc_extras:red_velutipe_planks",
+    "rtc_extras:red_velutipe_mushroom",
     "rtc_extras:red_velutipe_mushroom_stem",
+    "rtc_extras:brown_velutipe_mushroom",
+    "rtc_extras:magenta_velutipe_mushroom",
     "rtc_extras:blue_velutipe_mushroom_stem",
+    "rtc_extras:green_velutide_planks",
+    "rtc_extras:blue_velutipe_planks",
     "rtc_extras:green_velutipe_mushroom_stem"
   ]
 }

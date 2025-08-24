@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "rtc_extras:block/red_velutipe_slab"
+    },
+    "type=top": {
+      "model": "rtc_extras:block/red_velutipe_slab_top"
+    },
+    "type=double": {
+      "model": "rtc_extras:block/red_velutipe_slab_full"
+    }
+  }
+}

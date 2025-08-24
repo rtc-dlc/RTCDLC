@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_wall",
+  "textures": {
+    "particle": "rtc_extras:block/red_velutide_planks2",
+    "texture": "rtc_extras:block/red_velutide_planks2"
+  },
+  "render_type": "solid"
+}

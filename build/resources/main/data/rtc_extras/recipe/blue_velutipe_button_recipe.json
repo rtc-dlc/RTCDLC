@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "rtc_extras:blue_velutipe_planks"
+    }
+  ],
+  "result": {
+    "id": "rtc_extras:red_velutipe_button",
+    "count": 1
+  }
+}

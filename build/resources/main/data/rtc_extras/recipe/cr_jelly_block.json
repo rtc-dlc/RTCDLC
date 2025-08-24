@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "rtc_extras:jelly"
+    }
+  },
+  "result": {
+    "id": "rtc_extras:jelly_block",
+    "count": 1
+  }
+}

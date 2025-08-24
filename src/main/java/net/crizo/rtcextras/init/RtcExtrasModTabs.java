@@ -46,6 +46,31 @@ public class RtcExtrasModTabs {
 				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_MUSHROOM.get().asItem());
 				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_MUSHROOM_STEM.get().asItem());
 				tabData.accept(RtcExtrasModBlocks.MAGENTA_VELUTIPE_MUSHROOM.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_PLANKS.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_STAIRS.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_SLAB.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_FENCE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_FENCE_GATE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_PRESSURE_PLATE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.RED_VELUTIPE_BUTTON.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_PLANKS.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_STAIRS.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_SLAB.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_FENCE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_FENCE_GATE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_PRESSURE_PLATE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.BLUE_VELUTIPE_BUTTON.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GREEN_VELUTIDE_PLANKS.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GREEN_VELUTIDE_STAIRS.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GREEN_VELUTIDE_SLAB.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GREEN_VELUTIDE_FENCE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GREEN_VELUTIDE_FENCE_GATE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GREEN_VELUTIDE_PRESSURE_PLATE.get().asItem());
+				tabData.accept(RtcExtrasModBlocks.GREEN_VELUTIDE_BUTTON.get().asItem());
+				tabData.accept(RtcExtrasModItems.RED_SPORE.get());
+				tabData.accept(RtcExtrasModItems.BROWN_SPORE.get());
+				tabData.accept(RtcExtrasModItems.MAGENTA_SPORE.get());
+				tabData.accept(RtcExtrasModBlocks.JELLY_BLOCK.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

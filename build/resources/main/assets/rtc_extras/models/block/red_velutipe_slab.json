@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "rtc_extras:block/red_velutide_planks2",
+    "bottom": "rtc_extras:block/red_velutide_planks2",
+    "top": "rtc_extras:block/red_velutide_planks2",
+    "side": "rtc_extras:block/red_velutide_planks2"
+  },
+  "render_type": "solid"
+}

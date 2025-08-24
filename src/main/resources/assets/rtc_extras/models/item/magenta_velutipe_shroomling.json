@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "rtc_extras:item/magenta_shroomling"
+  },
+  "render_type": "translucent"
+}
