@@ -1371,7 +1371,7 @@
     {
       "name": "BrownVelutipeMushroom",
       "type": "block",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "brown_velutipe_mushroom",
       "metadata": {
@@ -1422,7 +1422,7 @@
       "name": "RedVelutipeMushroom",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "red_velutipe_mushroom",
       "metadata": {
         "files": [
@@ -1455,7 +1455,7 @@
       "name": "MagentaVelutipeMushroom",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "magenta_velutipe_mushroom",
       "metadata": {
         "files": [
