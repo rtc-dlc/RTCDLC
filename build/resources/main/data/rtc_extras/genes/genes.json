@@ -6,31 +6,31 @@
   },
   "genes": [
   	{
-      "id": "sodium_excretion",
-      "name": "Sodium Excretion",
+      "id": "hypernatremia",
+      "name": "Hypernatremia",
       "tier": "common",
       "interference": 0.08,
-      "effect": "Produces sodium chloride.",
+      "effect": "Produces excess sodium chloride.",
       "tags": ["production"],
-      "production": []
+      "production": ["halite"]
     },
 	{
-		"id": "sickle_cell_trait",
+		"id": "sickle_cell_disease",
 		"name": "Sickle Cell Trait",
 		"tier": "common",
 		"interference": 0.18,
 		"effect": "Slight stamina drain; strong resistance to poison/malaria-like effects.",
 		"tags": ["player", "resistance"],
-		"production": ["sickle_erythrocyte"]
+		"production": []
 	},
 	{
-		"id": "brittle_bones",
+		"id": "osteogenesis_imperfecta",
 		"name": "Brittle Bone Disease",
 		"tier": "common",
 		"interference": 0.20,
 		"effect": "Greatly increased fall and impact damage; extra harm from knockback.",
 		"tags": ["player", "negative"],
-		"production": ["fragile_collagen"]
+		"production": []
 	},
     {
 	  "id": "cancerous_growth",
@@ -42,8 +42,8 @@
 	  "production": ["tumor_mass"]
 	},
     {
-	  "id": "aquagenic_allergy",
-	  "name": "Aquagenic Allergy",
+	  "id": "aquagenic_urticaria",
+	  "name": "Aquagenic Urticaria",
 	  "tier": "common",
 	  "interference": 0.05,
 	  "effect": "Contact with water causes brief damage and nausea.",
@@ -51,8 +51,8 @@
 	  "production": []
 	},
     {
-      "id": "metabolism_boost",
-      "name": "Metabolism Boost",
+      "id": "hypermetabolism",
+      "name": "Hypermetabolism",
       "tier": "common",
       "interference": 0.05,
       "effect": "Minor movement speed and mining speed increase.",
@@ -66,16 +66,16 @@
       "interference": 0.10,
       "effect": "Slow hunger/food regen in sunlight.",
       "tags": ["player", "survival", "production"],
-      "production": ["glucose_basic"]
+      "production": ["sugar"]
     },
     {
-      "id": "detox_enzyme",
-      "name": "Detox Enzyme",
+      "id": "hyperimmune_response",
+      "name": "Hyperimmune_Response",
       "tier": "common",
       "interference": 0.10,
-      "effect": "Slight resistance to poison and negative effects.",
+      "effect": "Gain bursts of energy while suffering negative effects.",
       "tags": ["player", "resistance"],
-      "production": ["detox_compound_a"]
+      "production": []
     },
     {
       "id": "fermentation_pathway",
@@ -84,11 +84,11 @@
       "interference": 0.15,
       "effect": "Enables ethanol fermentation.",
       "tags": ["production", "fuel"],
-      "production": ["ethanol", "carbon_dioxide", "yeast_biomass"]
+      "production": ["ethanol"]
     },
     {
-      "id": "basic_healing_factor",
-      "name": "Basic Healing Factor",
+      "id": "regeneration_factor",
+      "name": "Regeneration Factor",
       "tier": "common",
       "interference": 0.10,
       "effect": "Small passive regeneration out of combat.",
@@ -105,8 +105,8 @@
       "production": []
     },
     {
-      "id": "heat_shock_protein",
-      "name": "Heat Shock Protein",
+      "id": "heat_tolerance",
+      "name": "Heat Tolerance",
       "tier": "common",
       "interference": 0.15,
       "effect": "Minor fire resistance bursts; longer burn tolerance.",
@@ -127,7 +127,7 @@
       "name": "Chitin Layer",
       "tier": "common",
       "interference": 0.10,
-      "effect": "Tiny defense buff (≈ +1 armor) and small knockback resist.",
+      "effect": "Tiny defense buff (+1 armor) and small knockback resist.",
       "tags": ["player", "defense"],
       "production": ["chitin_flakes"]
     },
@@ -165,7 +165,7 @@
       "interference": 0.15,
       "effect": "Generates methanol.",
       "tags": ["production", "fuel"],
-      "production": ["methane_gas", "bio_slurry"]
+      "production": ["methanol"]
     },
     {
       "id": "cellulose_synthase",
@@ -174,7 +174,7 @@
       "interference": 0.10,
       "effect": "Produces cellulose fibers.",
       "tags": ["production", "material"],
-      "production": ["cellulose_fiber", "plant_pulp"]
+      "production": ["string"]
     },
     {
       "id": "penicillin_like",
@@ -183,25 +183,7 @@
       "interference": 0.15,
       "effect": "Produces simple beta-lactam antibiotics.",
       "tags": ["production", "medicine"],
-      "production": ["beta_lactam_antibiotic"]
-    },
-    {
-      "id": "pectinase_expression",
-      "name": "Pectinase Expression",
-      "tier": "common",
-      "interference": 0.10,
-      "effect": "Enables pectin breakdown for processing.",
-      "tags": ["production", "processing"],
-      "production": ["pectinase_enzyme"]
-    },
-    {
-      "id": "amylase_pack",
-      "name": "Amylase Pack",
-      "tier": "common",
-      "interference": 0.10,
-      "effect": "Breaks starch into simple sugars.",
-      "tags": ["production", "processing"],
-      "production": ["amylase_enzyme", "simple_sugars"]
+      "production": ["antibiotic"]
     },
     {
       "id": "slime_polysaccharide",
@@ -210,18 +192,9 @@
       "interference": 0.10,
       "effect": "Produces industrial gums and gels.",
       "tags": ["production", "material"],
-      "production": ["alginate_gel", "xanthan_like_gum"]
+      "production": ["slime_ball"]
     },
     {
-      "id": "vitamin_pathway_basic",
-      "name": "Vitamin Pathway (Basic)",
-      "tier": "common",
-      "interference": 0.12,
-      "effect": "Synthesizes common vitamins.",
-      "tags": ["production", "medicine"],
-      "production": ["vitamin_b_complex", "vitamin_c"]
-    },
-	{
 	  "id": "hemophilia",
 	  "name": "Hemophilia",
 	  "tier": "rare",
@@ -246,7 +219,7 @@
       "interference": 0.25,
       "effect": "Faster mining/attack speed and mild focus.",
       "tags": ["player", "combat", "mining"],
-      "production": ["dopamine_precursor", "serotonin_precursor"]
+      "production": ["dopamine_precursor"]
     },
     {
       "id": "hemoglobin_variant",
@@ -267,22 +240,13 @@
       "production": ["adrenaline_extract"]
     },
     {
-      "id": "venom_synthesis",
-      "name": "Venom Synthesis",
+      "id": "venom_biosynthesis",
+      "name": "Venom Biosynthesis",
       "tier": "rare",
       "interference": 0.30,
       "effect": "Melee attacks apply short poison to mobs.",
       "tags": ["player", "combat", "production"],
       "production": ["venom_peptide"]
-    },
-    {
-      "id": "silk_spinneret",
-      "name": "Silk Spinneret",
-      "tier": "rare",
-      "interference": 0.20,
-      "effect": "Produces spider-silk-like fibers.",
-      "tags": ["production", "material"],
-      "production": ["spider_silk", "silk_fiber_bundle"]
     },
     {
       "id": "chloroplast_optimization",
@@ -291,7 +255,7 @@
       "interference": 0.25,
       "effect": "Faster hunger regen in sunlight; mild night penalty.",
       "tags": ["player", "survival", "production"],
-      "production": ["starch_dense"]
+      "production": []
     },
     {
       "id": "burst_regeneration",
@@ -303,8 +267,8 @@
       "production": []
     },
     {
-      "id": "toxin_resistance",
-      "name": "Toxin Resistance",
+      "id": "toxinase",
+      "name": "Toxinase",
       "tier": "rare",
       "interference": 0.20,
       "effect": "Immune to poison; reduced wither effect.",
@@ -318,7 +282,7 @@
       "interference": 0.25,
       "effect": "Enhanced cold climate boost; flame aura when hit.",
       "tags": ["player", "survival"],
-      "production": ["brown_fat_biomass"]
+      "production": []
     },
     {
       "id": "kinetic_muscle",
@@ -327,7 +291,7 @@
       "interference": 0.35,
       "effect": "Higher jump and sprint speed; slight fall mitigation.",
       "tags": ["player", "movement"],
-      "production": ["elastin_fibers"]
+      "production": []
     },
     {
       "id": "polycarbonate_pathway",
@@ -345,7 +309,7 @@
       "interference": 0.30,
       "effect": "Generates carbon nanotube precursor chemicals.",
       "tags": ["production", "material"],
-      "production": ["cnt_precursor"]
+      "production": ["carbon_nanotube"]
     },
     {
       "id": "nitration_pack",
@@ -366,13 +330,13 @@
       "production": ["tetracycline_like", "streptomycin_like"]
     },
     {
-      "id": "growth_hormone_line",
-      "name": "Growth Hormone Line",
+      "id": "acromegaly",
+      "name": "Acromegaly",
       "tier": "rare",
       "interference": 0.30,
-      "effect": "Synthesizes growth factor serum.",
+      "effect": "Causes an overproduction of growth hormone.",
       "tags": ["production", "medicine"],
-      "production": ["growth_factor_serum"]
+      "production": []
     },
     {
       "id": "styrogenesis",
@@ -383,23 +347,14 @@
       "tags": ["production", "material"],
       "production": ["styrene"]
     },
-    {
-      "id": "bioplastic_refinery",
-      "name": "Bioplastic Refinery",
-      "tier": "rare",
-      "interference": 0.25,
-      "effect": "Creates bioplastics such as PLA/PHA.",
-      "tags": ["production", "material"],
-      "production": ["pla_bioplastic", "pha_bioplastic"]
-    },
-    {
+	{
       "id": "biolubricant_chain",
       "name": "Biolubricant Chain",
       "tier": "rare",
       "interference": 0.25,
       "effect": "Produces bio-based lubricants.",
       "tags": ["production", "utility"],
-      "production": ["bio_lubricant"]
+      "production": ["lubricant"]
     },
     {
       "id": "antifungal_serum",
@@ -408,16 +363,7 @@
       "interference": 0.25,
       "effect": "Produces antifungal compounds.",
       "tags": ["production", "medicine"],
-      "production": ["azole_like_antifungal"]
-    },
-    {
-      "id": "collagen_weave",
-      "name": "Collagen Weave",
-      "tier": "rare",
-      "interference": 0.25,
-      "effect": "Generates collagen mesh for armor crafting.",
-      "tags": ["production", "armor", "material"],
-      "production": ["collagen_mesh"]
+      "production": ["antifungal"]
     },
     {
       "id": "chemoautotrophy_pack",
@@ -426,7 +372,7 @@
       "interference": 0.30,
       "effect": "Biofuel oil phase and nitrate salts production.",
       "tags": ["production", "fuel"],
-      "production": ["biofuel_oil_phase", "nitrate_salts"]
+      "production": ["niter"]
     },
 	{
 	  "id": "marfan_syndrome",
@@ -444,7 +390,7 @@
       "interference": 0.50,
       "effect": "Extreme mining & attack speed; tunnel vision side-effect.",
       "tags": ["player", "combat", "mining", "exotic"],
-      "production": ["nootropic_complex"]
+      "production": []
     },
     {
       "id": "quantum_enzyme",
@@ -453,7 +399,7 @@
       "interference": 0.60,
       "effect": "Short-range teleport dash with cooldown.",
       "tags": ["player", "mobility", "exotic"],
-      "production": ["biophotonic_crystal_seed"]
+      "production": []
     },
     {
       "id": "extreme_regeneration",
@@ -471,7 +417,7 @@
       "interference": 0.50,
       "effect": "Major armor increase with scaling knockback resist.",
       "tags": ["player", "defense", "exotic"],
-      "production": ["chitin_plate_advanced"]
+      "production": [""]
     },
     {
       "id": "mycelial_symbiosis",
@@ -483,22 +429,13 @@
       "production": ["symbiotic_root_mat"]
     },
     {
-      "id": "oxygen_synthesis",
-      "name": "Oxygen Synthesis",
+      "id": "heme_overproduction",
+      "name": "Heme Overproduction",
       "tier": "exotic",
       "interference": 0.40,
       "effect": "Self-generate breathable air in hostile atmospheres.",
       "tags": ["player", "survival", "exotic"],
-      "production": ["o2_micropacket"]
-    },
-    {
-      "id": "radiant_bioluminescence",
-      "name": "Radiant Bioluminescence",
-      "tier": "exotic",
-      "interference": 0.45,
-      "effect": "Powerful light aura; brief blind on nearby mobs.",
-      "tags": ["player", "utility", "combat", "exotic"],
-      "production": ["luciferin_advanced"]
+      "production": []
     },
     {
       "id": "neuroinhibitor_aura",
@@ -507,7 +444,7 @@
       "interference": 0.50,
       "effect": "Weakness aura against nearby hostiles.",
       "tags": ["player", "combat", "exotic"],
-      "production": ["inhibitory_peptide"]
+      "production": []
     },
     {
       "id": "immortal_cell_cycle",
@@ -516,25 +453,16 @@
       "interference": 0.60,
       "effect": "Prevent one death per in-game day; long cooldown.",
       "tags": ["player", "survival", "exotic"],
-      "production": ["telomerase_core"]
+      "production": []
     },
-    {
-      "id": "nanocellulose_forge",
-      "name": "Nanocellulose Forge",
-      "tier": "exotic",
-      "interference": 0.45,
-      "effect": "Produces ultra-strong nanocellulose materials.",
-      "tags": ["production", "material", "exotic"],
-      "production": ["nanocellulose_sheet", "bio_composite_panel"]
-    },
-    {
+	{
       "id": "biophotonic_array",
       "name": "Biophotonic Array",
       "tier": "exotic",
       "interference": 0.50,
       "effect": "Organic logic/circuit components.",
       "tags": ["production", "circuit", "exotic"],
-      "production": ["biophotonic_crystal", "organic_logic_unit"]
+      "production": ["brain_matter"]
     },
     {
       "id": "alien_neurotoxin_line",
@@ -543,16 +471,7 @@
       "interference": 0.55,
       "effect": "Synthesizes potent xenoneurotoxins.",
       "tags": ["production", "combat", "exotic"],
-      "production": ["xenoneurotoxin_ampule"]
-    },
-    {
-      "id": "bio_dynamism_cascade",
-      "name": "Bio-dynamism Cascade",
-      "tier": "exotic",
-      "interference": 0.55,
-      "effect": "Creates bio-reactive charges and shock gels.",
-      "tags": ["production", "energetic", "exotic"],
-      "production": ["bio_reactive_charge", "shock_gel"]
+      "production": ["xenoneurotoxin"]
     },
     {
       "id": "advanced_nootropics",
@@ -561,16 +480,7 @@
       "interference": 0.50,
       "effect": "High-end cognitive enhancers.",
       "tags": ["production", "medicine", "exotic"],
-      "production": ["focus_serum", "memory_enhancer"]
-    },
-    {
-      "id": "protein_scaffold_fab",
-      "name": "Protein Scaffold Fabricator",
-      "tier": "exotic",
-      "interference": 0.45,
-      "effect": "Generates scaffolds for bio-armor and tools.",
-      "tags": ["production", "armor", "exotic"],
-      "production": ["bio_armor_scaffold"]
+      "production": []
     },
     {
       "id": "phase_change_mucus",
@@ -579,16 +489,7 @@
       "interference": 0.50,
       "effect": "Briefly phase through 1-block gaps; slippery sprint.",
       "tags": ["player", "utility", "exotic"],
-      "production": ["phase_mucus_sample"]
-    },
-    {
-      "id": "electrocyte_array",
-      "name": "Electrocyte Array",
-      "tier": "exotic",
-      "interference": 0.50,
-      "effect": "Emit short electric burst; trickle-charge bio machines.",
-      "tags": ["player", "combat", "utility", "exotic"],
-      "production": ["bio_capacitor_gel"]
+      "production": []
     },
     {
       "id": "hardened_carapace",
@@ -597,7 +498,7 @@
       "interference": 0.55,
       "effect": "Massive armor with a small speed penalty.",
       "tags": ["player", "defense", "exotic"],
-      "production": ["carapace_plate"]
+      "production": []
     },
     {
       "id": "photoshade_negentropy",
@@ -606,16 +507,7 @@
       "interference": 0.60,
       "effect": "Very slow passive heal and hunger freeze in darkness.",
       "tags": ["player", "survival", "exotic"],
-      "production": ["dark_adapt_pigment"]
-    },
-    {
-      "id": "void_pressure_tolerance",
-      "name": "Void Pressure Tolerance",
-      "tier": "exotic",
-      "interference": 0.50,
-      "effect": "Immunity to vacuum/pressure damage; slight speed loss.",
-      "tags": ["player", "survival", "exotic"],
-      "production": ["pressure_protein_coil"]
+      "production": []
     },
     {
       "id": "prion_instability",
@@ -624,7 +516,7 @@
       "interference": 0.58,
       "effect": "Progressive degeneration over time; occasional chaotic surges in other gene effects.",
       "tags": ["player", "negative", "exotic"],
-      "production": ["misfolded_protein"]
+      "production": ["prion"]
     }
   ]
 }

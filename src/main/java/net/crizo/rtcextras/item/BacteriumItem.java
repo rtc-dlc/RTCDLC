@@ -150,8 +150,11 @@ public class BacteriumItem extends Item {
 				// Normal decay & death (only when not stabilized)
 				if (entity instanceof Player) {
 					if (isExpired(level, stack)) {
-						// spawn decay loot first
-						net.crizo.rtcextras.procedures.GeneDecayLootProcedure.onBacteriumDecay(level, entity, stack);
+						// NEW: drive all drops/side-effects through the engine
+						String geneId = getTag(stack).getString("rtc_gene_id"); // "" is fine; engine will no-op
+						var ctx = new net.crizo.rtcextras.GeneEngine.Ctx(level, entity.getX(), entity.getY() + 0.25, entity.getZ(), level.getRandom(), entity, null, // not from a block entity
+								stack, Math.max(1, stack.getCount()));
+						net.crizo.rtcextras.GeneEngine.apply(geneId, net.crizo.rtcextras.GeneEngine.Mode.DECAY, ctx);
 						// then kill the cohort
 						stack.setCount(0);
 					}

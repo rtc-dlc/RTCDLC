@@ -153,8 +153,8 @@ public class GeneDecayLootProcedure {
 			geneId = "";
 		return switch (geneId) {
 			// ---------- COMMON ----------
-			case "sodium_excretion" -> List.of(io("rtc:sodium_chloride", 0.03));
-			case "metabolism_boost" -> List.of();
+			case "hypernatremia" -> List.of(io("rtc:sodium_chloride", 0.03));
+			case "hypermetabolism" -> List.of();
 			case "photosynthesis" -> List.of(io("minecraft:sugar", 0.03));
 			case "detox_enzyme" -> List.of();
 			case "fermentation_pathway" -> List.of();
@@ -173,10 +173,10 @@ public class GeneDecayLootProcedure {
 			case "amylase_pack" -> List.of();
 			case "slime_polysaccharide" -> List.of(io("minecraft:slimeball", 0.04));
 			case "vitamin_pathway_basic" -> List.of();
-			case "aquagenic_growth" -> List.of();
+			case "aquagenic_urticaria" -> List.of();
 			case "cancerous_growth" -> List.of();
-			case "sickle_cell_trait" -> List.of();
-			case "brittle_bones" -> List.of();
+			case "sickle_cell_disease" -> List.of();
+			case "osteogenesis_imperfecta" -> List.of();
 			// ---------- RARE ----------
 			case "neurotransmitter_boost" -> List.of();
 			//eventually makes LDOPA and Serotonin
