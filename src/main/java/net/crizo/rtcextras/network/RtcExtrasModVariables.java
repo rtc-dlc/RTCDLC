@@ -72,7 +72,7 @@ public class RtcExtrasModVariables {
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public double geneReplacementCountdown = -1.0;
 		public String geneReplacement = "";
-		public String geneContent = "";
+		public String geneContent = "immortal_cell_cycle, toxinase, adrenaline_trigger";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {

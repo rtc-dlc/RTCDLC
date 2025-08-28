@@ -2,16 +2,30 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 319,
+  "projectBrowserSplitPos": 495,
   "projectBrowserState": {
     "expandedPaths": [
       "[, External libraries]",
       "[, External libraries, Gradle: neoforge-21.1.176]",
       "[, External libraries, Gradle: neoforge-21.1.176, net]",
       "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, client]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, client, renderer]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, client, renderer, entity]",
       "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, world]",
-      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, world, level]",
-      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, world, level, block]"
+      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, world, entity]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, world, entity, ai]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, world, entity, ai, memory]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, minecraft, world, entity, ai, sensing]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, client]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, client, event]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, common]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, common, extensions]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, event]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, event, entity]",
+      "[, External libraries, Gradle: neoforge-21.1.176, net, neoforged, neoforge, event, entity, living]"
     ]
   }
 }

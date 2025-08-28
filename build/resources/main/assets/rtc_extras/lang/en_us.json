@@ -75,5 +75,6 @@
   "block.rtc_extras.jelly_block": "Jelly Block",
   "item.rtc_extras.red_spore_singlet": "Red Spore Singlet",
   "item.rtc_extras.brown_spore_singlet": "Brown Spore Singlet",
-  "item.rtc_extras.magenta_spore_singlet": "Magenta Spore Singlet"
+  "item.rtc_extras.magenta_spore_singlet": "Magenta Spore Singlet",
+  "item.rtc_extras.waste_biomass": "Waste"
 }

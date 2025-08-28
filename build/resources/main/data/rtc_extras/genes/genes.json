@@ -15,22 +15,22 @@
       "production": ["halite"]
     },
 	{
-		"id": "sickle_cell_disease",
-		"name": "Sickle Cell Trait",
-		"tier": "common",
-		"interference": 0.18,
-		"effect": "Slight stamina drain; strong resistance to poison/malaria-like effects.",
-		"tags": ["player", "resistance"],
-		"production": []
+	  "id": "sickle_cell_disease",
+	  "name": "Sickle Cell Trait",
+	  "tier": "common",
+	  "interference": 0.18,
+	  "effect": "Slight stamina drain; strong resistance to poison/malaria-like effects.",
+	  "tags": ["player", "resistance"],
+	  "production": []
 	},
 	{
-		"id": "osteogenesis_imperfecta",
-		"name": "Brittle Bone Disease",
-		"tier": "common",
-		"interference": 0.20,
-		"effect": "Greatly increased fall and impact damage; extra harm from knockback.",
-		"tags": ["player", "negative"],
-		"production": []
+	  "id": "osteogenesis_imperfecta",
+	  "name": "Brittle Bone Disease",
+	  "tier": "common",
+      "interference": 0.20,
+	  "effect": "Greatly increased fall and impact damage; extra harm from knockback.",
+	  "tags": ["player", "negative"],
+	  "production": []
 	},
     {
 	  "id": "cancerous_growth",
@@ -129,7 +129,7 @@
       "interference": 0.10,
       "effect": "Tiny defense buff (+1 armor) and small knockback resist.",
       "tags": ["player", "defense"],
-      "production": ["chitin_flakes"]
+      "production": []
     },
     {
       "id": "bioluminescence",
@@ -138,18 +138,9 @@
       "interference": 0.05,
       "effect": "Soft light aura in darkness.",
       "tags": ["player", "utility", "production"],
-      "production": ["luciferin_basic"]
+      "production": []
     },
-    {
-      "id": "lactate_cycle",
-      "name": "Lactate Cycle",
-      "tier": "common",
-      "interference": 0.12,
-      "effect": "Produces lactic acid.",
-      "tags": ["production"],
-      "production": ["lactic_acid"]
-    },
-    {
+	{
       "id": "acetobacter_lineage",
       "name": "Acetobacter Lineage",
       "tier": "common",
@@ -219,7 +210,7 @@
       "interference": 0.25,
       "effect": "Faster mining/attack speed and mild focus.",
       "tags": ["player", "combat", "mining"],
-      "production": ["dopamine_precursor"]
+      "production": ["dopamine"]
     },
     {
       "id": "hemoglobin_variant",
@@ -246,7 +237,7 @@
       "interference": 0.30,
       "effect": "Melee attacks apply short poison to mobs.",
       "tags": ["player", "combat", "production"],
-      "production": ["venom_peptide"]
+      "production": []
     },
     {
       "id": "chloroplast_optimization",
@@ -318,16 +309,7 @@
       "interference": 0.35,
       "effect": "Synthesizes explosive precursor mixes.",
       "tags": ["production", "energetic"],
-      "production": ["hydrazine", "hexamine"]
-    },
-    {
-      "id": "broad_spectrum_antibiotic",
-      "name": "Broad-Spectrum Antibiotic",
-      "tier": "rare",
-      "interference": 0.30,
-      "effect": "Produces advanced antibiotics.",
-      "tags": ["production", "medicine"],
-      "production": ["tetracycline_like", "streptomycin_like"]
+      "production": ["hexamine"]
     },
     {
       "id": "acromegaly",
@@ -426,7 +408,7 @@
       "interference": 0.45,
       "effect": "Share slow regeneration with nearby allies.",
       "tags": ["player", "support", "exotic"],
-      "production": ["symbiotic_root_mat"]
+      "production": []
     },
     {
       "id": "heme_overproduction",

@@ -8,38 +8,42 @@ public final class ItemIO {
 	private static final java.util.Map<String, String> ALIASES = new java.util.HashMap<>();
 	static {
 		// vanilla
-		ALIASES.put("string", "minecraft:string");
-		ALIASES.put("sugar", "minecraft:sugar");
-		ALIASES.put("slime_ball", "minecraft:slime_ball");
-		// rtc / rtc_extras common ids from your JSON
-		ALIASES.put("halite", "rtc_extras:halite");
-		ALIASES.put("tumor_mass", "rtc_extras:tumor_mass");
-		ALIASES.put("luciferin_basic", "rtc_extras:luciferin_basic");
-		ALIASES.put("lactic_acid", "rtc_extras:lactic_acid");
-		ALIASES.put("acetic_acid", "rtc_extras:acetic_acid");
-		ALIASES.put("methanol", "rtc_extras:frozen_methanol");
-		ALIASES.put("antibiotic", "rtc_extras:antibiotic");
-		ALIASES.put("chitin_flakes", "rtc_extras:chitin_flakes");
-		ALIASES.put("coagulation_factor", "rtc_extras:coagulation_factor");
-		ALIASES.put("dopamine_precursor", "rtc_extras:dopamine_precursor");
-		ALIASES.put("oxygen_binding_protein", "rtc_extras:oxygen_binding_protein");
-		ALIASES.put("adrenaline_extract", "rtc_extras:adrenaline_extract");
-		ALIASES.put("venom_peptide", "rtc_extras:venom_peptide");
-		ALIASES.put("polycarbonate_pellet", "rtc_extras:polycarbonate_pellet");
-		// You had both “carbon_nanotube(s)” historically—map both to whichever you ship:
-		ALIASES.put("carbon_nanotube", "rtc:item_carbon_nanotubes"); // change to rtc_extras:carbon_nanotube if that's your id
-		ALIASES.put("hydrazine", "rtc_extras:hydrazine");
-		ALIASES.put("hexamine", "rtc_extras:hexamine");
-		ALIASES.put("tetracycline_like", "rtc_extras:tetracycline_like");
-		ALIASES.put("streptomycin_like", "rtc_extras:streptomycin_like");
-		ALIASES.put("styrene", "rtc:styrene"); // or rtc_extras:styrene
-		ALIASES.put("lubricant", "rtc_extras:lubricant");
-		ALIASES.put("antifungal", "rtc_extras:antifungal");
-		ALIASES.put("niter", "rtc:niter"); // or rtc_extras:niter if that's the id
-		ALIASES.put("symbiotic_root_mat", "rtc_extras:symbiotic_root_mat");
-		ALIASES.put("brain_matter", "rtc_extras:brain_matter");
-		ALIASES.put("xenoneurotoxin", "rtc_extras:xenoneurotoxin");
-		ALIASES.put("prion", "rtc_extras:prion");
+ALIASES.put("string", "minecraft:string");
+ALIASES.put("sugar", "minecraft:sugar");
+ALIASES.put("slime_ball", "minecraft:slime_ball");
+
+// rtc / rtc_extras
+ALIASES.put("halite", "rtc_extras:halite");
+ALIASES.put("tumor_mass", "rtc_extras:tumor_mass");
+
+// LIQUIDS → frozen_ under rtc_extras
+ALIASES.put("acetic_acid", "rtc_extras:frozen_acetic_acid");
+ALIASES.put("methanol", "rtc_extras:frozen_methanol");
+ALIASES.put("styrene", "rtc_extras:frozen_styrene");
+ALIASES.put("lubricant", "rtc_extras:frozen_lubricant");
+ALIASES.put("antifungal", "rtc_extras:frozen_antifungal");
+ALIASES.put("xenoneurotoxin", "rtc_extras:frozen_xenoneurotoxin");
+
+// solids / misc (keep as-is unless you decide otherwise)
+ALIASES.put("antibiotic", "rtc_extras:antibiotic");
+ALIASES.put("dopamine", "rtc_extras:frozen_dopamine");
+ALIASES.put("oxygen_binding_protein", "rtc_extras:oxygen_binding_protein");
+ALIASES.put("adrenaline_extract", "rtc_extras:adrenaline_extract");
+ALIASES.put("polycarbonate_pellet", "rtc_extras:polycarbonate_pellet");
+
+// pick one canonical id for nanotubes
+ALIASES.put("carbon_nanotube", "rtc:item_carbon_nanotubes");
+
+// if you want hexamine treated as “frozen”, keep this:
+ALIASES.put("hexamine", "rtc_extras:frozen_hexamine");
+
+// niter is a salt (solid) -> not frozen
+ALIASES.put("niter", "rtc:niter");
+
+// bio-ish
+ALIASES.put("brain_matter", "rtc_extras:brain_matter");
+ALIASES.put("prion", "rtc_extras:frozen_prion");
+
 	}
 
 	public static net.minecraft.world.item.Item resolveItem(String idOrBare) {

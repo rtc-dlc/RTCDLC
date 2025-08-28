@@ -4,7 +4,9 @@ import org.checkerframework.checker.units.qual.g;
 
 import org.apache.logging.log4j.core.util.Loader;
 
-@net.neoforged.fml.common.EventBusSubscriber(bus = net.neoforged.fml.common.EventBusSubscriber.Bus.MOD)
+import net.neoforged.fml.common.EventBusSubscriber;
+
+@EventBusSubscriber
 public final class GeneDatabase {
 	private static final java.util.Map<net.minecraft.resources.ResourceLocation, GeneSpec> MAP = new java.util.HashMap<>();
 	private static GenePack lastPack;

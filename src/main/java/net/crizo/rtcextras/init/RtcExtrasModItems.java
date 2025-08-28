@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.crizo.rtcextras.item.WasteBiomassItem;
 import net.crizo.rtcextras.item.RedSporeSingletItem;
 import net.crizo.rtcextras.item.RedSporeItem;
 import net.crizo.rtcextras.item.MagentaSporeSingletItem;
@@ -87,6 +88,7 @@ public class RtcExtrasModItems {
 	public static final DeferredItem<Item> RED_SPORE_SINGLET = REGISTRY.register("red_spore_singlet", RedSporeSingletItem::new);
 	public static final DeferredItem<Item> BROWN_SPORE_SINGLET = REGISTRY.register("brown_spore_singlet", BrownSporeSingletItem::new);
 	public static final DeferredItem<Item> MAGENTA_SPORE_SINGLET = REGISTRY.register("magenta_spore_singlet", MagentaSporeSingletItem::new);
+	public static final DeferredItem<Item> WASTE_BIOMASS = REGISTRY.register("waste_biomass", WasteBiomassItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

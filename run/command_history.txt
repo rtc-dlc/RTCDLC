@@ -1,28 +1,3 @@
-/kill
-/tp ~-10000 ~ ~
-/execute in minecraft:overworld run tp ~ ~ ~
-/tp ~-10000 ~ ~
-/execute in minecraft:overworld run tp ~ ~ ~
-/locate biome rtc_extras:gliese_bioprofusion
-/tp ~-10000 ~ ~
-/tp ~-10000 ~ ~10000
-/tp ~ ~ ~10000
-/execute in minecraft:overworld run tp ~ ~ ~
-/kill
-/execute in minecraft:overworld run tp ~ ~ ~
-/effect give Dev minecraft:night_vision
-/effect give Dev minecraft:night_vision infinite 0 true
-/execute in minecraft:overworld run tp ~ ~ ~
-/effect give Dev minecraft:night_vision infinite 0 true
-/tp ~ ~ ~10000
-/execute in minecraft:overworld run tp ~ ~ ~
-/tp ~ ~ ~10000
-/execute in minecraft:overworld run tp ~ ~ ~
-/tp ~ ~ ~10000
-/locate biome rtc_extras:gliese_shroomlands
-/tp @s -1082 118 42776
-/execute in minecraft:overworld run tp ~ ~ ~
-/tp ~ ~ ~10000
 /effect give Dev minecraft:night_vision infinite 0 true
 /tp ~ ~ ~10000
 /feature
@@ -48,3 +23,28 @@
 /gamerule randomTickSpeed 300
 /gamerule randomTickSpeed 3
 /gamerule randomTickSpeed 300
+/KILL
+/kill
+/data get entity Dev
+/kill
+/data
+/data get entity Dev
+/kill
+/effect give Dev minecraft:poison
+/effect give Dev minecraft:poison 10
+/effect give Dev minecraft:poison infinite
+/effect give Dev minecraft:poison infinite 2
+/effect give Dev minecraft:poison 30 20
+/damage Dev 10
+/kill
+/time add 24000
+/tick rate 10000
+/tick rate 20
+/tick sprint 1d
+/data get entity Dev
+/kill
+/damage Dev 19
+/damage Dev 4
+/effect give Dev minecraft:poison
+/effect give Dev minecraft:poison 30 2
+/kill

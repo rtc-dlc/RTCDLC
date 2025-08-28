@@ -71,6 +71,7 @@ public class RtcExtrasModTabs {
 				tabData.accept(RtcExtrasModItems.BROWN_SPORE.get());
 				tabData.accept(RtcExtrasModItems.MAGENTA_SPORE.get());
 				tabData.accept(RtcExtrasModBlocks.JELLY_BLOCK.get().asItem());
+				tabData.accept(RtcExtrasModItems.WASTE_BIOMASS.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

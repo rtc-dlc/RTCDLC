@@ -2,6 +2,9 @@
   "values": {
     "rtc_extras:jelly": {
       "chance": 0.2
+    },
+    "rtc_extras:waste_biomass": {
+      "chance": 0.2
     }
   }
 }
